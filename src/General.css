@@ -1,0 +1,59 @@
+:root {
+    /* Fonts */
+    --BS-font:'Big Shoulders Display', cursive;
+    --WS-font: 'Work Sans', sans-serif;
+    /* Colours */
+    --first-color: #5900D7;
+    --second-color: #F4911D;
+    --third-color: #79C9C3;
+    --fourth-color: #F0EFEE;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    /* Font sizes (Mobile) */
+    --main-title-mobile: 43px;
+    --title-mobile: 32px ;
+    --subtitle-mobile: 18px;
+    --paragraph-mobile: 12px;
+    --button-font-size-mobile: 10px;
+    --counter-main-size-mobile: 40px;
+    --counter-small-size-mobile: 9px;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: var(--WS-font);
+    font-size: var(--paragraph-mobile);
+}
+
+.text-orange {
+    color: var(--second-color)
+}
+
+.text-white {
+    color: var(--white-color)
+}
+
+.text-blue {
+    color: var(--first-color);
+}
+
+.text-cian {
+    color: var(--third-color)
+}
+
+

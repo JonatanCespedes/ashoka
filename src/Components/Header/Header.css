@@ -1,0 +1,41 @@
+button.btn-menu {
+    background-color: var(--first-color);
+    border: none;
+    height: auto;
+    outline: none;
+    width: 50px;
+    position: absolute;
+    right: 16px;
+}
+
+.header {
+    background-color: var(--first-color);
+    
+    padding: 18px 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+
+.logos img{
+      vertical-align: middle;
+}
+
+.logos img#logo-1{
+    width: 50px;
+    margin-left: -7px ;
+}
+
+.logos img#logo-2{
+    width: 80px;
+    margin-left: 7px ;
+}
+

@@ -1,0 +1,60 @@
+.svg-orange {
+    fill: var(--second-color);
+}
+
+.svg-blue {
+    fill: var(--first-color)
+}
+
+.way-section {
+    background-color: var(--fourth-color);
+    padding: 30px 0;
+}
+
+.way-section h3{
+    font-size: var(--title-mobile);
+    font-family: var(--BS-font);
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.way-section .img-container {
+    text-align: center;
+}
+
+.way-sentences {
+    margin: 0 auto 18px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.way-sentences p{
+    
+    margin: 0;
+    text-align: center;
+}
+
+.way-sentences.s-1 p{
+    width: 60vw;
+}
+
+.way-sentences.s-2 p{
+    width: 80vw;
+}
+
+.way-sentences.s-3 p{
+    width: 80vw;
+}
+.way-sentences.s-3 p span{
+    width: 50vw;
+}
+
+.way-sentences.s-4 p{
+    width: 80vw;
+}
+
+.way-sentences svg {
+    width: 15px;
+    margin-bottom: -8px;
+}
+

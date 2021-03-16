@@ -1,0 +1,32 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.card {
+    text-align: center;
+}
+
+.card h6{
+    font-size: var(--subtitle-mobile);
+    font-family: var(--BS-font);
+    margin: 15px auto 18px auto;
+    width: 80%;
+}
+
+.card p {
+    color: var(--white-color);
+    margin: 0 auto 18px auto;
+    width: 80%;
+}
+
+.ready-section {
+    background-color: var(--first-color);
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+.ready-section h3 {
+    margin: 0 auto 18px auto;
+    width: 45vw;
+}

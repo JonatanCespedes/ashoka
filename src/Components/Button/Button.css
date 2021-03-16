@@ -1,0 +1,51 @@
+.align-center {
+    align-self: center;
+}
+
+.btn-white {
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--first-color);
+    font-family: var(--WS-font);
+    font-size: var(--button-font-size-mobile);
+    font-weight: 800;
+    height: 1.8rem;
+    outline: none;
+    text-align: center;
+    width: 6rem;
+}
+
+.btn-white:hover{
+    /* border: thin solid var(--first-color); */
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+} 
+
+.btn-orange {
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-family: var(-WS-font);
+    font-size: var(--button-font-size-mobile);
+    font-weight: 800;
+    height: 2rem;
+    text-align: center;
+    width: 10rem;
+}
+
+.btn-orange:hover{
+    /* border: thin solid var(--first-color); */
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+} 
+
+.mb-18 {
+    margin-bottom: 18px;
+}
+
+.mb-30 {
+    margin-bottom: 30px; 
+}
+

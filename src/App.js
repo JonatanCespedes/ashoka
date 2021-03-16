@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+/* External resources */
+
+/* General style sheet */
+import './General.css'
+
+/* Components */
+import Header from './Components/Header';
+import Slider from './Components/Slider/Slider';
+import Video from './Components/VideoSection/Video';
+import Ready from './Components/ReadySection/Ready';
+import Way from './Components/Way/Way';
+import Countdown from './Components/Countdown/Countdown';
+import Photo from './Components/Photo/Photo';
+import Knowmore from './Components/Know-more/Knowmore';
+import Allies from './Components/Allies/Allies';
+import Contact from './Components/Contact-Form/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="general">
+       <Header/> 
+       <Slider/>
+       <Video/>
+       <Ready/>
+       <Way/>
+       <Countdown/>
+       <Photo/>
+       <Knowmore/>
+       <Allies/>
+       <Contact/>
     </div>
   );
 }

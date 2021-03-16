@@ -1,0 +1,15 @@
+.knowmore-section {
+    background-color: var(--first-color);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.knowmore-section h6 {
+    align-self: center;
+    color: var(--white-color);
+    font-family: var(--BS-font);
+    font-size: var(--subtitle-mobile);
+    margin: 18px auto 30px auto;
+    text-align: center;
+    width: 85vw;
+}

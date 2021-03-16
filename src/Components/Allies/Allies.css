@@ -1,0 +1,17 @@
+.allies-container .row-1, 
+.allies-container .row-3,
+.allies-container .row-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.allies-container .row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.allies-section {
+    background-color: var(--fourth-color);
+}

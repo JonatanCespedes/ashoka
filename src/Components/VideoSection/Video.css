@@ -1,0 +1,44 @@
+
+.video-container {
+    width: 100%;
+}
+
+.video-container img{
+    width: 100%;
+}
+
+.video-line {
+    background-color: var(--first-color);
+    border: var(--first-color);
+    height: 3px;
+    margin: 0 auto 25px auto;
+    width: 30px;
+    
+}
+
+.video-section {
+    background-color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.video-section {
+    color: var(--white-color);
+}
+
+.video-section p {
+    margin: 20px auto 25px auto;
+    text-align: center;
+    width: 65vw;
+}
+
+.video-title {
+    align-self: center;
+    font-family: var(--BS-font);
+    font-size: var(--title-mobile);
+    line-height: 32px;
+    margin: 30px auto 25px auto;
+    width: 50vw;
+    text-align: center;
+}

@@ -1,0 +1,78 @@
+.carousel {
+    text-align: center;
+    overflow-x: hidden;
+    background-color: var(--first-color);
+    width: 100%;
+}
+
+.carousel .slides {
+    padding-left: 0;
+    /* 100% por cada slide */
+    width: 300%;
+    display: flex;
+    list-style: none;
+    transition: transform .5s ease-in-out;
+}
+
+.carousel input {
+    display: none;
+}
+
+.carousel label {
+    background-color: var(--white-color);
+    border: medium solid var(--white-color);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 .25rem;
+    display: inline-block;
+    width: .50rem;
+    height: .50rem;
+}
+
+.carousel p {
+    color: var(--white-color);
+    margin: 0 auto 30px auto;
+    width: 65vw; 
+}
+
+.main-title {
+    font-family: var(--BS-font);
+    font-size: var(--main-title-mobile);
+    font-weight: 900;
+    margin: -12px 0 18px 0;
+}
+
+.slide {
+    width: 100vw;
+}
+
+.slide-img {
+    margin-bottom: 15px;
+}
+
+.slides-nav {
+    margin: -20px auto 30px auto;
+}
+
+#slide-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides {
+    transform: translateX(-33.3%);
+}
+
+#slide-3:checked ~ .slides {
+    transform: translateX(-66.6%);
+}
+
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3 {
+    background-color: var(--second-color);
+    border: var(--second-color);
+    width: .65rem;
+    height: .65rem;
+}
+
+
