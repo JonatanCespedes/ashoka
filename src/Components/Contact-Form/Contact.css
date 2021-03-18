@@ -1,3 +1,43 @@
 .contact-section {
     background-color: var(--first-color);
+    padding: 30px 0; 
+    text-align: center;
 }
+
+.contact-section h3{
+    font-family: var(--BS-font);
+    font-size: var(--title-mobile);
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.contact-section p {
+    color: var(--white-color);
+    margin: 0 auto 30px auto;
+}
+
+.contact-section a {
+    color: var(--second-color);
+    font-family: var(--WS-font);
+    font-size: var(--paragraph-mobile);
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.contact-section textarea {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    font-family: var(--WS-font);
+    font-size: var(--paragraph-mobile);
+    margin-bottom: 30px;
+    outline: none;
+    padding: 5px;
+    transition: all 0.3s ease-out;
+    width: 80vw;
+}
+
+.form-container { 
+    margin-top: 30px;
+}
+

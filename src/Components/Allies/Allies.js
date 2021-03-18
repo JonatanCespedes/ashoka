@@ -5,7 +5,7 @@ import './Allies.css';
 const Allies = () => {
     return ( 
         <section className="allies-section">
-            <h2>NUESTROS ALIADOS</h2>
+            <h2 className="text-orange">NUESTROS ALIADOS</h2>
             <div className="allies-container">
                 <div className="row-1">
                     <div>

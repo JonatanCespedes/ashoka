@@ -1,0 +1,30 @@
+input {
+    align-self: center;
+    margin-bottom: 10px;
+    width: 80vw;
+}
+
+.input-white {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    font-family: var(--WS-font);
+    font-size: var(--paragraph-mobile);
+    outline: none;
+    padding: 5px;
+    transition: all 0.3s ease-out;
+}
+
+.input-white-focus {
+    background-color: transparent;
+    box-shadow: 0 0 5px var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    font-family: var(--WS-font);
+    font-size: var(--paragraph-mobile);
+    outline: none;
+    padding: 5px;
+    transition: all 0.3s ease-out;
+}

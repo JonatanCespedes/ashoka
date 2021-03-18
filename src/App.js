@@ -14,6 +14,7 @@ import Photo from './Components/Photo/Photo';
 import Knowmore from './Components/Know-more/Knowmore';
 import Allies from './Components/Allies/Allies';
 import Contact from './Components/Contact-Form/Contact';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
        <Knowmore/>
        <Allies/>
        <Contact/>
+       <Footer/>
     </div>
   );
 }

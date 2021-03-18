@@ -1,0 +1,9 @@
+.footer {
+    background-color: var(--first-color);
+    height: 50px;
+    width: 100%;
+}
+
+.footer .logos {
+    text-align: center;
+}
