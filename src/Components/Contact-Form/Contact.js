@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '../Button/Button'
 import Input from '../Input/Input'
 import './Contact.css';
 
 const Contact = () => {
+
     return ( 
         <section className="contact-section">
             <h3 className="text-orange">

@@ -13,7 +13,7 @@ const Allies = () => {
                         <hr/>
                     </div>
                     <div>
-                        <small>CO-CREADO CON</small>
+                        <small id="impulsado">IMPULSADO JUNTO A</small>
                         <hr/>
                     </div>
                 </div>

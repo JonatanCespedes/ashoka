@@ -18,14 +18,13 @@
 
 .video-section {
     background-color: var(--second-color);
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
+    padding: 30px 30px;
     width: 100%;
 }
 
-.video-section {
-    color: var(--white-color);
-}
 
 .video-section p {
     margin: 20px auto 25px auto;
@@ -38,7 +37,7 @@
     font-family: var(--BS-font);
     font-size: var(--title-mobile);
     line-height: 32px;
-    margin: 30px auto 25px auto;
+    margin: 0 auto 25px auto;
     width: 50vw;
     text-align: center;
 }

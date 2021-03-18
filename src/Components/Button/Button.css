@@ -16,10 +16,10 @@
     width: 6rem;
 }
 
-.btn-white:hover{
-    /* border: thin solid var(--first-color); */
+.btn-white:hover {
+    box-shadow: 0 0 10px var(--white-color);
     cursor: pointer;
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-out;
 } 
 
 .btn-orange {
@@ -31,14 +31,15 @@
     font-size: var(--button-font-size-mobile);
     font-weight: 800;
     height: 2rem;
+    outline: none;
     text-align: center;
     width: 10rem;
 }
 
 .btn-orange:hover{
-    /* border: thin solid var(--first-color); */
+    box-shadow: 0 0 10px var(--white-color);
     cursor: pointer;
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-out;
 } 
 
 .mb-18 {

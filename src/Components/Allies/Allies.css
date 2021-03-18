@@ -7,10 +7,15 @@
     text-align: center;
 }
 
-.allies-container .row-2{
+.allies-container .row-1:nth-child(1) {
+    position: relative;
+    right: 8px;
+}
+
+.allies-container .row-2 {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 45% 1fr 1fr;
     justify-items: center;
 }
 
@@ -30,7 +35,7 @@
 
 .allies-section {
     background-color: var(--fourth-color);
-    padding: 30px 0;
+    padding: 30px 30px;
 }
 
 .allies-section h2 {
