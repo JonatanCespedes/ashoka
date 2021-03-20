@@ -1,0 +1,40 @@
+.fellows-section {
+    background-color: var(--fourth-color);
+    padding: 30px 30px 0 30px;
+} 
+
+.fellows-section h2 {
+    font-family: var(--BS-font);
+    font-size: var(--title-mobile);
+    margin: 0 30px 30px 30px;
+    text-align: center;
+}
+
+.fellows-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fellows-container .fellow {
+    text-align: center;
+}
+
+.fellow h6 {
+    font-family: var(--BS-font);
+    font-size: var(--subtitle-mobile);
+    margin: auto;
+    width: 70%;  
+}
+
+.fellow:last-child img {
+    margin-top: 14px;
+}
+
+.fellow:nth-child(odd) img{
+    margin-left: -15px;
+}
+
+.fellow p {
+    text-align: center;
+    width: 97%;
+}

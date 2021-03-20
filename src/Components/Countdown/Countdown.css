@@ -1,6 +1,14 @@
+.countdown-item {
+    border-right: thin solid var(--white-color)
+}
+
+.countdown-item:last-child {
+    border-right: none;
+}
+ 
 .countdown-section {
     background-color: var(--third-color);
-    padding:30px 0;
+    padding:30px 30px;
     text-align: center;
 }
 
@@ -21,9 +29,9 @@
 }
 
 .countdown-section .countdown-timer-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -37,6 +45,7 @@
 .countdown-timer-container p {
     color: var(--first-color);
     font-family: var(--BS-font);
+    margin: 0;
     text-align: center;
     text-transform: uppercase;
 }
