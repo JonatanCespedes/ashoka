@@ -6,15 +6,15 @@ import './Countdown.css';
 const Countdown = () => {
     const calculateTimeLeft = () => {
         let year = new Date().getFullYear(),
-        difference = +new Date(`04/16/${year}`) - +new Date(),
+        difference = +new Date(`03/21/${year}`) - +new Date(),
         timeleft = {}
 
         if (difference > 0) {
             timeleft = {
-                dias: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                horas: Math.floor((difference / (1000 * 60 * 60 )) % 24),
-                minutos: Math.floor((difference / 1000 / 60 ) % 60),
-                segundos: Math.floor((difference / 1000) % 60)
+                dias: Math.floor(difference / (1000 * 60 * 60 * 24)) != 0 ? Math.floor(difference / (1000 * 60 * 60 * 24)) : '0',
+                horas: Math.floor((difference / (1000 * 60 * 60 )) % 24) != 0 ? Math.floor((difference / (1000 * 60 * 60 )) % 24) : '00',
+                minutos: Math.floor((difference / 1000 / 60 ) % 60) != 0 ? Math.floor((difference / 1000 / 60 ) % 60) : '00',
+                segundos: Math.floor((difference / 1000) % 60) != 0 ? Math.floor((difference / 1000) % 60) : '00'
             };
         }
         return timeleft;
@@ -36,7 +36,7 @@ const Countdown = () => {
         }
 
         timerComponents.push(
-            <div>
+            <div className="countdown-item">
                 <span>
                     {timeLeft[interval]}{" "}
                 </span>
