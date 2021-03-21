@@ -12,12 +12,20 @@
     --header-nav-color: #4E08BC;
     /* Font sizes (Mobile) */
     --main-title-mobile: 2.68rem;
-    --title-mobile: 32px ;
+    --main-title-desktop: 3.4rem;
+    --title-mobile: 32px;
+    --title-desktop: 40px ;
     --subtitle-mobile: 18px;
+    --subtitle-desktop: 25px;
     --paragraph-mobile: 12px;
+    --paragraph-desktop: 18px;
     --button-font-size-mobile: 10px;
+    --button-font-size-desktop: 15px;
     --counter-main-size-mobile: 40px;
+    --counter-main-size-desktop: 50px;
     --counter-small-size-mobile: 9px;
+    --counter-small-size-desktop: 15px;
+
 }
 
 html {
