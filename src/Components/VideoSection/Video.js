@@ -31,7 +31,7 @@ const Video = () => {
                 <Button className="btn-white mb-30 align-center" text="HACÉ CLICK ACÁ"/>
             </div>
             <div className="video-container">
-                <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-02.png"/>
+                <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-02.png"/>
             </div>
         </section>
         </>
