@@ -50,3 +50,27 @@
     text-transform: uppercase;
 }
 
+/* ESCRITORIO */
+@media screen and (min-width: 992px) {
+    .countdown-section h2 {
+        font-size: var(--title-desktop);
+        margin: 0 auto 18px auto;
+        width: 100%;
+    }
+
+    .countdown-section hr {
+        width: 70px;
+    }
+
+    .countdown-section .countdown-timer-container {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+
+    .countdown-timer-container span {
+        font-size: 60px;
+        font-family: var(--BS-font);
+        color: var(--white-color);
+    }
+}
