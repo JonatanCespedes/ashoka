@@ -7,3 +7,34 @@
 .footer .logos {
     text-align: center;
 }
+
+.logos__tablet,
+.logos__desktop {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+
+    .footer {
+        background-color: var(--header-nav-color);
+        height: auto;
+        width: 100%;
+    }
+
+    .footer .logos {
+        text-align: left;
+        padding-left: 85px;
+    }
+    .logos__desktop {
+        display: block;
+    }
+
+    .logos__desktop > img {
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .logos__mobile {
+        display: none;
+    }
+}

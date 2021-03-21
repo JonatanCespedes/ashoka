@@ -62,6 +62,10 @@
         padding: 0 90px;
     }
 
+    .contact-section a {
+        font-size: var(--paragraph-desktop);
+    }
+
     .contact-section h3{
         font-size: var(--title-desktop);
         margin: 0 auto 30px auto;
