@@ -130,6 +130,10 @@
         display: block;
     }
 
+    .slide-img-desktop > img {
+        width: 100%;
+    }
+
     .slide-info {
         padding: 50px;
         text-align: left;
