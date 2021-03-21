@@ -6,6 +6,23 @@
     width: 100%;
 }
 
-.photo-section-container img {
+.photo-section-container > img {
     width: 100%;
+}
+
+.photo-section-container img#tablet,
+.photo-section-container img#desktop {
+    display: none;
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px) {
+    .photo-section-container img#mobile {
+        display: none;
+    }
+
+    .photo-section-container img#desktop {
+        display: block;
+    }
+
 }
