@@ -12,18 +12,25 @@
     --header-nav-color: #4E08BC;
     /* Font sizes (Mobile) */
     --main-title-mobile: 2.68rem;
+    --main-title-tablet: 2.7rem;
     --main-title-desktop: 3.4rem;
     --title-mobile: 32px;
+    --title-tablet: 36px;
     --title-desktop: 40px ;
     --subtitle-mobile: 18px;
+    --subtitle-tablet: 20px;
     --subtitle-desktop: 23px;
     --paragraph-mobile: 12px;
+    --paragraph-tablet: 14px;
     --paragraph-desktop: 16px;
     --button-font-size-mobile: 10px;
+    --button-font-size-tablet: 12.5px;
     --button-font-size-desktop: 15px;
     --counter-main-size-mobile: 40px;
+    --counter-main-size-tablet: 45px;
     --counter-main-size-desktop: 50px;
     --counter-small-size-mobile: 9px;
+    --counter-small-size-tablet: 12px;
     --counter-small-size-desktop: 15px;
 
 }
