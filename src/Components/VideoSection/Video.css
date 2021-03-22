@@ -16,7 +16,11 @@
     
 }
 
-.video-section {
+.video-section-desktop {
+    display: none;
+}
+
+.video-section-mobile {
     background-color: var(--second-color);
     color: var(--white-color);
     display: flex;
@@ -25,8 +29,7 @@
     width: 100%;
 }
 
-
-.video-section p {
+.video-section-mobile p {
     margin: 20px auto 25px auto;
     text-align: center;
     width: 65vw;
@@ -40,4 +43,44 @@
     margin: 0 auto 25px auto;
     width: 50vw;
     text-align: center;
+}
+
+/* ESCRITORIO*/
+@media screen and (min-width: 992px) {
+    .video-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .video-section-mobile {
+        display: none;
+    }
+
+    .video-section-desktop {
+        background-color: var(--second-color);
+        color: var(--white-color);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 30px 30px 0 30px;
+        width: 100%;  
+    }
+
+    .video-section-desktop p {
+        font-size: var(--paragraph-desktop);
+        margin: 20px auto 25px auto;
+        text-align: center;
+        width: 76%;
+    }
+    
+    .video-title {
+        align-self: center;
+        font-family: var(--BS-font);
+        font-size: var(--title-desktop);
+        line-height: 40px;
+        margin: 0 auto 25px auto;
+        width: 44%;
+        text-align: center;
+    }
+    
 }

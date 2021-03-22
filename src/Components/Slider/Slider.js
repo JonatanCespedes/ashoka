@@ -14,33 +14,57 @@ const Slider = () => {
             <input type="radio" name="slides" id="slide-3" />
             <ul className="slides">
                 <li className="slide">
-                    <h2 className="main-title">
-                        <span className="text-orange">JÓVENES </span><br/> <span className="text-white">QUE TRANSFORMAN</span>
-                    </h2>
-                    <p>Convocamos personas de <b>12 a 18 años</b> para co-construir una red a lo largo y ancho del país.</p>
-                    <Button className="btn-white mb-18" text="SUMATE"/>
-                    <div className="slide-img">
+                    <div className="slide-info">
+                        <h2 className="main-title">
+                            <span className="text-orange">JÓVENES </span><br/> <span className="text-white">QUE TRANSFORMAN</span>
+                        </h2>
+                        <p>Convocamos personas de <b>12 a 18 años</b> para co-construir una red a lo largo y ancho del país.</p>
+                        <Button className="btn-white mb-18" text="SUMATE"/>
+                    </div>
+                    <div className="slide-img-mobile">
                         <img id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
                     </div>
-                </li>
-                <li className="slide">
-                    <h2 className="main-title">
-                    <span className="text-orange">SOBRAN UTOPÍAS </span><br/> <span className="text-white">FALTAN REALIDADES</span>
-                    </h2>
-                    <p>Queremos promover espacios de diálogo para que la juventud participe en la toma de decisiones. ¿Te animás?</p>
-                    <Button className="btn-white mb-18" text="SUMATE"/>
-                    <div className="slide-img">
-                        <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
+                    <div className="slide-img-tablet">
+                        <img id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
+                    </div>
+                    <div className="slide-img-desktop">
+                        <img id="img-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-01.png"/>
                     </div>
                 </li>
                 <li className="slide">
-                    <h2 className="main-title">
-                    <span className="text-orange">NO COMUNES, </span><br/> <span className="text-white">SÍ BIEN COMÚN</span>
-                    </h2>
-                    <p>Vamos a conectar a Jóvenes transformadorxs que representen a la Argentina para inspirarnos y movilizarnos. ¿Empezamos hoy?</p>
-                    <Button className="btn-white mb-18" text="SUMATE"/>
-                    <div className="slide-img">
+                    <div className="slide-info">
+                        <h2 className="main-title">
+                        <span className="text-orange">SOBRAN UTOPÍAS </span><br/> <span className="text-white">FALTAN REALIDADES</span>
+                        </h2>
+                        <p>Queremos promover espacios de diálogo para que la juventud participe en la toma de decisiones. ¿Te animás?</p>
+                        <Button className="btn-white mb-18" text="SUMATE"/>
+                    </div>
+                    <div className="slide-img-mobile">
+                        <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
+                    </div>
+                    <div className="slide-img-tablet">
+                        <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
+                    </div>
+                    <div className="slide-img-desktop">
+                        <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-06.png"/>
+                    </div>
+                </li>
+                <li className="slide">
+                    <div className="slide-info">
+                        <h2 className="main-title">
+                        <span className="text-orange">NO COMUNES, </span><br/> <span className="text-white">SÍ BIEN COMÚN</span>
+                        </h2>
+                        <p>Vamos a conectar a Jóvenes transformadorxs que representen a la Argentina para inspirarnos y movilizarnos. ¿Empezamos hoy?</p>
+                        <Button className="btn-white mb-18" text="SUMATE"/>
+                    </div>
+                    <div className="slide-img-mobile">
                         <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-07.png"/>
+                    </div>
+                    <div className="slide-img-tablet">
+                        <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-07.png"/>
+                    </div>
+                    <div className="slide-img-desktop">
+                        <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-07.png"/>
                     </div>
                 </li>   
             </ul>

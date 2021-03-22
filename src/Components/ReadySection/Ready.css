@@ -20,6 +20,18 @@
     width: 80%;
 }
 
+.img-tablet {
+    display: none;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.p-desktop {
+    display: none;
+}
+
 .ready-section {
     background-color: var(--first-color);
     width: 100%;
@@ -29,4 +41,69 @@
 .ready-section h3 {
     margin: 0 auto 18px auto;
     width: 45vw;
+}
+
+.ready-title {
+    align-self: center;
+    font-family: var(--BS-font);
+    font-size: var(--title-mobile);
+    line-height: 32px;
+    margin: 0 auto 25px auto;
+    width: 50vw;
+    text-align: center;
+}
+
+/* ESCRITORIO*/
+@media screen and (min-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(4, 25%);
+    }
+    
+    .card h6 {
+        font-size: var(--subtitle-desktop);
+        font-family: var(--BS-font);
+        margin: 15px auto 18px auto;
+        width: 100%;
+    }
+
+    .card h6 br {
+       display: none;
+    }
+
+    .card p {
+        font-size: var(--paragraph-desktop);
+        margin: 0 auto 18px auto;
+        width: 91%;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop{
+        display: inline-block;
+    }
+
+    .p-desktop{
+        display: block;
+    }
+
+    .p-mobile {
+        display: none;
+    }
+
+    .ready-section {
+        padding: 30px 30px;
+    }
+
+    .ready-section h3 {
+        margin: 0 auto 18px auto;
+        width: 45vw;
+    }
+
+    .ready-title {
+        font-size: var(--title-desktop);
+        margin: 0 auto 25px auto;
+    }
+
 }

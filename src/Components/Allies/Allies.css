@@ -44,3 +44,39 @@
     margin: 0 auto 30px auto;
     text-align: center;
 }
+
+.img-tablet,
+.img-desktop {
+    display: none;
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px) {
+    .allies-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+    .allies-section h2 {
+        font-size: var(--title-desktop);
+    }
+
+    .allies-container small {
+        font-size: 18px;
+        width: fit-content;
+    }
+    
+    .img-desktop {
+        display: block;
+        margin-top: 30px;
+        width: 82%;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .allies__title {
+        width: 100%;
+    }
+}

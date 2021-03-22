@@ -26,6 +26,13 @@
     width: 70%;  
 }
 
+.fellow p#title {
+    font-family: var(--WS-font);
+    font-size: var(--paragraph-mobile);
+    font-weight: bold;
+    
+}
+
 .fellow:last-child img {
     margin-top: 14px;
 }
@@ -37,4 +44,35 @@
 .fellow p {
     text-align: center;
     width: 97%;
+}
+
+@media screen and (min-width: 992px) {
+    .fellow h6 {
+        font-size: var(--subtitle-desktop);
+        margin: 0 auto 10px auto;
+        width: 100%;  
+    }
+
+    .fellow p#title  {
+        font-size: var(--paragraph-desktop);
+        margin-bottom: 5px;
+    }
+
+    .fellow p {
+        font-size: var(--paragraph-desktop);
+        margin: auto auto;
+        text-align: center;
+        width: 93%;
+    }
+    
+    
+    .fellows-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fellows-section {
+        background-color: var(--fourth-color);
+        padding: 30px 30px 30px 30px;
+    } 
 }

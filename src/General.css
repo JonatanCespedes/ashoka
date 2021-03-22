@@ -2,7 +2,7 @@
     /* Fonts */
     --BS-font:'Big Shoulders Display', cursive;
     --WS-font: 'Work Sans', sans-serif;
-    /* Colours */
+    /* Colors */
     --first-color: #5900D7;
     --second-color: #F4911D;
     --third-color: #79C9C3;
@@ -12,12 +12,20 @@
     --header-nav-color: #4E08BC;
     /* Font sizes (Mobile) */
     --main-title-mobile: 2.68rem;
-    --title-mobile: 32px ;
+    --main-title-desktop: 3.4rem;
+    --title-mobile: 32px;
+    --title-desktop: 40px ;
     --subtitle-mobile: 18px;
+    --subtitle-desktop: 23px;
     --paragraph-mobile: 12px;
+    --paragraph-desktop: 16px;
     --button-font-size-mobile: 10px;
+    --button-font-size-desktop: 15px;
     --counter-main-size-mobile: 40px;
+    --counter-main-size-desktop: 50px;
     --counter-small-size-mobile: 9px;
+    --counter-small-size-desktop: 15px;
+
 }
 
 html {

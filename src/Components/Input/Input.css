@@ -28,3 +28,14 @@ input {
     padding: 5px;
     transition: all 0.3s ease-out;
 }
+
+@media screen and (min-width: 992px) {
+    input {
+        width: 100%;
+    }
+
+    .form__input {
+        text-align: left;
+    }
+
+}
