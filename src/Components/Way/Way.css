@@ -142,77 +142,30 @@
 /* ESCRITORIO*/
 @media screen and (min-width: 992px) {
 
-    .img-container-desktop {
-        display: block;
-    }
-
-    .img-container-desktop > img {
-        width: 100%;
-    }
-
     .way-section {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
         padding: 30px 30px;
     }
 
     .way-section h3{
-        font-size: var(--title-desktop);
-        font-family: var(--BS-font);
-        text-align: left;
         margin: 20px auto 30px auto;
-    }
-
-    .way-section .img-container-mobile {
-        display: none;
     }
 
     .way-sentences {
         margin: 0 auto 18px auto;
-        display: flex;
-        justify-content: left;
     }
     
     .way-sentences p{
         font-size: var(--paragraph-desktop);
-        margin: 0;
         margin-bottom: 20px;
-        text-align: left;
     }
-    
-    .way-sentences.s-1 p{
-        width: 100%;
-    }
-    
-    .way-sentences.s-2 p{
-        width: 100%;
-    }
-    
+
     .way-sentences.s-3 p{
         width: 97%;
     }
-    .way-sentences.s-3 p span{
-        margin-left: 15px;
-    }
 
-    .way-sentences.s-3 p br {
-        display: none;
-    }
-    
     .way-sentences.s-4 p{
         width: 97%;
     }
-
-    .way-sentences.s-4 p span{
-        margin-left: 15px;
-    }
-    
-    .way-sentences svg {
-        width: 15px;
-        margin: 0 5px -8px 0;
-    }
-    
-
 }
 
 @media screen and (min-width: 1093px) {

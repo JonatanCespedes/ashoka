@@ -50,10 +50,12 @@
     text-transform: uppercase;
 }
 
-/* ESCRITORIO */
-@media screen and (min-width: 992px) {
+/* Media queries */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
     .countdown-section h2 {
-        font-size: var(--title-desktop);
+        font-size: var(--title-tablet);
         margin: 0 auto 18px auto;
         width: 100%;
     }
@@ -69,8 +71,25 @@
     }
 
     .countdown-timer-container span {
-        font-size: 60px;
+        font-size: 50px;
         font-family: var(--BS-font);
         color: var(--white-color);
+    }
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px) {
+    .countdown-section h2 {
+        font-size: var(--title-desktop);
+    }
+
+    .countdown-timer-container span {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .countdown-section .countdown-timer-container {
+        width: 80%;
     }
 }
