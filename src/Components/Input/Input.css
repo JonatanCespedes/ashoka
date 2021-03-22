@@ -29,7 +29,11 @@ input {
     transition: all 0.3s ease-out;
 }
 
-@media screen and (min-width: 992px) {
+/* Media queries */
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
     input {
         width: 100%;
     }
@@ -37,5 +41,4 @@ input {
     .form__input {
         text-align: left;
     }
-
 }

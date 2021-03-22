@@ -55,11 +55,64 @@
     margin-top: 30px;
 }
 
-@media screen and (min-width: 992px) {
+/* Media queries */
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
     .contact__container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         padding: 0 90px;
+    }
+
+    .contact-section a {
+        font-size: var(--paragraph-tablet);
+    }
+
+    .contact-section h3{
+        font-size: var(--title-tablet);
+        margin: 0 auto 30px auto;
+    }
+
+    .contact-section p {
+        color: var(--white-color);
+        font-size: var(--paragraph-tablet);
+        margin: 0 auto 30px 0;
+    }
+
+    .contact__form{
+        width: 100%;
+    }
+
+    .contact__info {
+        text-align: left;
+    }
+
+    .contact-section textarea {
+        font-size: var(--paragraph-desktop);
+        height: 80px;
+        resize: none;
+        width: 100%;
+    }
+
+    .contact-section textarea:focus {
+        width: 100%;
+    }
+
+    .form-container { 
+        margin-top: 0px;
+        text-align: right;
+    }
+}
+
+/* ESCRITORIO */
+
+@media screen and (min-width: 992px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        padding: 0 117px;
     }
 
     .contact-section a {

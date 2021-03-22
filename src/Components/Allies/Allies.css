@@ -50,25 +50,26 @@
     display: none;
 }
 
-/* ESCRITORIO */
-@media screen and (min-width: 992px) {
+/* Media queries */
+/* TABLET */
+@media screen and (min-width: 768px) {
     .allies-container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
     }
     
     .allies-section h2 {
-        font-size: var(--title-desktop);
+        font-size: var(--title-tablet);
     }
 
     .allies-container small {
-        font-size: 18px;
+        font-size: 13px;
         width: fit-content;
     }
     
     .allies-section .img-desktop {
         display: block;
-        margin-top: 30px;
+        margin-top: 20px;
         width: 82%;
     }
 
@@ -78,5 +79,21 @@
 
     .allies__title {
         width: 100%;
+    }
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px) {
+    
+    .allies-section h2 {
+        font-size: var(--title-desktop);
+    }
+
+    .allies-container small {
+        font-size: 18px;
+    }
+    
+    .allies-section .img-desktop {
+        margin-top: 30px;
     }
 }
