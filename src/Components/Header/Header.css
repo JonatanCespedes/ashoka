@@ -87,13 +87,17 @@ button.btn-menu .fa-times:before{
     color: var(--second-color);
 }
 
-@media screen and (min-width: 992px){
+/* Media queries*/
+
+/* Tablet */
+
+@media screen and (min-width: 768px){
     .btn-menu {
         display: none;
     }
 
     .header {
-        padding: 30px 30px;
+        padding: 20px 20px;
     }
 
     .header .container {
@@ -109,13 +113,13 @@ button.btn-menu .fa-times:before{
     }
 
     .logos-desktop img#logo-1{
-        width: initial;
+        width: 65px;
         margin-left: 0;
-        margin-top: 15px;
+        margin-top: 8px;
     }
     
     .logos-desktop img#logo-2{
-        width: initial;
+        width: 75px;
         margin-left: 15px;
         margin-bottom: 15px;
     }
@@ -132,7 +136,7 @@ button.btn-menu .fa-times:before{
     .menu a {
         border-bottom: none;
         font-family: var(--WS-font);
-        font-size: 12px;
+        font-size: 10px;
         margin:0 ; 
         padding:0;
         text-decoration: none;
@@ -144,7 +148,24 @@ button.btn-menu .fa-times:before{
 
     .menu a:hover {
         background-color: transparent;
+    } 
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px){
+    .header {
+        padding: 30px 30px;
     }
 
+    .logos-desktop img#logo-1{
+        width: initial;
+        margin-top: 15px;
+    }
     
+    .logos-desktop img#logo-2{
+        width: initial;
+    }
+    .menu a {
+        font-size: 12px;
+    }
 }

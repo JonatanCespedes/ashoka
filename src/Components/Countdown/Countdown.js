@@ -47,7 +47,7 @@ const Countdown = () => {
     });
     return ( 
         <section className="countdown-section">
-            <div>
+            <div className="countdown-container">
                 <h2 className="text-blue">¿CUÁNTO FALTA PARA EL CIERRE DE LA CONVOCATORIA?</h2>
                 <hr/>
                 <div className="countdown-timer-container">

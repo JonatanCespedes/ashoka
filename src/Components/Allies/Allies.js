@@ -23,10 +23,6 @@ const Allies = () => {
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Motorola.png"/>
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Natura.png"/>
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Oracle.png"/>
-                        {/* Tablet images */}
-                        <img className="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Motorola.png"/>
-                        <img className="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Natura.png"/>
-                        <img className="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Oracle.png"/>
                         {/* Desktop images */}
                         <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Motorola.png"/>
                         <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Natura.png"/>
@@ -48,9 +44,6 @@ const Allies = () => {
                         {/* Mobile images */}
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionBancoCiudad.png"/>
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionLaNacion.png"/>
-                        {/* Tablet images */}
-                        <img className="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionBancoCiudad.png"/>
-                        <img className="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionLaNacion.png"/>
                         {/* Desktop images */}
                         <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionBancoCiudad.png"/>
                         <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>

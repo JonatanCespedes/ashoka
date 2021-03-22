@@ -18,8 +18,11 @@
     text-align: center;
     width: 85vw;
 }
+ 
+/* Media queries */
 
-@media screen and (min-width: 992px) {
+/* TABLET */
+@media screen and (min-width: 768px) {
     .knowmore__img img#img-desktop {
         display: block;
         width: 100%;
@@ -40,13 +43,21 @@
     }
 
     .knowmore-section h6 {
-        font-size: var(--subtitle-desktop);
-        margin: 25px auto 30px 0;
+        font-size: var(--subtitle-tablet);
+        margin: 15px auto 30px 0;
         text-align:left;
         width: 90%;
-    }
+    }   
+}
 
+/* ESCRITORIO */
+
+@media screen and (min-width: 992px) {
     
+    .knowmore-section h6 {
+        font-size: var(--subtitle-desktop);
+        margin: 25px auto 30px 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {

@@ -63,9 +63,10 @@
     margin-bottom: -8px;
 }
 
+/* Media queries */
 
-/* ESCRITORIO*/
-@media screen and (min-width: 992px) {
+/* TABLET*/
+@media screen and (min-width: 768px) {
 
     .img-container-desktop {
         display: block;
@@ -78,14 +79,14 @@
     .way-section {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        padding: 30px 30px;
+        padding: 30px 20px;
     }
 
     .way-section h3{
-        font-size: var(--title-desktop);
+        font-size: var(--title-tablet);
         font-family: var(--BS-font);
         text-align: left;
-        margin: 20px auto 30px auto;
+        margin: 20px auto 20px auto;
     }
 
     .way-section .img-container-mobile {
@@ -93,15 +94,15 @@
     }
 
     .way-sentences {
-        margin: 0 auto 18px auto;
+        margin: 0 auto 10px auto;
         display: flex;
         justify-content: left;
     }
     
     .way-sentences p{
-        font-size: var(--paragraph-desktop);
+        font-size: var(--paragraph-tablet);
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: left;
     }
     
@@ -114,7 +115,7 @@
     }
     
     .way-sentences.s-3 p{
-        width: 97%;
+        width: 100%;
     }
     .way-sentences.s-3 p span{
         margin-left: 15px;
@@ -125,7 +126,7 @@
     }
     
     .way-sentences.s-4 p{
-        width: 97%;
+        width: 100%;
     }
 
     .way-sentences.s-4 p span{
@@ -136,8 +137,35 @@
         width: 15px;
         margin: 0 5px -8px 0;
     }
-    
+}
 
+/* ESCRITORIO*/
+@media screen and (min-width: 992px) {
+
+    .way-section {
+        padding: 30px 30px;
+    }
+
+    .way-section h3{
+        margin: 20px auto 30px auto;
+    }
+
+    .way-sentences {
+        margin: 0 auto 18px auto;
+    }
+    
+    .way-sentences p{
+        font-size: var(--paragraph-desktop);
+        margin-bottom: 20px;
+    }
+
+    .way-sentences.s-3 p{
+        width: 97%;
+    }
+
+    .way-sentences.s-4 p{
+        width: 97%;
+    }
 }
 
 @media screen and (min-width: 1093px) {
