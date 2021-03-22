@@ -19,7 +19,7 @@ const Slider = () => {
             $slide3 = d.querySelector(".slide-3");
 
             $btnNext.addEventListener("click", e=>{
-                if(slide == 1 && slide < 2 ){
+                if(slide == 1){
                     setSlide(slide + 1)
                     $slide1.classList.toggle("none");
                     $slide2.classList.toggle("none");
@@ -27,6 +27,8 @@ const Slider = () => {
                 console.log(slide)
                 if(slide == 2){
                     setSlide(slide + 1)
+                }
+                if(slide == 3){
                     $slide2.classList.toggle("none");
                     $slide3.classList.toggle("none");
                 }
