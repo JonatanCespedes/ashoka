@@ -22,11 +22,8 @@
 .carousel .slides {
     padding-left: 0;
     /* 100% por cada slide */
-    width: 300%;
-    display: flex;
-    list-style: none;
+    width: 100%;
     transition: transform .5s ease-in-out;
-    animation: carousel-slide 30s ease-in-out 3s;
 }
 
 .carousel input {
@@ -54,7 +51,24 @@
     font-family: var(--BS-font);
     font-size: var(--main-title-mobile);
     font-weight: 900;
-    margin: -12px 0 18px 0;
+    margin: 0px 0 18px 0;
+}
+
+#row-left {
+    bottom: 276px;
+    left: -162px;
+    position: relative;
+
+}
+
+.fa, .fas {
+    color: var(--white-color);
+}
+
+#row-right {
+    bottom: 276px;
+    left: 162px;
+    position: relative;
 }
 
 .slide {
@@ -75,18 +89,6 @@
 
 .slides-nav {
     margin: -20px auto 30px auto;
-}
-
-#slide-1:checked ~ .slides {
-    transform: translateX(0%);
-}
-
-#slide-2:checked ~ .slides {
-    transform: translateX(-33.3%);
-}
-
-#slide-3:checked ~ .slides {
-    transform: translateX(-66.6%);
 }
 
 #slide-1:checked ~ .slides-nav label#dot-1,
