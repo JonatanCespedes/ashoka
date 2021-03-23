@@ -30,6 +30,10 @@
     text-align: center;
 }
 
+.way-section .img-container-mobile > img {
+    width: 96%;
+}
+
 .way-sentences {
     margin: 0 auto 18px auto;
     display: flex;

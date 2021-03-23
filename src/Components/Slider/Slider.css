@@ -67,9 +67,10 @@
     }
 
 .carousel {
-    text-align: center;
-    overflow-x: hidden;
     background-color: var(--first-color);
+    padding-top: 18px;
+    overflow-x: hidden;
+    text-align: center;
     width: 100%;
 }
 
@@ -98,7 +99,7 @@
 .carousel p {
     color: var(--white-color);
     margin: 0 auto 30px auto;
-    width: 65vw; 
+    width: 76vw; 
 }
 
 .main-title {
@@ -114,15 +115,17 @@
 
 #row-left {
     bottom: 276px;
+    cursor: pointer;
     left: -140px;
     position: relative;
-
 }
 
 #row-right {
     bottom: 276px;
+    cursor: pointer;
     left: 140px;
     position: relative;
+
 }
 
 .slide-1,
@@ -133,6 +136,10 @@
 
 .slide-img-mobile {
     margin-bottom: 15px;
+}
+
+.slide-img-mobile #img-1{
+   width: 65%;
 }
 
 .slide-img-tablet {
@@ -162,6 +169,7 @@
     .carousel{
         max-height: 290px;
         overflow-y: hidden;
+        padding-top: 0;
         position: relative;
     }
 
@@ -251,14 +259,14 @@
 @media screen and (min-width: 992px) {
 
     .carousel{
-        max-height: 400px;
-        min-height: 400px;
+        max-height: 460px;
+        min-height: 460px;
+        padding: 10px;
     }
-
 
     .main-title {
         font-size: var(--main-title-desktop);
-        margin: -12px 0 30px 0;
+        margin: -12px 0 20px 0;
     }
 
     #row-left {
@@ -332,5 +340,58 @@
         left: 562px;
     }
 }
+
+@media screen and (min-width: 1300px) {
+
+    .carousel{
+        max-height: 550px;
+        min-height: 550px;
+    }
+
+    #row-left {
+        bottom: 265px;
+        right: 1114px;
+        
+    }
+    
+    #row-right {
+        bottom: 265px;
+        left: 1260px;
+        
+    }
+
+    .slides-nav {
+        bottom: 50px;
+        left: 562px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+    .carousel{
+        max-height: 550px;
+        min-height: 550px;
+    }
+
+    #row-left {
+        bottom: 265px;
+        right: 1164px;
+        
+    }
+    
+    #row-right {
+        bottom: 265px;
+        left: 1310px;
+        
+    }
+
+    .slides-nav {
+        bottom: 50px;
+        left: 660px;
+    }
+}
+
+
+
 
 

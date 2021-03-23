@@ -112,7 +112,7 @@
     .contact__container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        padding: 0 117px;
+        padding: 0 140px;
     }
 
     .contact-section a {

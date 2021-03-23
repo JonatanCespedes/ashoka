@@ -43,7 +43,7 @@
     align-self: center;
     font-family: var(--BS-font);
     font-size: var(--title-mobile);
-    line-height: 32px;
+    line-height: 34px;
     margin: 0 auto 25px auto;
     width: 50vw;
     text-align: center;
@@ -156,7 +156,7 @@
     }
 
     .ready-section h3 {
-        margin: 0 auto 18px auto;
+        margin: 10px auto 35px auto;
         width: 45vw;
     }
 

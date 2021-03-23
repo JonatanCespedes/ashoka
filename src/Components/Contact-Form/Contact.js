@@ -23,7 +23,7 @@ const Contact = () => {
                         <Input inputName="Nombre" id="inputName" type="text" name="name" className="input-white"/>
                         <Input inputName="Email" id="inputEmail" type="email" name="email" className="input-white"/>
                         <Input inputName="Celular" id="inputCel" type="text" name="cel" className="input-white"/>
-                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <textarea placeholder="Consulta" name="message" id="" cols="30" rows="10"></textarea>
                         <Button className="btn-white" text="ENVIAR"/>
                     </form>
                 </div>

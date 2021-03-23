@@ -82,8 +82,29 @@
 /* ESCRITORIO */
 
 @media screen and (min-width: 992px) {
+
+    .fellows-section h2 {
+        font-family: var(--BS-font);
+        font-size: var(--title-desktop);
+        margin: 0 30px 30px 30px;
+        text-align: center;
+    }
+
     .fellow h6 {
         font-size: var(--subtitle-desktop);
+    }
+
+    .fellow#fellow-1 img {
+        width: 48%;
+    }
+    .fellow#fellow-2 img {
+        width: 45%;
+    }
+    .fellow#fellow-3 img {
+        width: 53%;
+    }
+    .fellow#fellow-4 img {
+        width: 48%;
     }
 
     .fellow p#title  {
@@ -93,5 +114,6 @@
 
     .fellow p {
         font-size: var(--paragraph-desktop);
+        width: 72%;
     }
 }
