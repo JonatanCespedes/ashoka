@@ -6,7 +6,14 @@ import './Slider.css'
 const Slider = () => {
 
     const [slide, setSlide] = useState(0);
- 
+
+    useEffect(() => {
+        const sliderAnimation = () => setTimeout(()=>{
+            return setSlide(slide + 1)
+        }, 10000)
+        sliderAnimation()
+    }, []);
+    
     useEffect(() => {
         ((d) => {
             const $btnPrev = d.querySelector("#row-left"),
@@ -18,6 +25,7 @@ const Slider = () => {
             $slide2 = d.querySelector(".slide-2"),
             $slide3 = d.querySelector(".slide-3");
 
+            
 
             switch (slide) {
                 case -1:
