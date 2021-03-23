@@ -67,9 +67,10 @@
     }
 
 .carousel {
-    text-align: center;
-    overflow-x: hidden;
     background-color: var(--first-color);
+    padding-top: 18px;
+    overflow-x: hidden;
+    text-align: center;
     width: 100%;
 }
 
@@ -98,7 +99,7 @@
 .carousel p {
     color: var(--white-color);
     margin: 0 auto 30px auto;
-    width: 65vw; 
+    width: 76vw; 
 }
 
 .main-title {
@@ -137,6 +138,10 @@
     margin-bottom: 15px;
 }
 
+.slide-img-mobile #img-1{
+   width: 65%;
+}
+
 .slide-img-tablet {
     display: none;
 }
@@ -164,6 +169,7 @@
     .carousel{
         max-height: 290px;
         overflow-y: hidden;
+        padding-top: 0;
         position: relative;
     }
 

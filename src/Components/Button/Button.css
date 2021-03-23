@@ -5,15 +5,15 @@
 .btn-white {
     background-color: var(--white-color);
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     color: var(--first-color);
     font-family: var(--WS-font);
     font-size: var(--button-font-size-mobile);
     font-weight: 800;
-    height: 1.8rem;
+    height: 1.9rem;
     outline: none;
     text-align: center;
-    width: 6rem;
+    width: 7rem;
 }
 
 .btn-white:hover {
@@ -25,7 +25,7 @@
 .btn-orange {
     background-color: var(--second-color);
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     color: var(--white-color);
     font-family: var(-WS-font);
     font-size: var(--button-font-size-mobile);
@@ -33,7 +33,7 @@
     height: 2rem;
     outline: none;
     text-align: center;
-    width: 10rem;
+    width: 11rem;
 }
 
 .btn-orange:hover{

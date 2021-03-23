@@ -22,7 +22,7 @@
 .allies-container small {
     color: var(--first-color);
     font-family: var(--BS-font);
-    font-size: 9px;
+    font-size: 11px;
 }
 
 .allies-container hr {

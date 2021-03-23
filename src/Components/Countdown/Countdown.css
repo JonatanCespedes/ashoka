@@ -37,14 +37,16 @@
 }
 
 .countdown-timer-container span {
-    font-size: 40px;
+    font-size: 50px;
     font-family: var(--BS-font);
     color: var(--white-color);
 }
 
 .countdown-timer-container p {
     color: var(--first-color);
-    font-family: var(--BS-font);
+    font-family: var(--WS-font);
+    font-size: 13px;
+    font-weight: bold;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
