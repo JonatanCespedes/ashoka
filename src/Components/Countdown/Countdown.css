@@ -1,6 +1,14 @@
+.countdown-item {
+    border-right: thin solid var(--white-color)
+}
+
+.countdown-item:last-child {
+    border-right: none;
+}
+ 
 .countdown-section {
     background-color: var(--third-color);
-    padding:30px 0;
+    padding:30px 30px;
     text-align: center;
 }
 
@@ -21,23 +29,80 @@
 }
 
 .countdown-section .countdown-timer-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .countdown-timer-container span {
-    font-size: 40px;
+    font-size: 50px;
     font-family: var(--BS-font);
     color: var(--white-color);
 }
 
 .countdown-timer-container p {
     color: var(--first-color);
-    font-family: var(--BS-font);
+    font-family: var(--WS-font);
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
     text-align: center;
     text-transform: uppercase;
 }
 
+/* Media queries */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .countdown-section h2 {
+        font-size: var(--title-tablet);
+        margin: 0 auto 18px auto;
+        width: 100%;
+    }
+
+    .countdown-section hr {
+        width: 70px;
+    }
+
+    .countdown-section .countdown-timer-container {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+
+    .countdown-timer-container span {
+        font-size: 50px;
+        font-family: var(--BS-font);
+        color: var(--white-color);
+    }
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px) {
+
+    .countdown-section {
+        background-color: var(--third-color);
+        padding:30px 30px 50px 30px;
+        text-align: center;
+    }
+    
+    .countdown-section h2 {
+        font-size: var(--title-desktop);
+    }
+
+    .countdown-timer-container span {
+        font-size: 80px;
+    }
+
+    .countdown-timer-container p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .countdown-section .countdown-timer-container {
+        width: 80%;
+    }
+}

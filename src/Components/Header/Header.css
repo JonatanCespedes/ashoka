@@ -11,7 +11,7 @@ button.btn-menu {
 button.btn-menu .fa-times:before{
     color: var(--white-color);
     height: auto;
-    width: .8rem;
+    font-size: 20px;
 }
 
 .header {
@@ -21,7 +21,6 @@ button.btn-menu .fa-times:before{
     top: 0;
     width: 100%;
     z-index: 999;
-
 }
 
 .header .container {
@@ -30,18 +29,26 @@ button.btn-menu .fa-times:before{
     height: 2rem;
 }
 
-.logos img{
+.logos-mobile img{
       vertical-align: middle;
 }
 
-.logos img#logo-1{
+.logos-mobile img#logo-1{
     width: 50px;
     margin-left: -7px ;
 }
 
-.logos img#logo-2{
+.logos-mobile img#logo-2{
     width: 80px;
     margin-left: 7px ;
+}
+
+.logos-tablet {
+    display: none;
+}
+
+.logos-desktop { 
+    display: none;
 }
 
 .menu {
@@ -80,20 +87,59 @@ button.btn-menu .fa-times:before{
     color: var(--second-color);
 }
 
-@media screen and (min-width: 1024px){
-    .menu-btn {
+/* Media queries*/
+
+/* Tablet */
+
+@media screen and (min-width: 768px){
+    .btn-menu {
         display: none;
     }
 
+    .header {
+        padding: 20px 20px;
+    }
+
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .logos-mobile {
+        display: none;
+    }
+
+    .logos-desktop {
+        display: block;
+    }
+
+    .logos-desktop img#logo-1{
+        width: 65px;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    
+    .logos-desktop img#logo-2{
+        width: 75px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
     .menu {
-        position: static;
-        width: auto;
+        background-color: var(--first-color);
         flex-direction: row;
+        justify-content: space-evenly;
         opacity: 1;
         pointer-events: auto;
+        position: static;
+        width: 50%;
     }
+
     .menu a {
-        padding: 0 1rem;
+        border-bottom: none;
+        font-family: var(--WS-font);
+        font-size: 10px;
+        margin:0 ; 
+        padding:0;
+        text-decoration: none;
     }
 
     .menu a:last-child {
@@ -102,5 +148,24 @@ button.btn-menu .fa-times:before{
 
     .menu a:hover {
         background-color: transparent;
+    } 
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px){
+    .header {
+        padding: 30px 30px;
+    }
+
+    .logos-desktop img#logo-1{
+        width: initial;
+        margin-top: 15px;
+    }
+    
+    .logos-desktop img#logo-2{
+        width: initial;
+    }
+    .menu a {
+        font-size: 14px;
     }
 }

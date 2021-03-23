@@ -15,6 +15,7 @@ import Knowmore from './Components/Know-more/Knowmore';
 import Allies from './Components/Allies/Allies';
 import Contact from './Components/Contact-Form/Contact';
 import Footer from './Components/Footer/Footer';
+import Fellows from './Components/Fellows/Fellows';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
        <Countdown/>
        <Photo/>
        <Knowmore/>
+       <Fellows/>
        <Allies/>
        <Contact/>
        <Footer/>

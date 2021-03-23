@@ -28,3 +28,27 @@ input {
     padding: 5px;
     transition: all 0.3s ease-out;
 }
+
+/* Media queries */
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    input {
+        width: 100%;
+    }
+
+    .form__input {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input-white {
+        font-size: var(--paragraph-desktop);
+    }
+    
+    .input-white:focus {
+        font-size: var(--paragraph-desktop);
+    }
+}

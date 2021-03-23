@@ -6,6 +6,26 @@
     width: 100%;
 }
 
-.photo-section-container img {
+.photo-section-container > img {
+    vertical-align: middle;
     width: 100%;
 }
+
+.photo-section-container img#tablet,
+.photo-section-container img#desktop {
+    display: none;
+}
+
+/* Media queries */
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .photo-section-container img#mobile {
+        display: none;
+    }
+
+    .photo-section-container img#desktop {
+        display: block;
+    }
+
+}
+

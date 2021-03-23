@@ -1,9 +1,52 @@
 .footer {
     background-color: var(--first-color);
     height: 50px;
+    padding: 6px;
     width: 100%;
 }
 
 .footer .logos {
     text-align: center;
+}
+
+.logos__tablet,
+.logos__desktop {
+    display: none;
+}
+
+/* Media queries */
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .footer {
+        background-color: var(--header-nav-color);
+        height: auto;
+        width: 100%;
+    }
+
+    .footer .logos {
+        text-align: left;
+        padding-left: 85px;
+    }
+    .logos__desktop {
+        display: block;
+    }
+
+    .logos__desktop > img {
+        text-align: left;
+        vertical-align: middle;
+        width: 68px;
+    }
+
+    .logos__mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .logos__desktop > img {
+        width: initial;
+    }
 }

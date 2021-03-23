@@ -1,3 +1,8 @@
+.knowmore__img img#img-tablet,
+.knowmore__img img#img-desktop {
+    display: none;
+}
+
 .knowmore-section {
     background-color: var(--first-color);
     padding: 30px 0;
@@ -12,4 +17,53 @@
     margin: 18px auto 30px auto;
     text-align: center;
     width: 85vw;
+}
+ 
+/* Media queries */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .knowmore__img img#img-desktop {
+        display: block;
+        width: 100%;
+    }    
+
+    .knowmore__img img#img-mobile {
+        display: none;
+    }
+
+    .knowmore__info {
+        padding: 25px;
+        text-align: left;
+    }
+    
+    .knowmore-section {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .knowmore-section h6 {
+        font-size: var(--subtitle-tablet);
+        margin: 15px auto 30px 0;
+        text-align:left;
+        width: 90%;
+    }   
+}
+
+/* ESCRITORIO */
+
+@media screen and (min-width: 992px) {
+    
+    .knowmore-section h6 {
+        font-size: var(--subtitle-desktop);
+        margin: 25px auto 30px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .knowmore-section h6 {
+        margin: 30px auto 30px 0;
+        text-align:left;
+        width: 74%;
+    }
 }

@@ -20,6 +20,14 @@
     width: 80%;
 }
 
+.ready-section .img-desktop {
+    display: none;
+}
+
+.p-desktop {
+    display: none;
+}
+
 .ready-section {
     background-color: var(--first-color);
     width: 100%;
@@ -29,4 +37,132 @@
 .ready-section h3 {
     margin: 0 auto 18px auto;
     width: 45vw;
+}
+
+.ready-title {
+    align-self: center;
+    font-family: var(--BS-font);
+    font-size: var(--title-mobile);
+    line-height: 34px;
+    margin: 0 auto 25px auto;
+    width: 50vw;
+    text-align: center;
+}
+/* Media queries */
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(4, 25%);
+    }
+    
+    .card h6 {
+        font-size: var(--subtitle-tablet);
+        font-family: var(--BS-font);
+        margin: 15px auto 12px auto;
+        width: 100%;
+    }
+
+    .card h6 br {
+       display: none;
+    }
+
+    .card p {
+        font-size: var(--paragraph-tablet);
+        margin: 0 auto 5px auto;
+        width: 91%;
+    }
+
+    .cards .card:nth-child(3) img {
+        width: 70%;
+    }
+
+    .cards .card:nth-child(4) img {
+        width: 68%;
+    }
+
+    .p-desktop{
+        display: block;
+    }
+
+    .p-mobile {
+        display: none;
+    }
+
+    .ready-section {
+        padding: 30px 20px;
+    }
+
+    .ready-section h3 {
+        margin: 0 auto 15px auto;
+        width: 45vw;
+    }
+
+    .ready-title {
+        font-size: var(--title-tablet);
+        margin: 0 auto 25px auto;
+    }
+
+}
+
+/* ESCRITORIO*/
+@media screen and (min-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(4, 25%);
+    }
+    
+    .card h6 {
+        font-size: var(--subtitle-desktop);
+        font-family: var(--BS-font);
+        margin: 15px auto 18px auto;
+        width: 100%;
+    }
+
+    .card h6 br {
+       display: none;
+    }
+
+    .card p {
+        font-size: var(--paragraph-desktop);
+        margin: 0 auto 18px auto;
+        width: 91%;
+    }
+
+    .ready-section .img-mobile {
+        display: none;
+    }
+
+    .ready-section .img-desktop{
+        display: inline-block;
+    }
+
+    .cards .card:nth-child(3) img {
+        width: initial;
+    }
+
+    .cards .card:nth-child(4) img {
+        width: initial;
+    }
+
+    .p-desktop{
+        display: block;
+    }
+
+    .p-mobile {
+        display: none;
+    }
+
+    .ready-section {
+        padding: 30px 30px;
+    }
+
+    .ready-section h3 {
+        margin: 10px auto 35px auto;
+        width: 45vw;
+    }
+
+    .ready-title {
+        font-size: var(--title-desktop);
+        margin: 0 auto 25px auto;
+    }
+
 }

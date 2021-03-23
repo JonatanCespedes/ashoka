@@ -1,0 +1,119 @@
+.fellows-section {
+    background-color: var(--fourth-color);
+    padding: 30px 30px 0 30px;
+} 
+
+.fellows-section h2 {
+    font-family: var(--BS-font);
+    font-size: var(--title-mobile);
+    margin: 0 30px 30px 30px;
+    text-align: center;
+}
+
+.fellows-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fellows-container .fellow {
+    text-align: center;
+}
+
+.fellow h6 {
+    font-family: var(--BS-font);
+    font-size: var(--subtitle-mobile);
+    margin: auto;
+    width: 70%;  
+}
+
+.fellow p#title {
+    font-family: var(--WS-font);
+    font-size: var(--paragraph-mobile);
+    font-weight: bold;
+}
+
+.fellow:last-child img {
+    margin-top: 14px;
+}
+
+.fellow:nth-child(odd) img{
+    margin-left: -15px;
+}
+
+.fellow p {
+    text-align: center;
+    width: 97%;
+}
+
+/* Media queries */
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    .fellow h6 {
+        font-size: var(--subtitle-tablet);
+        margin: 0 auto 10px auto;
+        width: 100%;  
+    }
+
+    .fellow p#title  {
+        font-size: var(--paragraph-tablet);
+        margin-bottom: 5px;
+    }
+
+    .fellow p {
+        font-size: var(--paragraph-tablet);
+        margin: auto auto;
+        text-align: center;
+        width: 93%;
+    }
+    
+    .fellows-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fellows-section {
+        background-color: var(--fourth-color);
+        padding: 30px 30px 30px 30px;
+    } 
+}
+
+/* ESCRITORIO */
+
+@media screen and (min-width: 992px) {
+
+    .fellows-section h2 {
+        font-family: var(--BS-font);
+        font-size: var(--title-desktop);
+        margin: 0 30px 30px 30px;
+        text-align: center;
+    }
+
+    .fellow h6 {
+        font-size: var(--subtitle-desktop);
+    }
+
+    .fellow#fellow-1 img {
+        width: 48%;
+    }
+    .fellow#fellow-2 img {
+        width: 45%;
+    }
+    .fellow#fellow-3 img {
+        width: 53%;
+    }
+    .fellow#fellow-4 img {
+        width: 48%;
+    }
+
+    .fellow p#title  {
+        font-size: var(--paragraph-desktop);
+       
+    }
+
+    .fellow p {
+        font-size: var(--paragraph-desktop);
+        width: 72%;
+    }
+}
