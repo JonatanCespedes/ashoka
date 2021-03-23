@@ -333,4 +333,56 @@
     }
 }
 
+@media screen and (min-width: 1300px) {
+
+    .carousel{
+        max-height: 550px;
+        min-height: 550px;
+    }
+
+    #row-left {
+        bottom: 265px;
+        right: 1114px;
+        
+    }
+    
+    #row-right {
+        bottom: 265px;
+        left: 1260px;
+        
+    }
+
+    .slides-nav {
+        bottom: 50px;
+        left: 562px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+    .carousel{
+        max-height: 550px;
+        min-height: 550px;
+    }
+
+    #row-left {
+        bottom: 265px;
+        right: 1164px;
+        
+    }
+    
+    #row-right {
+        bottom: 265px;
+        left: 1310px;
+        
+    }
+
+    .slides-nav {
+        bottom: 50px;
+        left: 660px;
+    }
+}
+
+
+
 

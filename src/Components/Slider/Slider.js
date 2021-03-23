@@ -13,6 +13,21 @@ const Slider = () => {
         }, 10000)
         sliderAnimation()
     }, []);
+
+    if(slide == 1){
+        const sliderAnimation = () => setTimeout(()=>{
+            return setSlide(slide + 1)
+        }, 10000)
+        sliderAnimation()
+    }
+
+    if(slide == 2){
+        const sliderAnimation = () => setTimeout(()=>{
+            return setSlide(slide + 1)
+        }, 10000)
+        sliderAnimation()
+    }
+    
     
     useEffect(() => {
         ((d) => {
