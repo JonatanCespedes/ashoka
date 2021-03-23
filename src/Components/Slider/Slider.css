@@ -1,16 +1,70 @@
-@keyframes carousel-slide {
-    0% {
-        transform: translateX(0%); 
+/* Animaciones */
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
     }
 
-    33.3% {
-        transform: translateX(-33.3%);    
+.fade-out {
+    transition: fadeOut ease 3s;
+    -webkit-transition: fadeOut ease-in-out 3s;
+    -moz-transition: fadeOut ease-in-out 3s;
+    -o-transition: fadeOut ease-in-out 3s;
+    -ms-transition: fadeOut ease-in-out 3s;
     }
 
-    66.6% {
-        transform: translateX(-66.6%);
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
     }
-}
+
+    @keyframes fadeOut {
+        100% {opacity:1;}
+        0% {opacity:0;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeOut {
+       100% {opacity:1;}
+        0% {opacity:0;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-webkit-keyframes fadeOut {
+        100% {opacity:1;}
+        0% {opacity:0;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-o-keyframes fadeOut {
+        100% {opacity:1;}
+        0% {opacity:0;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-ms-keyframes fadeOut {
+        100% {opacity:1;}
+        0% {opacity:0;}
+    }
 
 .carousel {
     text-align: center;
@@ -54,25 +108,27 @@
     margin: 0px 0 18px 0;
 }
 
-#row-left {
-    bottom: 276px;
-    left: -162px;
-    position: relative;
-
-}
-
 .fa, .fas {
     color: var(--white-color);
 }
 
+#row-left {
+    bottom: 276px;
+    left: -140px;
+    position: relative;
+
+}
+
 #row-right {
     bottom: 276px;
-    left: 162px;
+    left: 140px;
     position: relative;
 }
 
-.slide {
-    width: 100vw;
+.slide-1,
+.slide-2,
+.slide-3 {
+    width: 100%;
 }
 
 .slide-img-mobile {
@@ -99,12 +155,14 @@
     width: .65rem;
     height: .65rem;
 }
+
 /* Media queries */
 /* TABLET */
 @media screen and (min-width: 768px) {
-
-    .carousel {
+    .carousel{
+        max-height: 290px;
         overflow-y: hidden;
+        position: relative;
     }
 
     .carousel label {
@@ -112,6 +170,7 @@
         width: .65rem;
         height: .65rem;
     }
+    
 
     .main-title {
         font-family: var(--BS-font);
@@ -119,10 +178,30 @@
         font-weight: 900;
         margin: -12px 0 20px 0;
     }
+
+    #row-left {
+        bottom: 150px;
+        right: 588px;
+        font-size: 30px;
+        position: absolute;
+    }
     
-    .slide {
+    #row-right {
+        bottom: 150px;
+        left: 733px;
+        font-size: 30px;
+        position: absolute;
+    }
+    
+    .slide-1,
+    .slide-2,
+    .slide-3 {
         display: grid;
         grid-template-columns: repeat(2, 50%);
+    }
+
+    .none {
+        display: none;
     }
 
     .slide-img-mobile {
@@ -150,9 +229,10 @@
     }
 
     .slides-nav {
+        bottom: 25px;
+        left: 350px;
         margin: -20px auto 0 auto;
-        position: relative;
-        top: -40px;
+        position: absolute;
         z-index: 998;
     }
 
@@ -170,10 +250,29 @@
 /* ESCRITORIO*/
 @media screen and (min-width: 992px) {
 
+    .carousel{
+        max-height: 400px;
+        min-height: 400px;
+    }
+
+
     .main-title {
         font-size: var(--main-title-desktop);
         margin: -12px 0 30px 0;
     }
+
+    #row-left {
+        bottom: 200px;
+        right: 800px;
+        font-size: 30px;
+    }
+    
+    #row-right {
+        bottom: 200px;
+        left: 954px;
+        font-size: 30px;
+    }
+    
 
     .slide-info {
         padding: 50px;
@@ -183,7 +282,55 @@
         font-size: var(--paragraph-desktop);
         width: 73%;
     }
+
+    .slides-nav {
+        bottom: 25px;
+        left: 464px;
+    }
 }
 
+@media screen and (min-width: 1024px) {
+    #row-left {
+        bottom: 200px;
+        right: 826px;
+        font-size: 30px;
+    }
+    
+    #row-right {
+        bottom: 200px;
+        left: 983px;
+        font-size: 30px;
+    }
+
+    .slides-nav {
+        bottom: 25px;
+        left: 464px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+
+    .carousel{
+        max-height: 500px;
+        min-height: 500px;
+    }
+
+    #row-left {
+        bottom: 265px;
+        right: 1013px;
+        font-size: 30px;
+    }
+    
+    #row-right {
+        bottom: 265px;
+        left: 1170px;
+        font-size: 30px;
+    }
+
+    .slides-nav {
+        bottom: 50px;
+        left: 562px;
+    }
+}
 
 
