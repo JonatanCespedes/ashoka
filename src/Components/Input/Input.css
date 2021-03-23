@@ -42,3 +42,13 @@ input {
         text-align: left;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .input-white {
+        font-size: var(--paragraph-desktop);
+    }
+    
+    .input-white:focus {
+        font-size: var(--paragraph-desktop);
+    }
+}

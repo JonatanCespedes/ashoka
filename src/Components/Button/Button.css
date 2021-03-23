@@ -53,14 +53,14 @@
 /* ESCRITORIO*/
 @media screen and (min-width: 992px) {
     .btn-white {
-        border-radius: 10px;
+        border-radius: 20px;
         font-size: var(--button-font-size-desktop);
         height: 2.5rem;
         width: 9rem;
     }
 
     .btn-orange {
-        border-radius: 10px;
+        border-radius: 20px;
         font-size: var(--button-font-size-desktop);
         height: 3rem;
         width: 14rem;

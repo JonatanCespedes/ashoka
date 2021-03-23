@@ -81,12 +81,23 @@
 
 /* ESCRITORIO */
 @media screen and (min-width: 992px) {
+
+    .countdown-section {
+        background-color: var(--third-color);
+        padding:30px 30px 50px 30px;
+        text-align: center;
+    }
+    
     .countdown-section h2 {
         font-size: var(--title-desktop);
     }
 
     .countdown-timer-container span {
-        font-size: 60px;
+        font-size: 80px;
+    }
+
+    .countdown-timer-container p {
+        font-size: 15px;
     }
 }
 
