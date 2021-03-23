@@ -114,15 +114,17 @@
 
 #row-left {
     bottom: 276px;
+    cursor: pointer;
     left: -140px;
     position: relative;
-
 }
 
 #row-right {
     bottom: 276px;
+    cursor: pointer;
     left: 140px;
     position: relative;
+
 }
 
 .slide-1,
@@ -382,6 +384,7 @@
         left: 660px;
     }
 }
+
 
 
 
