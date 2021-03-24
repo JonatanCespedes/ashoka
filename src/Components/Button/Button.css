@@ -17,7 +17,7 @@
 }
 
 .btn-white:hover {
-    box-shadow: 0 0 10px var(--white-color);
+    background-color: var(--third-color);
     cursor: pointer;
     transition: all 0.3s ease-out;
 } 
@@ -37,7 +37,8 @@
 }
 
 .btn-orange:hover{
-    box-shadow: 0 0 10px var(--white-color);
+    background-color: var(--white-color);
+    color: var(--second-color);
     cursor: pointer;
     transition: all 0.3s ease-out;
 } 

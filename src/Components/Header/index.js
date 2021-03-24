@@ -29,27 +29,35 @@ const Header = () => {
         <header className="header">
             <section className="container">
                 <div className="logos-mobile">
+                    <a href="#">
                     <img id="logo-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Header-Ashoka.png"/>
                     <img id="logo-2" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Header-Tribu24.png"/>
+                    </a>
                 </div>
                 <div className="logos-tablet">
+                <a href="#">
                     <img id="logo-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Ashoka-Footer.png"/>
                     <img id="logo-2" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Tribu24-Footer.png"/>
+                </a>
                 </div>
                 <div className="logos-desktop">
+                <a href="#">
                     <img id="logo-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Header-Ashoka.png"/>
                     <img id="logo-2" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Header-Tribu24.png"/>
+                </a>
                 </div>
                 <button className="btn-menu">
                    <img src="images/mobile/SVG/Ashoka-Landing-Mobile_Icono-01.svg" />
                    <span className="none"><i class="fas fa-times"></i></span>
                 </button>
                 <nav class="menu">
-                    <a href="#acerca">ACERCA DE</a>
+                    <a href="#acerca-d" id="acerca-desktop">ACERCA DE</a>
+                    <a href="#acerca-m" id="acerca-mobile">ACERCA DE</a>
                     <a href="#sumate">SUMATE</a>
                     <a href="#tribu">TRIBU</a>
                     <a href="#camino">EL CAMINO</a>
                     <a href="#ashoka">ASHOKA</a>
+                    <a href="#fellows">FELLOWS</a>
                     <a href="#contacto">CONTACTO</a>
                 </nav>
             </section>

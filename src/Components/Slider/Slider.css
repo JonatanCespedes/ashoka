@@ -136,6 +136,12 @@
 
 .slide-img-mobile {
     margin-bottom: 15px;
+    min-height: 345px;
+}
+
+.slide-img-mobile > img {
+    height: 100%;
+    width: 100%;
 }
 
 .slide-img-mobile #img-1{
@@ -222,6 +228,10 @@
 
     .slide-img-desktop > img {
         width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: relative;
+        bottom: 17px;
     }
 
     .slide-info {
@@ -261,7 +271,7 @@
     .carousel{
         max-height: 460px;
         min-height: 460px;
-        padding: 10px;
+        padding: 10px 20px;
     }
 
     .main-title {

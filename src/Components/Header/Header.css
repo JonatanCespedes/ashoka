@@ -17,7 +17,7 @@ button.btn-menu .fa-times:before{
 .header {
     background-color: var(--first-color);
     padding: 18px 30px;
-    position: sticky;
+    position: sticky !important;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -34,12 +34,12 @@ button.btn-menu .fa-times:before{
 }
 
 .logos-mobile img#logo-1{
-    width: 50px;
+    width: 60px;
     margin-left: -7px ;
 }
 
 .logos-mobile img#logo-2{
-    width: 80px;
+    width: 90px;
     margin-left: 7px ;
 }
 
@@ -77,6 +77,14 @@ button.btn-menu .fa-times:before{
     margin: 0 30px; 
     padding: 8px 0;
     text-decoration: none;
+}
+
+.menu a#acerca-mobile {
+    display: inline-block;
+}
+
+.menu a#acerca-desktop {
+    display: none;
 }
 
 .menu a:last-child {
@@ -140,6 +148,14 @@ button.btn-menu .fa-times:before{
         margin:0 ; 
         padding:0;
         text-decoration: none;
+    }
+
+    .menu a#acerca-mobile {
+        display: none;
+    }
+
+    .menu a#acerca-desktop {
+        display: inline-block;
     }
 
     .menu a:last-child {

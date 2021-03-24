@@ -1,4 +1,7 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import { motion } from 'framer-motion'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 import Button from '../Button/Button';
 import './Slider.css'
@@ -6,29 +9,21 @@ import './Slider.css'
 const Slider = () => {
 
     const [slide, setSlide] = useState(0);
-
+    const [click, setClick] = useState(false)
     useEffect(() => {
-        const sliderAnimation = () => setTimeout(()=>{
-            return setSlide(slide + 1)
-        }, 10000)
-        sliderAnimation()
-    }, []);
+        if(!click){
+            const sliderAnimation = () => setTimeout(()=>{
+                return setSlide(slide + 1)
+            }, 8000)
+            sliderAnimation()
+            return () => {
+                clearTimeout(sliderAnimation)
+            };
+        } 
+    }, [slide]);
 
-    if(slide == 1){
-        const sliderAnimation = () => setTimeout(()=>{
-            return setSlide(slide + 1)
-        }, 10000)
-        sliderAnimation()
-    }
+    
 
-    if(slide == 2){
-        const sliderAnimation = () => setTimeout(()=>{
-            return setSlide(slide + 1)
-        }, 10000)
-        sliderAnimation()
-    }
-    
-    
     useEffect(() => {
         ((d) => {
             const $btnPrev = d.querySelector("#row-left"),
@@ -38,9 +33,26 @@ const Slider = () => {
             $dot_3 = d.querySelector("#slide-3"),
             $slide1 = d.querySelector(".slide-1"),
             $slide2 = d.querySelector(".slide-2"),
-            $slide3 = d.querySelector(".slide-3");
+            $slide3 = d.querySelector(".slide-3"),
+            $label1 = d.querySelector("#dot-1"),
+            $label2 = d.querySelector("#dot-2"),
+            $label3 = d.querySelector("#dot-3");
 
-            
+            $btnNext.addEventListener('click', ()=>{
+                setClick(true)
+            })
+            $btnPrev.addEventListener('click', ()=>{
+                setClick(true)
+            })
+            $label1.addEventListener('click', ()=>{
+                setClick(true)
+            })
+            $label2.addEventListener('click', ()=>{
+                setClick(true)
+            })
+            $label3.addEventListener('click', ()=>{
+                setClick(true)
+            })
 
             switch (slide) {
                 case -1:
@@ -89,13 +101,16 @@ const Slider = () => {
             <input type="radio" name="slides" id="slide-3" />
             <div className="slides">
                 <div className="slide-1 fade-in ">
-                    <div className="slide-info">
+                    <motion.div 
+                    initial={{ x: "200vw" }}
+                    animate={{ x: "0", y: '0', transition: { duration: 1, ease: 'easeInOut'} }}
+                    className="slide-info">
                         <h2 className="main-title">
                             <span className="text-orange">JÓVENES </span><br/> <span className="text-white">QUE TRANSFORMAN</span>
                         </h2>
                         <p>Convocamos personas de <b>12 a 18 años</b> para co-construir una red a lo largo y ancho del país.</p>
                         <Button className="btn-white mb-18" text="SUMATE"/>
-                    </div>
+                    </motion.div>
                     <div className="slide-img-mobile">
                         <img id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
                     </div>
@@ -142,13 +157,13 @@ const Slider = () => {
                         <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-07.png"/>
                     </div>
                 </div> 
-                <span id="row-left"  onClick={()=>setSlide(slide - 1)}><i  className="fas fa-chevron-left"></i></span>
-                <span id="row-right" onClick={()=>setSlide(slide + 1)}><i className="fas fa-chevron-right"></i></span>    
+                <span id="row-left"  onClick={()=>setSlide(slide - 1)} ><i  className="fas fa-chevron-left"></i></span>
+                <span id="row-right" onClick={()=>setSlide(slide + 1)} ><i className="fas fa-chevron-right"></i></span>    
             </div>
             <aside class="slides-nav">
-                <label htmlFor="slide-1" id="dot-1" onClick={()=>setSlide(0)}></label>
-                <label htmlFor="slide-2" id="dot-2" onClick={()=>setSlide(1)}></label>
-                <label htmlFor="slide-3" id="dot-3" onClick={()=>setSlide(2)}></label>
+                <label htmlFor="slide-1" id="dot-1" onClick={()=>setSlide(0)} ></label>
+                <label htmlFor="slide-2" id="dot-2" onClick={()=>setSlide(1)} ></label>
+                <label htmlFor="slide-3" id="dot-3" onClick={()=>setSlide(2)} ></label>
             </aside>  
               
         </section>

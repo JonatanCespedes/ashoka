@@ -4,6 +4,10 @@ input {
     width: 80vw;
 }
 
+input::placeholder {
+    color: #6A77D8;
+}
+
 .input-white {
     background-color: transparent;
     border: 1px solid var(--white-color);

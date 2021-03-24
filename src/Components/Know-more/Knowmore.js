@@ -1,11 +1,13 @@
 import React from 'react';
+
 import Button from '../Button/Button'
 import './Knowmore.css';
 
 const Knowmore = () => {
+   
     return ( 
-        <section className="knowmore-section">
-            <div className="knowmore__img">
+        <section id="ashoka" className="knowmore-section">
+            <div  className="knowmore__img">
                 <img id="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-05.png"/>
                 <img id="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-05.png"/>
                 <img id="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-05.png"/>

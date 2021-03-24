@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
-import './Ready.css'
+import './Ready.css';
 
 const Ready = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 2000}); 
+    }, []);
+
     return ( 
-        <section className="ready-section">
-            <h3 className="ready-title text-cian">
+        <section id="tribu" className="ready-section">
+            <h3 data-aos="fade-left" className="ready-title text-cian">
                 ¿ESTÁS PARA LA TRIBU?
             </h3>   
             <div className="cards">
-                <div className="card">
+                <div data-aos="slide-up" className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-05.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-05.png"/>
                     <h6 className="text-cian">TENÉS UNA IDEA</h6>
@@ -24,7 +31,7 @@ const Ready = () => {
                         <p>¿Ya empezaste a resolverlo?</p>
                     </div>
                 </div>
-                <div className="card">
+                <div data-aos="slide-up" className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-06.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-06.png"/>
                     <h6 className="text-cian">LIDERAR UN GRUPO</h6>
@@ -39,7 +46,7 @@ const Ready = () => {
                         <p>¿Te gustaría armar equipo?</p>
                     </div>
                 </div>
-                <div className="card">
+                <div data-aos="slide-up" className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-07.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-07.png"/>
                     <h6 className="text-cian">GENERAR <br/>UN IMPACTO REAL</h6>
@@ -54,7 +61,7 @@ const Ready = () => {
                         <p>¿Te imaginás comprometidx con el bien común?</p>
                     </div>
                 </div>
-                <div className="img-mobile" className="card">
+                <div data-aos="slide-up" className="img-mobile" className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-08.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-08.png"/>
                     <h6 className="text-cian">PRACTICAR <br/> EL CO-LIDERAZGO</h6>

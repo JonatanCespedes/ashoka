@@ -1,24 +1,32 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 import './Allies.css';
 
 const Allies = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 3000}); 
+    }, []);
+
     return ( 
         <section className="allies-section">
-            <h2 className="text-orange">NUESTROS ALIADOS</h2>
+            <h2 data-aos="fade" className="text-orange">NUESTROS ALIADOS</h2>
             <div className="allies-container">
                 <div className="allies__box1">
                     <div className="row-1">
-                        <div className="allies__title">
+                        <div data-aos="slide-right" className="allies__title">
                             <small>CO-CREADO CON</small>
                             <hr/>
                         </div>
-                        <div className="allies__title">
+                        <div data-aos="slide-left" className="allies__title">
                             <small id="impulsado">IMPULSADO JUNTO A</small>
                             <hr/>
                         </div>
                     </div>
-                    <div className="row-2">
+                    <div data-aos="fade" className="row-2">
                         {/* Mobile images */}
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Motorola.png"/>
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Natura.png"/>
@@ -31,16 +39,16 @@ const Allies = () => {
                 </div>
                 <div className="allies__box2">
                     <div className="row-3">
-                        <div className="allies__title">
+                        <div data-aos="slide-right" className="allies__title">
                             <small>COLABORA</small>
                             <hr/>
                         </div>
-                        <div className="allies__title">
+                        <div data-aos="slide-left" className="allies__title">
                             <small>ACOMPAÑA</small>
                             <hr/>
                         </div>
                     </div>   
-                    <div className="row-4">
+                    <div data-aos="fade" className="row-4">
                         {/* Mobile images */}
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionBancoCiudad.png"/>
                         <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionLaNacion.png"/>

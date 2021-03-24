@@ -1,9 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import Button from '../Button/Button'
 
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
 import './Countdown.css';
 
 const Countdown = () => {
+
+   
+
     const calculateTimeLeft = () => {
         let year = new Date().getFullYear(),
         difference = +new Date(`03/28/${year}`) - +new Date(),
@@ -48,9 +54,9 @@ const Countdown = () => {
     return ( 
         <section className="countdown-section">
             <div className="countdown-container">
-                <h2 className="text-blue">¿CUÁNTO FALTA PARA EL CIERRE DE LA CONVOCATORIA?</h2>
+                <h2  className="text-blue">¿CUÁNTO FALTA PARA EL CIERRE DE LA CONVOCATORIA?</h2>
                 <hr/>
-                <div className="countdown-timer-container">
+                <div  className="countdown-timer-container">
                     {timerComponents.length ? timerComponents : <span> Time`s up!</span>}
                 </div>
                 

@@ -1,22 +1,27 @@
-import React, {useState, useEffect} from 'react';
-import TextField from '@material-ui/core/TextField';
-import Button from '../Button/Button'
-import Input from '../Input/Input'
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import Button from '../Button/Button';
+import Input from '../Input/Input';
 import './Contact.css';
 
 const Contact = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 3000}); 
+    }, []);
+
     return ( 
-        <section className="contact-section">
-            
-                <h3 className="text-orange">
+        <section id="contacto" className="contact-section">
+                <h3 data-aos="fade" className="text-orange">
                     CONTACTANOS!
                 </h3>
             <div className="contact__container">
                 <div className="contact__info">   
-                    <p><b>¿Tenés preguntas?</b></p>
-                    <p>Si tenés alguna duda, ¡consultanos!<br/>
+                    <p data-aos="slide-right"><b>¿Tenés preguntas?</b></p>
+                    <p data-aos="fade">Si tenés alguna duda, ¡consultanos!<br/>
                     Te responderemos los más rápido posible.</p>
-                    <a href="mailto:infoargentina@ashoka.org">infoargentina@ashoka.org</a>
+                    <a data-aos="fade" href="mailto:infoargentina@ashoka.org">infoargentina@ashoka.org</a>
                 </div>
                 <div className="contact__form">
                     <form autoComplete="off" className="form-container">
