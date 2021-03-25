@@ -22,12 +22,17 @@ const Contact = () => {
                     
                 </div>
                 <div className="contact__form">
-                    <form action="https://formsubmit.co/develop.jec@gmail.com" autoComplete="off" method="POST" className="form-container">
-                        <Input inputName="Nombre" id="inputName" type="text" name="name" className="input-white" require/>
-                        <Input inputName="Email" id="inputEmail" type="email" name="email" className="input-white" required/>
-                        <Input inputName="Celular" id="inputCel" type="text" name="cel" className="input-white"/>
-                        <textarea placeholder="Consulta" name="message" id="" cols="30" rows="10"></textarea>
-                        <Button className="btn-white" text="ENVIAR"/>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style={{display:'none'}}
+                            onLoad="if(submitted) {window.location='thankyou.html';}"></iframe>
+                    <p id="gracias" style={{display:'none'}}><b>Gracias por contactarte</b></p>
+                    <form autoComplete="off" className="form-container" id={'contact_form'}
+                          action="https://docs.google.com/forms/d/e/1FAIpQLSd054WJx5e6-VB8RWb-O-ntOrUkqunTDRVC-rLOMHzpuFahgg/formResponse"
+                          target="hidden_iframe"  method="post" onSubmit={reset}>
+                        <Input inputName="Nombre" id="inputName" type="text" name="entry.1924373565" className="input-white"/>
+                        <Input inputName="Email" id="inputEmail" type="email" name="entry.993016979" className="input-white"/>
+                        <Input inputName="Celular" id="inputCel" type="text" name="entry.890105707" className="input-white"/>
+                        <textarea placeholder="Consulta" name="entry.412920707" id="" cols="30" rows="10"></textarea>
+                        <Button className="btn-white" text="ENVIAR" onClick={reset}/>
                     </form>
                 </div>
             </div>        
