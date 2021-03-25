@@ -103,13 +103,13 @@ const Slider = () => {
                         <PSlide/>
                         <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" dataAos="fade-up" dataAosDelay="500" className="btn-white mb-18" text="SUMATE"/>
                     </div>
-                    <div className="slide-img-mobile">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-mobile">
                         <img id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
                     </div>
-                    <div className="slide-img-tablet">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-tablet">
                         <img id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
                     </div>
-                    <div className="slide-img-desktop">
+                    <div dataAos="slide-up" dataAosDelay="500" className="slide-img-desktop">
                         <img id="img-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-01.png"/>
                     </div>
                 </div>
@@ -121,13 +121,13 @@ const Slider = () => {
                         <p>Queremos promover espacios de diálogo para que la juventud participe en la toma de decisiones. ¿Te animás?</p>
                         <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-white mb-18" text="SUMATE"/>
                     </div>
-                    <div className="slide-img-mobile">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-mobile">
                         <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
                     </div>
-                    <div className="slide-img-tablet">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-tablet">
                         <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
                     </div>
-                    <div className="slide-img-desktop">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-desktop">
                         <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-06.png"/>
                     </div>
                 </div>
@@ -139,13 +139,13 @@ const Slider = () => {
                         <p>Vamos a conectar a Jóvenes transformadorxs que representen a la Argentina para inspirarnos y movilizarnos. ¿Empezamos hoy?</p>
                         <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-white mb-18" text="SUMATE"/>
                     </div>
-                    <div className="slide-img-mobile">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-mobile">
                         <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-07.png"/>
                     </div>
-                    <div className="slide-img-tablet">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-tablet">
                         <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-07.png"/>
                     </div>
-                    <div className="slide-img-desktop">
+                    <div dataAos="fade-up" dataAosDelay="500" className="slide-img-desktop">
                         <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-07.png"/>
                     </div>
                 </div> 

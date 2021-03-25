@@ -12,7 +12,7 @@ const Button = (props) => {
 
     return ( 
         <div data-aos={props.dataAos} data-aos-delay={props.dataAosDelay} className={props.className}>
-            <a href={props.href} target="_blank"  >
+            <a id={props.id} href={props.href} target="_blank"  >
                 {props.text}
             </a>
         </div>

@@ -56,7 +56,7 @@ const Countdown = () => {
                 </div>
                 
             </div>
-            <Button dataAos="fade-up" href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-orange" text="¡SUMATE A LA TRIBU24!"/>
+            <Button id="orange" dataAos="fade-up" href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-orange" text="¡SUMATE A LA TRIBU24!"/>
         </section>
      );
 }

@@ -16,7 +16,7 @@ const Knowmore = () => {
                 <h6  data-aos="fade-right" dataAosDelay="100" >
                     LA MAYORÍA DE LOS EMPRENDEDORES SOCIALES DE <span className="text-cian">ASHOKA</span> HAN TENIDO SU PRIMERA EXPERIENCIA COMO AGENTES <span className="text-orange">DE CAMBIO</span> ANTES DE LOS 20 AÑOS.
                 </h6>
-                <Button dataAos="fade-right" dataAosDelay="200" href="https://www.ashoka.org.ar/" id="knowmore__btn" className="btn-orange" text="CONOCÉ MÁS"/>
+                <Button  dataAos="fade-right" dataAosDelay="200" href="https://www.ashoka.org.ar/" id="orange" className="btn-orange" text="CONOCÉ MÁS"/>
             </div>
             
         </section>

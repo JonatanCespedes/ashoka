@@ -32,7 +32,7 @@
     border-radius: 15px;
     color: var(--white-color);
     display: inline-block;
-    font-family: var(-WS-font);
+    
     font-size: var(--button-font-size-mobile);
     font-weight: 800;
     height: 2rem;
@@ -40,6 +40,10 @@
     outline: none;
     text-align: center;
     width: 11rem;
+}
+
+ a#orange{
+    font-family: 'Work Sans', sans-serif;
 }
 
 .btn-orange:hover{
