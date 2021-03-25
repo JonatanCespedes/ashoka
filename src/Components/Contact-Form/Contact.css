@@ -18,10 +18,21 @@
 
 .contact-section a {
     color: var(--second-color);
+    display: inline-block;
     font-family: var(--WS-font);
     font-size: var(--paragraph-mobile);
-    margin-bottom: 30px;
     text-decoration: none;
+}
+
+.contact-section a.wp {
+    color: var(--white-color);
+}
+
+.contact-section a > svg{
+    fill: var(--white-color);
+    width: 6%;
+    position: relative;
+    bottom: -6px;
 }
 
 .contact-section textarea {
@@ -91,6 +102,14 @@ textarea::placeholder {
 
     .contact__info {
         text-align: left;
+    }
+
+    .contact-section a > svg{
+        fill: var(--white-color);
+        width: 7%;
+        position: relative;
+        bottom: -7px;
+        left: -5px;
     }
 
     .contact-section textarea {

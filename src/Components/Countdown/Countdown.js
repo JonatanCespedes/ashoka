@@ -1,14 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import Button from '../Button/Button'
 
-import Aos from 'aos';
-import "aos/dist/aos.css";
-
 import './Countdown.css';
 
 const Countdown = () => {
-
-   
 
     const calculateTimeLeft = () => {
         let year = new Date().getFullYear(),
@@ -54,14 +49,14 @@ const Countdown = () => {
     return ( 
         <section className="countdown-section">
             <div className="countdown-container">
-                <h2  className="text-blue">¿CUÁNTO FALTA PARA EL CIERRE DE LA CONVOCATORIA?</h2>
+                <h2 data-aos="fade-up" className="text-blue">¿CUÁNTO FALTA PARA EL CIERRE DE LA CONVOCATORIA?</h2>
                 <hr/>
                 <div  className="countdown-timer-container">
                     {timerComponents.length ? timerComponents : <span> Time`s up!</span>}
                 </div>
                 
             </div>
-            <Button className="btn-orange" text="¡SUMATE A LA TRIBU24!"/>
+            <Button dataAos="fade-up" href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-orange" text="¡SUMATE A LA TRIBU24!"/>
         </section>
      );
 }

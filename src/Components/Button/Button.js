@@ -1,19 +1,22 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, {useEffect} from 'react';
+
+import Aos from 'aos';
 
 import './Button.css'
 
 const Button = (props) => {
+
+    useEffect(() => {
+        Aos.init({duration: 400}); 
+    }, []);
+
     return ( 
-        <motion.button
-        whileHover={{
-            scale: 1.2,
-            transition: { duration: 1 },
-          }}
-          whileTap={{ scale: 0.9 }}
-        className={props.className} >
-            {props.text}
-        </motion.button>
+        <div data-aos={props.dataAos} data-aos-delay={props.dataAosDelay} className={props.className}>
+            <a href={props.href} target="_blank"  >
+                {props.text}
+            </a>
+        </div>
+       
      );
 }
  

@@ -73,9 +73,9 @@ button.btn-menu .fa-times:before{
     border-bottom: 1px solid var(--white-color);
     color: var(--white-color);
     font-family: var(--WS-font);
-    font-size: 10px;
+    font-size: 13px;
     margin: 0 30px; 
-    padding: 8px 0;
+    padding: 12px 0;
     text-decoration: none;
 }
 

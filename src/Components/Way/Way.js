@@ -1,14 +1,8 @@
 import React, {useEffect} from 'react';
-import Aos from 'aos';
-import "aos/dist/aos.css";
 
 import './Way.css';
 
 const Way = () => {
-
-    useEffect(() => {
-        Aos.init({duration: 2000}); 
-    }, []);
 
     return ( 
         <section id="camino" className="way-section"> 
@@ -16,7 +10,8 @@ const Way = () => {
                 <h3 data-aos="fade" className="text-orange">
                 EL CAMINO A RECORRER
                 </h3>
-                <div data-aos="fade-left" className="way-sentences s-1">
+                <div data-aos="fade-left">
+                <div  className="way-sentences s-1">
                     <p> 
                         <svg className="svg-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 20">
                             <title>Ashoka-Landing-Mobile</title>
@@ -27,7 +22,7 @@ const Way = () => {
                     Contruirán una <b>identidad</b> como agentes de cambio.    
                     </p>
                 </div>
-                <div data-aos="fade-right" className="way-sentences s-2">
+                <div  className="way-sentences s-2">
                     <p>
                         <svg className="svg-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 20">
                             <title>Ashoka-Landing-Mobile</title>
@@ -38,7 +33,7 @@ const Way = () => {
                     Facilitar la colaboración y el trabajo en <b>equipo</b>.
                     </p>
                 </div>   
-                <div data-aos="fade-left" className="way-sentences s-3">
+                <div  className="way-sentences s-3">
                     <p>
                         <svg className="svg-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 20">
                             <title>Ashoka-Landing-Mobile</title>
@@ -49,7 +44,7 @@ const Way = () => {
                     Pariciparán de un programa de desarrollo de habilidades de liderazgo certificado por <b>Ashoka</b> Argentina.    
                     </p>
                 </div>    
-                <div data-aos="fade-right" className="way-sentences s-4">
+                <div  className="way-sentences s-4">
                     <p>
                         <svg className="svg-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 20">
                             
@@ -60,6 +55,7 @@ const Way = () => {
                         </svg> 
                     <b>Co-crearán</b> comunidades junto a escuelas, organizaciones y empresas locales, gobiernos, entre otros.
                     </p>
+                </div>
                 </div>        
             </div>
             <div data-aos="fade" className="img-container-mobile">

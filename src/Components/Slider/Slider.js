@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import { motion } from 'framer-motion'
-import Aos from 'aos';
-import "aos/dist/aos.css"
 
 import Button from '../Button/Button';
 import './Slider.css'
+import PSlide from './p-slide';
+import MainT from './main-title';
 
 const Slider = () => {
 
@@ -91,9 +90,6 @@ const Slider = () => {
         })(document);
     }, [slide]);
 
-    /* e.target.classList.add('fade-out'); */
-       
-
     return ( 
         <section className="carousel">
             <input type="radio" name="slides" id="slide-1" defaultChecked/>
@@ -101,16 +97,12 @@ const Slider = () => {
             <input type="radio" name="slides" id="slide-3" />
             <div className="slides">
                 <div className="slide-1 fade-in ">
-                    <motion.div 
-                    initial={{ x: "200vw" }}
-                    animate={{ x: "0", y: '0', transition: { duration: 1, ease: 'easeInOut'} }}
+                    <div 
                     className="slide-info">
-                        <h2 className="main-title">
-                            <span className="text-orange">JÓVENES </span><br/> <span className="text-white">QUE TRANSFORMAN</span>
-                        </h2>
-                        <p>Convocamos personas de <b>12 a 18 años</b> para co-construir una red a lo largo y ancho del país.</p>
-                        <Button className="btn-white mb-18" text="SUMATE"/>
-                    </motion.div>
+                        <MainT/>
+                        <PSlide/>
+                        <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" dataAos="fade-up" dataAosDelay="500" className="btn-white mb-18" text="SUMATE"/>
+                    </div>
                     <div className="slide-img-mobile">
                         <img id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
                     </div>
@@ -127,7 +119,7 @@ const Slider = () => {
                         <span className="text-orange">SOBRAN UTOPÍAS </span><br/> <span className="text-white">FALTAN REALIDADES</span>
                         </h2>
                         <p>Queremos promover espacios de diálogo para que la juventud participe en la toma de decisiones. ¿Te animás?</p>
-                        <Button className="btn-white mb-18" text="SUMATE"/>
+                        <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-white mb-18" text="SUMATE"/>
                     </div>
                     <div className="slide-img-mobile">
                         <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
@@ -145,7 +137,7 @@ const Slider = () => {
                         <span className="text-orange">NO COMUNES, </span><br/> <span className="text-white">SÍ BIEN COMÚN</span>
                         </h2>
                         <p>Vamos a conectar a Jóvenes transformadorxs que representen a la Argentina para inspirarnos y movilizarnos. ¿Empezamos hoy?</p>
-                        <Button className="btn-white mb-18" text="SUMATE"/>
+                        <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-white mb-18" text="SUMATE"/>
                     </div>
                     <div className="slide-img-mobile">
                         <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-07.png"/>

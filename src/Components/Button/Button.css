@@ -2,15 +2,19 @@
     align-self: center;
 }
 
+
+
 .btn-white {
     background-color: var(--white-color);
     border: none;
     border-radius: 15px;
+    display: inline-block;
     color: var(--first-color);
     font-family: var(--WS-font);
     font-size: var(--button-font-size-mobile);
     font-weight: 800;
     height: 1.9rem;
+    padding: 7px;
     outline: none;
     text-align: center;
     width: 7rem;
@@ -27,10 +31,12 @@
     border: none;
     border-radius: 15px;
     color: var(--white-color);
+    display: inline-block;
     font-family: var(-WS-font);
     font-size: var(--button-font-size-mobile);
     font-weight: 800;
     height: 2rem;
+    padding: 7px;
     outline: none;
     text-align: center;
     width: 11rem;
@@ -56,6 +62,7 @@
     .btn-white {
         border-radius: 20px;
         font-size: var(--button-font-size-desktop);
+        padding: 10px;
         height: 2.5rem;
         width: 9rem;
     }
@@ -64,6 +71,7 @@
         border-radius: 20px;
         font-size: var(--button-font-size-desktop);
         height: 3rem;
+        padding: 10px;
         width: 14rem;
     }
 

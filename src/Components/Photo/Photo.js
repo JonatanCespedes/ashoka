@@ -1,15 +1,8 @@
 import React, {useEffect} from 'react';
 
-import Aos from 'aos';
-import "aos/dist/aos.css";
-
 import './Photo.css';
 
 const Photo = () => {
-
-    useEffect(() => {
-        Aos.init({duration: 2000}); 
-    }, []);
 
     return ( 
         <section className="photo-section">

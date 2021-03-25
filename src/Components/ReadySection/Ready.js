@@ -1,22 +1,15 @@
-import React, {useEffect} from 'react';
-import Aos from 'aos';
-import "aos/dist/aos.css";
-
+import React from 'react';
 import './Ready.css';
 
 const Ready = () => {
 
-    useEffect(() => {
-        Aos.init({duration: 2000}); 
-    }, []);
-
     return ( 
         <section id="tribu" className="ready-section">
-            <h3 data-aos="fade-left" className="ready-title text-cian">
+            <h3 data-aos="fade-up" className="ready-title text-cian">
                 ¿ESTÁS PARA LA TRIBU?
             </h3>   
-            <div className="cards">
-                <div data-aos="slide-up" className="card">
+            <div data-aos="fade-up"  data-aos-delay="400" className="cards">
+                <div  className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-05.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-05.png"/>
                     <h6 className="text-cian">TENÉS UNA IDEA</h6>
@@ -31,19 +24,19 @@ const Ready = () => {
                         <p>¿Ya empezaste a resolverlo?</p>
                     </div>
                 </div>
-                <div data-aos="slide-up" className="card">
+                <div className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-06.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-06.png"/>
-                    <h6 className="text-cian">LIDERAR UN GRUPO</h6>
+                    <h6 className="text-cian">FORMASTE UN EQUIPO</h6>
                     <p className="p-mobile">
-                        ¿Cómo acompañar a otrxs agentes de cambio?<br/>
-                        ¿De qué manera podemos multiplicarlo por miles?<br/>
-                        ¿Te gustaría armar equipo?
+                        ¿Cómo movilizás a otras personas?<br/>
+                        ¿Te gustaría co-crear con tus pares?<br/>
+                        ¿De qué manera podemos multiplicar soluciones?
                     </p>
                     <div className="p-desktop">
-                        <p>¿Cómo acompañar a otrxs agentes de cambio?</p>
-                        <p>¿De qué manera podemos multiplicarlo por miles?</p>
-                        <p>¿Te gustaría armar equipo?</p>
+                        <p>¿Cómo movilizás a otras personas?</p>
+                        <p>¿Te gustaría co-crear con tus pares?</p>
+                        <p>¿De qué manera podemos multiplicar soluciones?</p>
                     </div>
                 </div>
                 <div data-aos="slide-up" className="card">
@@ -51,28 +44,28 @@ const Ready = () => {
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-07.png"/>
                     <h6 className="text-cian">GENERAR <br/>UN IMPACTO REAL</h6>
                     <p className="p-mobile">
-                        ¿Cuál es la forma de ayudar a mejorar la vida?<br/>
+                        ¿Cuál es la forma de mejorar nuestra realidad?<br/>
                         ¿Hay algo del entorno que atrasa?<br/>
-                        ¿Te imaginás comprometidx con el bien común?
+                        ¿Te imaginás aportando al bien común?
                     </p>
                     <div className="p-desktop">
-                        <p>¿Cuál es la forma de ayudar a mejorar la vida?</p>
+                        <p>¿Cuál es la forma de mejorar nuestra realidad?</p>
                         <p>¿Hay algo del entorno que atrasa?</p>
-                        <p>¿Te imaginás comprometidx con el bien común?</p>
+                        <p>¿Te imaginás aportando al bien común?</p>
                     </div>
                 </div>
                 <div data-aos="slide-up" className="img-mobile" className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-08.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-08.png"/>
-                    <h6 className="text-cian">PRACTICAR <br/> EL CO-LIDERAZGO</h6>
+                    <h6 className="text-cian">PRACTICÁS <br/> EL CO-LIDERAZGO</h6>
                     <p className="p-mobile">
-                        ¿Dónde empujar y generar cambios positivos?<br/>
-                        ¿Por qué difundilo masivamente?<br/>
+                        ¿Te gusta lo colaborativo?<br/>
+                        ¿Activás el liderazgo de tus pares?<br/>
                         ¿Sabés la importancia de ser agentes de cambio?
                     </p>
                     <div className="p-desktop">
-                        <p>¿Dónde empujar y generar cambios positivos?</p>
-                        <p>¿Por qué difundilo masivamente?</p>
+                        <p>¿Te gusta lo colaborativo?</p>
+                        <p>¿Activás el liderazgo de tus pares?</p>
                         <p>¿Sabés la importancia de ser agentes de cambio?</p>
                     </div>
                 </div>

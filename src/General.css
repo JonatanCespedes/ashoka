@@ -57,6 +57,10 @@ p {
     font-size: var(--paragraph-mobile);
 }
 
+a {
+    text-decoration: none;
+}
+
 .text-orange {
     color: var(--second-color)
 }

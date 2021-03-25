@@ -1,4 +1,7 @@
+import React, {useEffect} from 'react';
 /* External resources */
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 /* General style sheet */
 import './General.css'
@@ -18,6 +21,11 @@ import Footer from './Components/Footer/Footer';
 import Fellows from './Components/Fellows/Fellows';
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({duration: 1000}); 
+  }, []);
+
   return (
     <div className="general">
        <Header/> 
