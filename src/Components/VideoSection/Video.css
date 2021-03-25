@@ -29,6 +29,10 @@
     width: 100%;
 }
 
+.video-section-mobile .btn-white {
+    align-self: center;
+}
+
 .video-section-mobile p {
     margin: 20px auto 25px auto;
     text-align: center;
@@ -111,6 +115,11 @@
         margin: 0 auto 25px auto;
         text-align: center;
         width: 65%;
+    }
+    
+
+    .video-section-desktop .btn-white {
+        align-self: center;
     }
     
     .video-title {

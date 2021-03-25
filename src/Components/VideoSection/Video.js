@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from '../Button/Button'
+
 import './Video.css'
 
 const Video = () => {
@@ -17,6 +19,7 @@ const Video = () => {
             <p data-aos="fade-left" data-aos-delay="600">
                 Buscamos identificar y conectar jóvenes transformadorxs que representen a cada rincón de Argentina.
             </p>
+            <Button dataAos="fade-left" dataAosDelay="600" className="btn-white" text="CONOCE MÁS"  />
         </section>
         <section id="acerca-d" className="video-section-desktop">
             <div className="video-info">
@@ -27,6 +30,7 @@ const Video = () => {
                 <p data-aos="fade-left" data-aos-delay="400">
                     Buscamos identificar y conectar jóvenes transformadorxs que representen a cada rincón de Argentina. 
                 </p>
+                <Button dataAos="fade-left" dataAosDelay="600" className="btn-white" text="CONOCE MÁS"  />
             </div>
             <div  className="video-container">
                 <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-02.png"/>

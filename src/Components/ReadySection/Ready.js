@@ -42,7 +42,7 @@ const Ready = () => {
                 <div data-aos="slide-up" className="card">
                     <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-07.png"/>
                     <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-07.png"/>
-                    <h6 className="text-cian">GENERAR <br/>UN IMPACTO REAL</h6>
+                    <h6 className="text-cian">GENERÁS <br/>X GENERAR</h6>
                     <p className="p-mobile">
                         ¿Cuál es la forma de mejorar nuestra realidad?<br/>
                         ¿Hay algo del entorno que atrasa?<br/>

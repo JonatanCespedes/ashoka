@@ -30,7 +30,7 @@ const Way = () => {
                                 <polygon class="cls-1" points="10.64 10.16 4 3.48 4 3.52 4 16.83 10.64 10.16"/>
                             </g>
                         </svg>
-                    Facilitar la colaboración y el trabajo en <b>equipo</b>.
+                    Facilitarán la colaboración y el trabajo en <b>equipo</b>.
                     </p>
                 </div>   
                 <div  className="way-sentences s-3">
