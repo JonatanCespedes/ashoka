@@ -6,13 +6,18 @@ import './Contact.css';
 
 const Contact = () => {
 
+    let reset = () => {
+        //document.getElementById("contact_form").reset();
+        document.getElementById("gracias").style.display = 'block';
+    }
+
     return ( 
         <section id="contacto" className="contact-section">
-                <h3 className="text-orange">
+                <h3 data-aos="fade" className="text-orange">
                     CONTACTANOS!
                 </h3>
             <div className="contact__container">
-                <div className="contact__info">   
+                <div data-aos="fade-left" data-aos-delay="200" className="contact__info">   
                     <p >Si tenés alguna duda, ¡consultanos!<br/>
                     Te responderemos los más rápido posible.</p>
                     <a  href="mailto:infoargentina@ashoka.org">infoargentina@ashoka.org</a>
@@ -21,7 +26,7 @@ const Contact = () => {
                     +54 11 5555-5555</a>
                     
                 </div>
-                <div className="contact__form">
+                <div data-aos="fade" data-aos-delay="200" className="contact__form">
                     <iframe name="hidden_iframe" id="hidden_iframe" style={{display:'none'}}
                             onLoad="if(submitted) {window.location='thankyou.html';}"></iframe>
                     <p id="gracias" style={{display:'none'}}><b>Gracias por contactarte</b></p>
