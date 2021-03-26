@@ -17,10 +17,21 @@ button.btn-menu .fa-times:before{
 .header {
     background-color: var(--first-color);
     padding: 18px 30px;
-    position: sticky !important;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 999;
+}
+
+header.active{
+    background-color: var(--header-nav-color);
+}
+button.btn-menu.active {
+    background-color: var(--header-nav-color);
+}
+
+.menu.active{
+    background-color: var(--header-nav-color);
 }
 
 .header .container {

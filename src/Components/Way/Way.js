@@ -59,7 +59,7 @@ const Way = () => {
                 </div>        
             </div>
             <div data-aos="fade" className="img-container-mobile">
-                <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-03.png"/>
+                <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-03.png"/>
             </div>
             <div data-aos="fade" className="img-container-tablet">
                 <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-03.png"/>

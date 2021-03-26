@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.knowmore-section img{
+    width: 100%;
+}
+
 .knowmore-section h6 {
     align-self: center;
     color: var(--white-color);

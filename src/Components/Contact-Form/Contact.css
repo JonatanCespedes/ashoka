@@ -62,62 +62,14 @@
     width: 80vw;
 }
 
-/********* Modal *********/
-
-.contact-form-response {
-    padding: 1rem;
-    width: 400px;
-    text-align: center;
-    background-color: var(--white-color);
-}
-
-.contact-form-response svg {
-    margin-top: 2rem;
-    width: 4rem;
-    height: 4rem;
-    fill: var(--first-color);
-}
-
-.modal {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--black-alpha-color);
+.contact_button {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 1s;
+    flex-direction: row-reverse;
+    width: 90vw;
 }
 
-.modal-content {
-    position: relative;
-}
-
-.modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-.modal-close svg {
-    width: 3rem;
-    height: 3rem;
-    fill: var(--first-color);
-}
-
-.modal[id|='trabajo']:target {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.modal#gracias:target {
-    opacity: 1;
-    pointer-events: auto;
+p#gracias {
+    color: var(--second-color);
 }
 
 textarea::placeholder {
@@ -152,6 +104,10 @@ textarea{
     .contact-section h3{
         font-size: var(--title-tablet);
         margin: 0 auto 30px auto;
+    }
+
+    .contact_button {
+        width: 100%;
     }
 
     .contact-section p {

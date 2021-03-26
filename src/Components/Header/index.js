@@ -4,6 +4,8 @@ import './Header.css';
 
 const Header = () => {
 
+    const [navBar, setNavBar] = useState(false);
+
     useEffect(() => {
         ((d) => {
             const $btnMenu = d.querySelector(".btn-menu"),
@@ -24,14 +26,24 @@ const Header = () => {
             })
         })(document);
     }, []);
+
+    const changebackground = () => {
+        if(window.scrollY >= 80){
+            setNavBar(true);
+        }else {
+            setNavBar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changebackground);
     
     return ( 
-        <header className="header">
+        <header className={navBar ? 'header active' : 'header'}>
             <section className="container">
                 <div className="logos-mobile">
                     <a href="#">
-                    <img id="logo-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Header-Ashoka.png"/>
-                    <img id="logo-2" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Header-Tribu24.png"/>
+                    <img id="logo-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Header-Ashoka.png"/>
+                    <img id="logo-2" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Header-Tribu24.png"/>
                     </a>
                 </div>
                 <div className="logos-tablet">
@@ -46,11 +58,11 @@ const Header = () => {
                     <img id="logo-2" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Header-Tribu24.png"/>
                 </a>
                 </div>
-                <button className="btn-menu">
+                <button className={ navBar ? "btn-menu active" : 'btn-menu'}>
                    <img src="images/mobile/SVG/Ashoka-Landing-Mobile_Icono-01.svg" />
                    <span className="none"><i class="fas fa-times"></i></span>
                 </button>
-                <nav class="menu">
+                <nav class={ navBar ? "menu active" : 'menu'}>
                     <a href="#acerca-d" id="acerca-desktop">ACERCA DE</a>
                     <a href="#acerca-m" id="acerca-mobile">ACERCA DE</a>
                     <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" target="_blank">SUMATE</a>

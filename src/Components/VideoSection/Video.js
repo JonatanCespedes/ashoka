@@ -14,7 +14,7 @@ const Video = () => {
             </h3>
             <hr data-aos="fade-left" data-aos-delay="400" className="video-line"/>
             <div className="video-container">
-                <img data-aos="zoom-in" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-02.png"/>
+            <iframe width="280" height="280" src="https://www.youtube.com/embed/2auIuJw71-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p data-aos="fade-left" data-aos-delay="600">
                 Buscamos identificar y conectar jóvenes transformadorxs que representen a cada rincón de Argentina.
@@ -33,7 +33,7 @@ const Video = () => {
                 <Button dataAos="fade-left" dataAosDelay="600" className="btn-white" text="CONOCE MÁS"  />
             </div>
             <div  className="video-container">
-                <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-02.png"/>
+            <iframe width="280" height="280" src="https://www.youtube.com/embed/2auIuJw71-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         </>
