@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+#btn-video {
+    display: flex;
+    justify-content: center;
+}
+
 .video-container iframe{
     width: 100%;
     height: 60vh;
@@ -177,8 +182,12 @@
 
 @media screen and (min-width: 1024px) {
 
+    .video-container {
+        height: 80vh;
+    }
+
     .video-container iframe{
-        width: 67%;
+        width: 81%;
         height: 100%;
     }
 
@@ -192,7 +201,7 @@
     }
 
     .video-container iframe{
-        width: 57%;
+        width: 70%;
         height: 100%;
     }
 

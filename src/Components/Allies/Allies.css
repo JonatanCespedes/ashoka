@@ -1,6 +1,7 @@
 .allies-container .row-1, 
 .allies-container .row-3,
 .allies-container .row-4{
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -51,12 +52,77 @@
     width: 100%;
 }
 
+.acompaña-desktop{
+    display: none;
+}
+
+.img-unicef {
+    text-align: center;
+}
+
+.img-unicef img {
+    width: 55%;
+}
+
+.title-unicef .allies__title {
+    text-align: center;
+}
+
 /* Media queries */
 /* TABLET */
 @media screen and (min-width: 768px) {
+
+    
+.allies-container .row-3,
+.allies-container .row-4 {
+    display: flex;
+    grid-template-columns: none;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.allies-desktop-row1 {
+    display: flex;
+    justify-content: center;
+}
+
+.allies__box3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.row-4 img#bcociudad {
+    width: 84%;
+}
+
+.img-unicef img {
+    width: 75%;
+}
+
+    .acompaña-mobile{
+        display: none;
+    }
+
+    .acompaña-mobile{
+        display: none;
+    }
+
+    #acompaña-mobile{
+        display: none;
+    }
+    .acompaña-desktop{
+        display:block;
+    }
+
+    .acompaña-desktop .allies__title {
+        text-align: center;
+    }
     .allies-container {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
+        display: flex;
+        flex-direction: column;
     }
     
     .allies-section h2 {
