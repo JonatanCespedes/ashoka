@@ -7,6 +7,17 @@
     text-align: center;
 }
 
+.card .img-container {
+    width: 100%;
+    height: 100px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .card h6{
     font-size: var(--subtitle-mobile);
     font-family: var(--BS-font);
@@ -20,9 +31,6 @@
     width: 80%;
 }
 
-.ready-section .img-desktop {
-    display: none;
-}
 
 .p-desktop {
     display: none;
@@ -108,6 +116,11 @@
 @media screen and (min-width: 992px) {
     .cards {
         grid-template-columns: repeat(4, 25%);
+    }
+
+    .card .img-container {
+        width: 100%;
+        height: 150px;
     }
     
     .card h6 {

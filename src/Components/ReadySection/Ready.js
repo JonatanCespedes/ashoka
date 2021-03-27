@@ -10,8 +10,9 @@ const Ready = () => {
             </h3>   
             <div data-aos="fade-up"  data-aos-delay="400" className="cards">
                 <div  className="card">
-                    <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-05.png"/>
-                    <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-05.png"/>
+                    <div className="img-container">
+                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-05.png"/>
+                    </div>
                     <h6 className="text-cian">TENÉS UNA IDEA</h6>
                     <p className="p-mobile">
                         ¿Empatizaste con un problema?<br/>
@@ -25,9 +26,10 @@ const Ready = () => {
                     </div>
                 </div>
                 <div className="card">
-                    <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-06.png"/>
-                    <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-06.png"/>
-                    <h6 className="text-cian">FORMASTE UN EQUIPO</h6>
+                    <div className="img-container">
+                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-06.png"/>
+                    </div>
+                    <h6 className="text-cian">FORMÁS UN EQUIPO</h6>
                     <p className="p-mobile">
                         ¿Cómo movilizás a otras personas?<br/>
                         ¿Te gustaría co-crear con tus pares?<br/>
@@ -39,9 +41,10 @@ const Ready = () => {
                         <p>¿De qué manera podemos multiplicar soluciones?</p>
                     </div>
                 </div>
-                <div data-aos="slide-up" className="card">
-                    <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-07.png"/>
-                    <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-07.png"/>
+                <div className="card">
+                    <div className="img-container">
+                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-07.png"/>
+                    </div>
                     <h6 className="text-cian">GENERÁS <br/>UN IMPACTO REAL</h6>
                     <p className="p-mobile">
                         ¿Cuál es la forma de mejorar nuestra realidad?<br/>
@@ -54,9 +57,10 @@ const Ready = () => {
                         <p>¿Te imaginás aportando al bien común?</p>
                     </div>
                 </div>
-                <div data-aos="slide-up" className="img-mobile" className="card">
-                    <img className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Icono-08.png"/>
-                    <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-08.png"/>
+                <div className="img-mobile" className="card">
+                    <div className="img-container">
+                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-08.png"/>
+                    </div>
                     <h6 className="text-cian">PRACTICÁS <br/> EL CO-LIDERAZGO</h6>
                     <p className="p-mobile">
                         ¿Te gusta lo colaborativo?<br/>

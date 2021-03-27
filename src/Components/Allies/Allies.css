@@ -45,9 +45,10 @@
     text-align: center;
 }
 
-.allies-section .img-tablet,
 .allies-section .img-desktop {
-    display: none;
+    display: block;
+    margin-top: 5px;
+    width: 100%;
 }
 
 /* Media queries */
@@ -73,9 +74,6 @@
         width: 82%;
     }
 
-    .allies-section .img-mobile {
-        display: none;
-    }
 
     .allies__title {
         width: 100%;

@@ -136,7 +136,7 @@ const Slider = () => {
                         <h2 className="main-title">
                         <span className="text-orange">NO COMUNES, </span><br/> <span className="text-white">SÍ BIEN COMÚN</span>
                         </h2>
-                        <p>Vamos a conectar a Jóvenes transformadorxs que representen a la Argentina para inspirarnos y movilizarnos. ¿Empezamos hoy?</p>
+                        <p>Vamos a conectar a Jóvenes Transformadorxs que representen a la Argentina para inspirarnos y movilizarnos. ¿Empezamos hoy?</p>
                         <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-white mb-18" text="SUMATE"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="500" className="slide-img-mobile">

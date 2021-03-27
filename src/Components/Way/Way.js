@@ -19,7 +19,7 @@ const Way = () => {
                                 <polygon class="cls-1" points="10.89 10.02 4.25 3.35 4.25 3.39 4.25 16.7 10.89 10.02"/>
                             </g>
                         </svg>  
-                    Contruirán una <b>identidad</b> como agentes de cambio.    
+                    Construirán una <b>identidad</b> como agentes de cambio.    
                     </p>
                 </div>
                 <div  className="way-sentences s-2">
@@ -30,7 +30,7 @@ const Way = () => {
                                 <polygon class="cls-1" points="10.64 10.16 4 3.48 4 3.52 4 16.83 10.64 10.16"/>
                             </g>
                         </svg>
-                    Facilitarán la colaboración y el trabajo en <b>equipo</b>.
+                   Pondrán en práctica la colaboración y el trabajo en <b>equipo</b>.
                     </p>
                 </div>   
                 <div  className="way-sentences s-3">
@@ -41,7 +41,7 @@ const Way = () => {
                                 <polygon class="cls-1" points="10.89 10.02 4.25 3.35 4.25 3.39 4.25 16.7 10.89 10.02"/>
                             </g>
                         </svg>     
-                    Pariciparán de un programa de desarrollo de habilidades de liderazgo certificado por <b>Ashoka</b> Argentina.    
+                    Participarán de un programa de desarrollo de habilidades de liderazgo certificado por <b>Ashoka</b> Argentina.    
                     </p>
                 </div>    
                 <div  className="way-sentences s-4">

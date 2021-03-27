@@ -10,30 +10,30 @@ const Video = () => {
         <>
         <section id="acerca-m" className="video-section-mobile">
             <h3 data-aos="fade-left" className="video-title">
-                <span className="text-white">DIGAMOS SI PARA</span><span className="text-blue"> CAMBIAR LO QUE NO</span>
+                <span className="text-white">DIGAMOS SÍ PARA</span><span className="text-blue"> CAMBIAR LO QUE NO</span>
             </h3>
             <hr data-aos="fade-left" data-aos-delay="400" className="video-line"/>
             <div className="video-container">
-            <iframe width="280" height="280" src="https://www.youtube.com/embed/2auIuJw71-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JXxKAhsPOdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p data-aos="fade-left" data-aos-delay="600">
-                Buscamos identificar y conectar jóvenes transformadorxs que representen a cada rincón de Argentina.
+                Buscamos identificar y conectar Jóvenes Transformadorxs que representen a cada provincia de Argentina.
             </p>
-            <Button dataAos="fade-left" dataAosDelay="600" className="btn-white" text="CONOCE MÁS"  />
+            <a dataAos="fade-left" dataAosDelay="600" href="/Tribu 24 - Ashoka.pdf"  download="Ashoka" className="btn-white" >CONOCE MÁS</a>
         </section>
         <section id="acerca-d" className="video-section-desktop">
             <div className="video-info">
                 <h3 data-aos="fade-left" className="video-title">
-                    <span className="text-white">DIGAMOS SI PARA</span><span className="text-blue"> CAMBIAR LO QUE NO</span>
+                    <span className="text-white">DIGAMOS Sí PARA</span><span className="text-blue"> CAMBIAR LO QUE NO</span>
                 </h3>
                 <hr data-aos="fade-left" data-aos-delay="200" className="video-line"/>
                 <p data-aos="fade-left" data-aos-delay="400">
-                    Buscamos identificar y conectar jóvenes transformadorxs que representen a cada rincón de Argentina. 
+                    Buscamos identificar y conectar Jóvenes Transformadorxs que representen a cada provincia de Argentina. 
                 </p>
-                <Button dataAos="fade-left" dataAosDelay="600" className="btn-white" text="CONOCE MÁS"  />
+                <a dataAos="fade-left" dataAosDelay="600" href="/Tribu 24 - Ashoka.pdf" download="Ashoka" className="btn-white" >CONOCE MÁS</a>
             </div>
             <div  className="video-container">
-            <iframe width="280" height="280" src="https://www.youtube.com/embed/2auIuJw71-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JXxKAhsPOdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         </>

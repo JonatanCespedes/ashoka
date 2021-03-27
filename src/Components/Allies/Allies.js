@@ -21,9 +21,9 @@ const Allies = () => {
                     </div>
                     <div className="row-2">
                         {/* Mobile images */}
-                        <img data-aos="fade-up" data-aos-delay="1000" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Motorola.png"/>
+                        {/* <img data-aos="fade-up" data-aos-delay="1000" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Motorola.png"/>
                         <img data-aos="fade-up" data-aos-delay="1200" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Natura.png"/>
-                        <img data-aos="fade-up" data-aos-delay="1400" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Oracle.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1400" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Oracle.png"/> */}
                         {/* Desktop images */}
                         <img data-aos="fade-up" data-aos-delay="1000" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Motorola.png"/>
                         <img data-aos="fade-up" data-aos-delay="1200" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Natura.png"/>
@@ -43,13 +43,14 @@ const Allies = () => {
                     </div>   
                     <div className="row-4">
                         {/* Mobile images */}
-                        <img data-aos="fade-up" data-aos-delay="1600" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionBancoCiudad.png"/>
-                        <img data-aos="fade-up" data-aos-delay="1800" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionLaNacion.png"/>
+                      {/*   <img data-aos="fade-up" data-aos-delay="1600" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionBancoCiudad.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1800" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-FundacionLaNacion.png"/> */}
                         {/* Desktop images */}
                         <img data-aos="fade-up" data-aos-delay="1600" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionBancoCiudad.png"/>
                         <img data-aos="fade-up" data-aos-delay="1800" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>
                     </div>
                 </div>
+                
             </div>
         </section>
      );
