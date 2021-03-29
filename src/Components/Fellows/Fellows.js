@@ -35,9 +35,9 @@ const Fellows = () => {
                 <div data-aos="fade-up" data-aos-delay="800" className="fellow" id="fellow-4">
                     <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-Fellow-Pierre-Yves-Herrquet.png"/>
                     <h6 className="text-orange">
-                    PIERRE-YVES HEEROUET 
+                    PIERRE-YVES HERROUET 
                     </h6>
-                    <p id="title">Consultor y Director de <a href="https://www.facebook.com/SolarInti/" target="_blank">Solar Inti</a>.</p><p>Apunta a mejorar la economía familiar, la salud, la capacidad de subsistencia y al mismo tiempo, el medio ambiente.</p>
+                    <p id="title">Fundador de <a href="https://www.facebook.com/SolarInti/" target="_blank">Solar Inti</a>, Dir. de Desarrollo Socio Económico / Ministerio de Desarrollo Social de Salta, Coordinador del programa de impacto Mayma Salta NOA. </p><p> Apunta a desarrollar el emprendedurismo de triple impacto, favoreciendo la inclusión social, regenerando el ambiente, y fortaleciendo las economías locales.</p>
                 </div>
             </div>
         </section>
