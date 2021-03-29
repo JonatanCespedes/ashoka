@@ -84,6 +84,7 @@ const Slider = () => {
                     setSlide(0)
                     $slide3.classList.add('none');
                     $slide1.classList.remove('none')
+                    break;
                 default:
                     break;
             }
@@ -104,13 +105,13 @@ const Slider = () => {
                         <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" dataAos="fade-up" dataAosDelay="500" className="btn-white mb-18" text="SUMATE"/>
                     </div>
                     <div className="slide-img-mobile">
-                        <img dataAos="fade-up" dataAosDelay="1000" id="img-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-01.png"/>
+                        <img alt="Foto" dataAos="fade-up" dataAosDelay="1000" id="img-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-01.png"/>
                     </div>
                     <div className="slide-img-tablet">
-                        <img id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
+                        <img alt="Foto" id="img-1" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-01.png"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="1100" className="slide-img-desktop">
-                        <img dataAos="fade-up" dataAosDelay="500" id="img-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-01.png"/>
+                        <img alt="Foto" dataAos="fade-up" dataAosDelay="500" id="img-1" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-01.png"/>
                     </div>
                 </div>
                 <div className="slide-2 none fade-in">
@@ -122,13 +123,13 @@ const Slider = () => {
                         <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-white mb-18" text="SUMATE"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="500" className="slide-img-mobile">
-                        <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-06.png"/>
+                        <img alt="Foto" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-06.png"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="500" className="slide-img-tablet">
-                        <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
+                        <img alt="Foto" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-06.png"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="500" className="slide-img-desktop">
-                        <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-06.png"/>
+                        <img alt="Foto" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-06.png"/>
                     </div>
                 </div>
                 <div className="slide-3 none fade-in">
@@ -140,13 +141,13 @@ const Slider = () => {
                         <Button href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" className="btn-white mb-18" text="SUMATE"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="500" className="slide-img-mobile">
-                        <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-07.png"/>
+                        <img alt="Foto" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-07.png"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="500" className="slide-img-tablet">
-                        <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-07.png"/>
+                        <img alt="Foto" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-07.png"/>
                     </div>
                     <div dataAos="fade-up" dataAosDelay="500" className="slide-img-desktop">
-                        <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-07.png"/>
+                        <img alt="Foto" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-07.png"/>
                     </div>
                 </div> 
                 <span id="row-left"  onClick={()=>setSlide(slide - 1)} ><i  className="fas fa-chevron-left"></i></span>

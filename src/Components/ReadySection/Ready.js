@@ -11,7 +11,7 @@ const Ready = () => {
             <div data-aos="fade-up"  data-aos-delay="400" className="cards">
                 <div  className="card">
                     <div className="img-container">
-                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-05.png"/>
+                        <img alt="" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-05.png"/>
                     </div>
                     <h6 className="text-cian">TENÉS UNA IDEA</h6>
                     <p className="p-mobile">
@@ -27,7 +27,7 @@ const Ready = () => {
                 </div>
                 <div className="card">
                     <div className="img-container">
-                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-06.png"/>
+                        <img alt="" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-06.png"/>
                     </div>
                     <h6 className="text-cian">FORMÁS UN EQUIPO</h6>
                     <p className="p-mobile">
@@ -43,7 +43,7 @@ const Ready = () => {
                 </div>
                 <div className="card">
                     <div className="img-container">
-                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-07.png"/>
+                        <img alt="" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-07.png"/>
                     </div>
                     <h6 className="text-cian">GENERÁS <br/>UN IMPACTO REAL</h6>
                     <p className="p-mobile">
@@ -59,7 +59,7 @@ const Ready = () => {
                 </div>
                 <div className="img-mobile" className="card">
                     <div className="img-container">
-                        <img className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-08.png"/>
+                        <img alt="" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-08.png"/>
                     </div>
                     <h6 className="text-cian">PRACTICÁS <br/> EL CO-LIDERAZGO</h6>
                     <p className="p-mobile">

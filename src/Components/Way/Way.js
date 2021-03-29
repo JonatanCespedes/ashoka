@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import './Way.css';
 
@@ -59,13 +59,13 @@ const Way = () => {
                 </div>        
             </div>
             <div data-aos="fade" className="img-container-mobile">
-                <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-03.png"/>
+                <img alt="Foto" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-03.png"/>
             </div>
             <div data-aos="fade" className="img-container-tablet">
-                <img src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-03.png"/>
+                <img alt="Foto" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-03.png"/>
             </div>
             <div data-aos="fade" className="img-container-desktop">
-                <img src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-03.png"/>
+                <img alt="Foto" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-03.png"/>
             </div>
 
         </section> 

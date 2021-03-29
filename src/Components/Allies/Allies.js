@@ -26,9 +26,9 @@ const Allies = () => {
                         <img data-aos="fade-up" data-aos-delay="1200" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Natura.png"/>
                         <img data-aos="fade-up" data-aos-delay="1400" className="img-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Logo-Oracle.png"/> */}
                         {/* Desktop images */}
-                        <img data-aos="fade-up" data-aos-delay="1000" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Motorola.png"/>
-                        <img data-aos="fade-up" data-aos-delay="1200" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Natura.png"/>
-                        <img data-aos="fade-up" data-aos-delay="1400" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Oracle.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1000" alt="logo Motorola" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Motorola.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1200" alt="logo Natura" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Natura.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1400" alt="logo Oracle" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Oracle.png"/>
                     </div>
                 </div>
                 <div className="allies__box2">
@@ -43,8 +43,8 @@ const Allies = () => {
                         </div>
                     </div>   
                     <div className="row-4">
-                        <img data-aos="fade-up" data-aos-delay="1600" id="bcociudad" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionBancoCiudad.png"/>
-                        <img data-aos="fade-up" data-aos-delay="1800" id="acompaña-mobile" className="img-desktop " src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1600" alt="logo Banco Ciudad" id="bcociudad" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionBancoCiudad.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1800" alt="logo Fundacion La Nación" id="acompaña-mobile" className="img-desktop " src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>
                     </div>
                 </div>
                 </div>
@@ -56,18 +56,18 @@ const Allies = () => {
                             <hr/>
                         </div>
                         <div className="img-unicef">
-                            <img data-aos="fade-up" data-aos-delay="1600" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>
+                            <img data-aos="fade-up" data-aos-delay="1600" alt="logo Unicef" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>
                         </div>
                     </div>
                         
                     <div className="title-unicef">
                         <div data-aos="fade-up" data-aos-delay="1000" className="allies__title">
-                            <small>CON EL APOYO DE:</small>
+                            <small>CON EL APOYO INSTITUCIONAL DE:</small>
                             <hr/>
                         </div>
                     
                     <div className="img-unicef">
-                        <img data-aos="fade-up" data-aos-delay="1800" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Unicef.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1800" alt="Logo unicef" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Unicef.png"/>
                     </div>
                     </div>   
                 </div>

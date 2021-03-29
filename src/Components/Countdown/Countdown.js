@@ -12,10 +12,10 @@ const Countdown = () => {
 
         if (difference > 0) {
             timeleft = {
-                dias: Math.floor(difference / (1000 * 60 * 60 * 24)) != 0 ? Math.floor(difference / (1000 * 60 * 60 * 24)) : '0',
-                horas: Math.floor((difference / (1000 * 60 * 60 )) % 24) != 0 ? Math.floor((difference / (1000 * 60 * 60 )) % 24) : '00',
-                minutos: Math.floor((difference / 1000 / 60 ) % 60) != 0 ? Math.floor((difference / 1000 / 60 ) % 60) : '00',
-                segundos: Math.floor((difference / 1000) % 60) != 0 ? Math.floor((difference / 1000) % 60) : '00'
+                dias: Math.floor(difference / (1000 * 60 * 60 * 24)) !== 0 ? Math.floor(difference / (1000 * 60 * 60 * 24)) : '0',
+                horas: Math.floor((difference / (1000 * 60 * 60 )) % 24) !== 0 ? Math.floor((difference / (1000 * 60 * 60 )) % 24) : '00',
+                minutos: Math.floor((difference / 1000 / 60 ) % 60) !== 0 ? Math.floor((difference / 1000 / 60 ) % 60) : '00',
+                segundos: Math.floor((difference / 1000) % 60) !== 0 ? Math.floor((difference / 1000) % 60) : '00'
             };
         }
         return timeleft;

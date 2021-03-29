@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import Button from '../Button/Button'
 import './Knowmore.css';
@@ -8,9 +8,9 @@ const Knowmore = () => {
     return ( 
         <section id="ashoka" className="knowmore-section">
             <div data-aos="fade" className="knowmore__img">
-                <img id="img-mobile" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-05.png"/>
-                <img id="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-05.png"/>
-                <img id="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-05.png"/>
+                <img alt="Foto" id="img-mobile" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-05.png"/>
+                <img alt="Foto" id="img-tablet" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-05.png"/>
+                <img alt="Foto" id="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-05.png"/>
             </div>
             <div className="knowmore__info">
                 <h6  data-aos="fade-right" dataAosDelay="100" >
