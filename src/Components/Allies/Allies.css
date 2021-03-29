@@ -148,6 +148,10 @@
 
 /* ESCRITORIO */
 @media screen and (min-width: 992px) {
+
+    .allies-section {
+        padding: 60px 30px;
+    }
     
     .allies-section h2 {
         font-size: var(--title-desktop);
