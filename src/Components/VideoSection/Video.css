@@ -10,7 +10,7 @@
 
 .video-container iframe{
     width: 100%;
-    height: 60vh;
+    height: 44vh;
 }
 
 .video-line {
@@ -183,7 +183,7 @@
 @media screen and (min-width: 1024px) {
 
     .video-container {
-        height: 80vh;
+        height: 47vh;
     }
 
     .video-container iframe{
@@ -193,17 +193,92 @@
 
 }
 
+@media screen and (min-width: 1112px) {
+    .video-container iframe{
+        width: 91%;
+    }
+
+    .video-container {
+        height: 60vh;
+    }
+
+}
+
+
 @media screen and (min-width: 1220px) {
 
     .video-section-desktop {
         padding: 50px 30px 50px 30px;
-        height: 65vh;
+        height: 80vh;
     }
 
     .video-container iframe{
         width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .video-section-desktop {
+        padding: 50px 30px 50px 30px;
+        height: 100vh;
+    }
+
+    .video-container iframe{
+        width: 77%;
         height: 100%;
     }
 
 }
+
+@media screen and (min-width: 1366px) {
+
+    .video-section-desktop {
+        padding: 50px 30px 50px 30px;
+        height: 100vh;
+    }
+
+    .video-container iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .video-section-desktop {
+        padding: 80px 50px 80px 50px;
+        height: 80vh;
+    }
+
+    .video-container iframe{
+        width: 75%;
+        height: 100%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 2220px) {
+
+    .video-section-desktop {
+        padding: 80px 50px 80px 50px;
+        height: 100%;
+    }
+
+    .video-container {
+        height: 50vh;
+    }
+
+    .video-container iframe{
+        width: 80%;
+        height: 100%;
+    }
+
+}
+
+
 

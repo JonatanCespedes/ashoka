@@ -56,18 +56,18 @@ const Allies = () => {
                             <hr/>
                         </div>
                         <div className="img-unicef">
-                            <img data-aos="fade-up" data-aos-delay="1800" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>
+                            <img data-aos="fade-up" data-aos-delay="1600" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-FundacionLaNacion.png"/>
                         </div>
                     </div>
                         
                     <div className="title-unicef">
-                        <div data-aos="fade-up" data-aos-delay="800" className="allies__title">
+                        <div data-aos="fade-up" data-aos-delay="1000" className="allies__title">
                             <small>CON EL APOYO DE:</small>
                             <hr/>
                         </div>
                     
                     <div className="img-unicef">
-                        <img data-aos="fade-up" data-aos-delay="1600" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Unicef.png"/>
+                        <img data-aos="fade-up" data-aos-delay="1800" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Logo-Unicef.png"/>
                     </div>
                     </div>   
                 </div>

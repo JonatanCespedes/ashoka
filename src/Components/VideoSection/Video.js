@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 import './Video.css'
 
 const Video = () => {
-
+    console.log(window.screen)
     return ( 
         <>
         <section id="acerca-m" className="video-section-mobile">
