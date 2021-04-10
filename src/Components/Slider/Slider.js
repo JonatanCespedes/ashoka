@@ -56,6 +56,7 @@ const Slider = () => {
             switch (slide) {
                 case -1:
                     setSlide(2)
+                    break;
                 case 0: 
                     $slide1.classList.remove('none');
                     $slide2.classList.add('none');

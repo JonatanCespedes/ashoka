@@ -65,7 +65,7 @@ const Header = () => {
                 <nav class={ navBar ? "menu active" : 'menu'}>
                     <a href="#acerca-d" id="acerca-desktop">ACERCA DE</a>
                     <a href="#acerca-m" id="acerca-mobile">ACERCA DE</a>
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" target="_blank">SUMATE</a>
+                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" target="_blank" rel="noreferrer">SUMATE</a>
                     <a href="#tribu">TRIBU</a>
                     <a href="#camino">EL CAMINO</a>
                     <a href="#ashoka">ASHOKA</a>
