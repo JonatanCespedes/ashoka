@@ -1,10 +1,11 @@
 import React from 'react';
 
 const UnitProvince = ({
-    id
+    id,
+    key
 }) => {
     return ( 
-        <div className="province-container" id={id}>
+        <div key={key} className="province-container" id={id}>
             <label for={id} className="circle">
 
             </label>

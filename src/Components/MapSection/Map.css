@@ -3,7 +3,6 @@
 .map {
     display: flex;
     justify-content: center;
-    max-height: 450px;
 }
 
 .map img#map-desktop {
@@ -76,6 +75,37 @@
 /* UNIT PROVINCES */
 
 
+.map-mobile-container {
+    position: relative;
+}
+.map-mobile-container #santaCruz,
+.map-mobile-container #chubut,
+.map-mobile-container #rioNegro,
+.map-mobile-container #neuquen,
+.map-mobile-container #laPampa,
+.map-mobile-container #buenosAires,
+.map-mobile-container #caba,
+.map-mobile-container #mendoza,
+.map-mobile-container #sanLuis,
+.map-mobile-container #cordoba,
+.map-mobile-container #santaFe,
+.map-mobile-container #entreRios,
+.map-mobile-container #sanJuan,
+.map-mobile-container #laRioja,
+.map-mobile-container #catamarca,
+.map-mobile-container #tucuman,
+.map-mobile-container #santiagoDelEstero,
+.map-mobile-container #salta,
+.map-mobile-container #jujuy,
+.map-mobile-container #chaco,
+.map-mobile-container #formosa,
+.map-mobile-container #corrientes,
+.map-mobile-container #misiones{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
 .map-mobile-container .province-container {
     display: flex;
     justify-content: center;
@@ -84,203 +114,131 @@
 
 .map-mobile-container .circle {
     background-color: var(--white-color);
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-radius: 5px;
 }
 
 .map-mobile-container .circle:hover {
-    transition: 0.5s ease;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     background-color: var(--second-color);
 }
 
 .map-mobile-container #santaCruz {
-    height: 90px;
-    width: 75px;
-    position: relative;
-    bottom: 150px;
-    left: 16px;
+    bottom:100px;
+    left:40px;
 }
 
 .map-mobile-container #chubut {
-    height: 50px;
-    width: 75px;
-    position: relative;
-    bottom: 289px;
-    left: 27px;
+    bottom:160px;
+    left: 50px;
 }
 
 .map-mobile-container #rioNegro {
-    height: 51px;
-    width: 92px;
-    position: relative;
-    bottom: 390px;
-    left: 31px;
-}
-
-.map-mobile-container #neuquen {
-    height: 53px;
-    width: 36px;
-    position: relative;
-    bottom: 457px;
-    left: 31px;
-}
-
-.map-mobile-container #laPampa {
-    height: 53px;
-    width: 48px;
-    position: relative;
-    bottom: 528px;
-    left: 66px;
-}
-
-.map-mobile-container #buenosAires {
-    height: 76px;
-    width: 67px;
-    position: relative;
-    bottom: 596px;
-    left: 113px;
-}
-
-.map-mobile-container #caba {
-    height: 25px;
-    width: 25px;
-    position: relative;
-    bottom: 667px;
-    left: 148px;
-}
-
-.map-mobile-container #mendoza {
-    height: 62px;
-    width: 42px;
-    position: relative;
-    bottom: 713px;
-    left: 43px;
-}
-
-.map-mobile-container #sanLuis {
-    height: 47px;
-    width: 29px;
-    position: relative;
-    bottom: 776px;
-    left: 73px;
-}
-
-.map-mobile-container #cordoba {
-    height: 60px;
-    width: 46px;
-    position: relative;
-    bottom: 849px;
-    left: 87px;
-}
-
-.map-mobile-container #santaFe{
-    height: 58px;
-    width: 31px;
-    position: relative;
-    bottom: 925px;
-    left: 122px;
-}
-
-.map-mobile-container #entreRios{
-    height: 41px;
-    width: 31px;
-    position: relative;
-    bottom: 958px;
-    left: 137px;
-}
-
-.map-mobile-container #sanJuan{
-    height: 39px;
-    width: 31px;
-    position: relative;
-    bottom: 1010px;
-    left: 45px;
-}
-
-.map-mobile-container #laRioja{
-    height: 39px;
-    width: 31px;
-    position: relative;
-    bottom: 1066px;
+    bottom: 210px;
     left: 60px;
 }
 
+.map-mobile-container #neuquen {
+    bottom: 230px;
+    left:40px;
+}
+
+.map-mobile-container #laPampa { 
+    bottom: 245px;
+    left: 80px;
+}
+
+.map-mobile-container #buenosAires { 
+    bottom: 250px;
+    left: 130px;
+}
+
+.map-mobile-container #caba { 
+    bottom:270px;
+    left: 145px;
+}
+
+.map-mobile-container #mendoza {
+    bottom:275px;
+    left: 50px;
+}
+
+.map-mobile-container #sanLuis {   
+    bottom: 285px;
+    left: 75px;
+}
+
+.map-mobile-container #cordoba { 
+    bottom: 300px;
+    left: 100px;
+}
+
+.map-mobile-container #santaFe{ 
+    bottom:320px;
+    left: 125px;
+}
+
+.map-mobile-container #entreRios{
+    bottom: 300px;
+    left: 140px;
+}
+
+.map-mobile-container #sanJuan{    
+    bottom: 315px;
+    left: 45px;
+}
+
+.map-mobile-container #laRioja{   
+    bottom: 325px;
+    left: 68px;
+}
+
 .map-mobile-container #catamarca{
-    height: 39px;
-    width: 31px;
-    position: relative;
-    bottom: 1131px;
+    bottom: 355px;
     left: 60px;
 }
 
 .map-mobile-container #tucuman{
-    height: 23px;
-    width: 18px;
-    position: relative;
-    bottom: 1161px;
-    left: 84px;
+    bottom: 355px;
+    left: 82px;
 }
 
-.map-mobile-container #santiagoDelEstero{
-    height: 48px;
-    width: 30px;
-    position: relative;
-    bottom: 1187px;
+.map-mobile-container #santiagoDelEstero{   
+    bottom: 345px;
     left: 100px;
 }
 
-.map-mobile-container #salta{
-    height: 48px;
-    width: 30px;
-    position: relative;
-    bottom: 1262px;
-    left: 80px;
+.map-mobile-container #salta{  
+    bottom: 372px;
+    left: 85px;
 }
 
-.map-mobile-container #jujuy{
-    height: 48px;
-    width: 30px;
-    position: relative;
-    bottom: 1334px;
-    left: 69px;
+.map-mobile-container #jujuy{     
+    bottom: 395px;
+    left: 75px;
 }
 
 .map-mobile-container #chaco{
-    height: 48px;
-    width: 30px;
-    position: relative;
-    bottom: 1344px;
-    left: 127px;
+    bottom: 360px;
+    left: 125px;
 }
 
 .map-mobile-container #formosa{
-    height: 48px;
-    width: 30px;
-    position: relative;
-    bottom: 1413px;
-    left: 129px;
+    bottom: 375px;
+    left: 135px;
 }
 
-.map-mobile-container #corrientes{
-    height: 48px;
-    width: 30px;
-    position: relative;
-    bottom: 1419px;
-    left: 153px;
+.map-mobile-container #corrientes{    
+    bottom: 335px;
+    left: 155px;
 }
 
 .map-mobile-container #misiones{
-    height: 48px;
-    width: 30px;
-    position: relative;
-    bottom: 1488px;
+    bottom: 355px;
     left: 185px;
 }
-
-
 
 
 /* MEDIA QUERIES*/
@@ -314,6 +272,7 @@
     .map {
         display: flex;
         justify-content:end;
+        max-height: 774px;
     }
     
     .map img#map-mobile {
@@ -358,4 +317,177 @@
         margin: 20px auto 25px auto;
         width: 70px; 
     }
+
+    /* UNIT PROVINCES */
+
+    .map-mobile-container {
+        display: none;
+    }
+
+    .map-desktop-container {
+        position: relative;
+    }
+    .map-desktop-container #santaCruz,
+    .map-desktop-container #chubut,
+    .map-desktop-container #rioNegro,
+    .map-desktop-container #neuquen,
+    .map-desktop-container #laPampa,
+    .map-desktop-container #buenosAires,
+    .map-desktop-container #caba,
+    .map-desktop-container #mendoza,
+    .map-desktop-container #sanLuis,
+    .map-desktop-container #cordoba,
+    .map-desktop-container #santaFe,
+    .map-desktop-container #entreRios,
+    .map-desktop-container #sanJuan,
+    .map-desktop-container #laRioja,
+    .map-desktop-container #catamarca,
+    .map-desktop-container #tucuman,
+    .map-desktop-container #santiagoDelEstero,
+    .map-desktop-container #salta,
+    .map-desktop-container #jujuy,
+    .map-desktop-container #chaco,
+    .map-desktop-container #formosa,
+    .map-desktop-container #corrientes,
+    .map-desktop-container #misiones{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+    }
+
+    .map-desktop-container .province-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map-desktop-container .circle {
+        background-color: var(--white-color);
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+    }
+
+    .map-desktop-container .circle:hover {
+        width: 12px;
+        height: 12px;
+        background-color: var(--second-color);
+    }
+
+    .map-desktop-container #santaCruz {
+        bottom: 164px;
+        left: 83px;
+    }
+
+    .map-desktop-container #chubut {
+        bottom:287px;
+        left: 108px;
+    }
+
+    .map-desktop-container #rioNegro {
+        bottom: 376px;
+        left: 131px;
+    }
+
+    .map-desktop-container #neuquen {
+        bottom: 410px;
+        left: 87px;
+    }
+
+    .map-desktop-container #laPampa { 
+        bottom: 440px;
+        left: 161px;
+    }
+
+    .map-desktop-container #buenosAires { 
+        bottom: 450px;
+        left: 258px;
+    }
+
+    .map-desktop-container #caba { 
+        bottom: 490px;
+        left: 278px;
+    }
+
+    .map-desktop-container #mendoza {
+        bottom: 500px;
+        left: 110px;
+    }
+
+    .map-desktop-container #sanLuis {   
+        bottom: 510px;
+        left: 155px;
+    }
+
+    .map-desktop-container #cordoba { 
+        bottom: 540px;
+        left: 195px;
+    }
+
+    .map-desktop-container #santaFe{ 
+        bottom: 580px;
+        left: 245px;
+    }
+
+    .map-desktop-container #entreRios{
+        bottom: 545px;
+        left: 270px;
+    }
+
+    .map-desktop-container #sanJuan{    
+        bottom: 570px;
+        left: 105px;
+    }
+
+    .map-desktop-container #laRioja{   
+        bottom: 595px;
+        left: 135px;
+    }
+
+    .map-desktop-container #catamarca{
+        bottom: 640px;
+        left: 125px;
+    }
+
+    .map-desktop-container #tucuman{
+        bottom: 645px;
+        left: 165px;
+    }
+
+    .map-desktop-container #santiagoDelEstero{   
+        bottom: 630px;
+        left: 200px;
+    }
+
+    .map-desktop-container #salta{  
+        bottom: 680px;
+        left: 165px;
+    }
+
+    .map-desktop-container #jujuy{     
+        bottom: 720px;
+        left: 145px;
+    }
+
+    .map-desktop-container #chaco{
+        bottom: 650px;
+        left: 250px;
+    }
+
+    .map-desktop-container #formosa{
+        bottom: 680px;
+        left: 265px;
+    }
+
+    .map-desktop-container #corrientes{    
+        bottom: 610px;
+        left: 300px;
+    }
+
+    .map-desktop-container #misiones{
+        bottom: 645px;
+        left: 355px;
+    }
+
+
 }

@@ -4,69 +4,101 @@ const provincesService = {
     // getAll: () => connect.get('Province.json'),
     getAll: [
         {
-            amount: 2,
-            name: "JUJUY"
+            amount: "02",
+            name: "JUJUY",
+            id: "jujuy",
         },
         {
-            amount: 2,
-            name: "SALTA"
+            amount: "02",
+            name: "SALTA",
+            id: "salta"
         },{
-            amount: 2,
-            name: "CATAMARCA"
+            amount: "02",
+            name: "CATAMARCA",
+            id: "catamarca"
+
         },{
-            amount: 2,
-            name: "SAN JUAN"
+            amount: "02",
+            name: "SAN JUAN",
+            id: "sanJuan"
         },{
-            amount: 2,
-            name: "LA RIOJA"
+            amount: "02",
+            name: "LA RIOJA",
+            id: "laRioja"
         },{
-            amount: 2,
-            name: "SAN LUIS"
+            amount: "02",
+            name: "SAN LUIS",
+            id: "sanLuis"
         },{
-            amount: 2,
-            name: "MENDOZA"
+            amount: "02",
+            name: "MENDOZA",
+            id: "mendoza"
         },{
-            amount: 2,
-            name: "NEUQUÉN"
+            amount: "02",
+            name: "NEUQUÉN",
+            id: "neuquen"
         },{
-            amount: 2,
-            name: "CHUBUT"
+            amount: "02",
+            name: "CHUBUT",
+            id: "chubut"
         },{
-            amount: 2,
-            name: "LA PAMPA"
+            amount: "02",
+            name: "LA PAMPA",
+            id: "laPampa"
         },{
-            amount: 2,
-            name: "FORMOSA"
+            amount: "02",
+            name: "FORMOSA",
+            id: "formosa"
         },{
-            amount: 2,
-            name: "CHACO"
+            amount: "02",
+            name: "CHACO",
+            id: "chaco"
         },{
-            amount: 2,
-            name: "SANTIAGO DEL ESTERO"
+            amount: "02",
+            name: "SANTIAGO DEL ESTERO",
+            id: "santiagoDelEstero"
         },{
-            amount: 2,
-            name: "CORRIENTES"
+            amount: "02",
+            name: "CORRIENTES",
+            id: "corrientes"
         },{
-            amount: 2,
-            name: "SANTA FÉ"
+            amount: "02",
+            name: "SANTA FÉ",
+            id: "santaFe"
         },{
-            amount: 2,
-            name: "ENTRE RÍOS"
+            amount: "02",
+            name: "ENTRE RÍOS",
+            id: "entreRios"
         },{
-            amount: 2,
-            name: "AMBA"
+            amount: "02",
+            name: "CABA",
+            id: "caba"
         },{
-            amount: 2,
-            name: "BUENOS AIRES"
+            amount: "02",
+            name: "BUENOS AIRES",
+            id: "buenosAires"
         },{
-            amount: 2,
-            name: "RÍO NEGRO"
+            amount: "02",
+            name: "RÍO NEGRO",
+            id: "rioNegro"
         },{
-            amount: 2,
-            name: "SANTA CRUZ"
+            amount: "02",
+            name: "SANTA CRUZ",
+            id: "santaCruz"
         },{
-            amount: 2,
-            name: "TUCUMAN"
+            amount: "02",
+            name: "TUCUMAN",
+            id: "tucuman"
+        },
+        {
+            amount: "02",
+            name: "CÓRDOBA",
+            id: "cordoba"
+        },
+        {
+            amount: "02",
+            name: "MISIONES",
+            id: "misiones"
         },
     ]
 };
