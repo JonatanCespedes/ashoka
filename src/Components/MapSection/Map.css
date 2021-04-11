@@ -1,0 +1,361 @@
+/* MAP */
+
+.map {
+    display: flex;
+    justify-content: center;
+    max-height: 450px;
+}
+
+.map img#map-desktop {
+    display: none;
+}
+
+.map-mobile-container {
+    width: 220px;
+}
+
+/* MAP SECTION */
+.map-section {
+    background-color: var(--third-color);
+    padding: 30px 40px;
+}
+
+.map-section hr {
+    background-color: var(--second-color);
+    border: var(--second-color);
+    height: 3px;
+    margin: 0 auto 25px auto;
+    width: 30px; 
+}
+
+.map-section-action {
+    text-align: center;
+}
+
+.map-section-action h6 {
+    color: var(--first-color);
+    font-family: var(--BS-font);
+    font-size: var(--subtitle-tablet);
+    text-align: center;
+}
+
+.map-section-action h6 svg{
+    bottom: -6px;
+    fill: var(--second-color);
+    position: relative;
+    width: 16px;
+}
+
+.map-title h2 {
+    color: var(--first-color);
+    font-family: var(--BS-font);
+    font-size: var(--title-mobile);
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+/* PROVINCES LIST */
+
+.provinces {
+    display: flex;
+    justify-content: space-between;
+}
+
+.province {
+    font-family: var(--WS-font);
+}
+
+.province .amount {
+    font-size: var(--paragraph-mobile);
+}
+
+.province .name {
+    font-size: 11px;
+}
+
+/* UNIT PROVINCES */
+
+
+.map-mobile-container .province-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-mobile-container .circle {
+    background-color: var(--white-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.map-mobile-container .circle:hover {
+    transition: 0.5s ease;
+    width: 8px;
+    height: 8px;
+    background-color: var(--second-color);
+}
+
+.map-mobile-container #santaCruz {
+    height: 90px;
+    width: 75px;
+    position: relative;
+    bottom: 150px;
+    left: 16px;
+}
+
+.map-mobile-container #chubut {
+    height: 50px;
+    width: 75px;
+    position: relative;
+    bottom: 289px;
+    left: 27px;
+}
+
+.map-mobile-container #rioNegro {
+    height: 51px;
+    width: 92px;
+    position: relative;
+    bottom: 390px;
+    left: 31px;
+}
+
+.map-mobile-container #neuquen {
+    height: 53px;
+    width: 36px;
+    position: relative;
+    bottom: 457px;
+    left: 31px;
+}
+
+.map-mobile-container #laPampa {
+    height: 53px;
+    width: 48px;
+    position: relative;
+    bottom: 528px;
+    left: 66px;
+}
+
+.map-mobile-container #buenosAires {
+    height: 76px;
+    width: 67px;
+    position: relative;
+    bottom: 596px;
+    left: 113px;
+}
+
+.map-mobile-container #caba {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom: 667px;
+    left: 148px;
+}
+
+.map-mobile-container #mendoza {
+    height: 62px;
+    width: 42px;
+    position: relative;
+    bottom: 713px;
+    left: 43px;
+}
+
+.map-mobile-container #sanLuis {
+    height: 47px;
+    width: 29px;
+    position: relative;
+    bottom: 776px;
+    left: 73px;
+}
+
+.map-mobile-container #cordoba {
+    height: 60px;
+    width: 46px;
+    position: relative;
+    bottom: 849px;
+    left: 87px;
+}
+
+.map-mobile-container #santaFe{
+    height: 58px;
+    width: 31px;
+    position: relative;
+    bottom: 925px;
+    left: 122px;
+}
+
+.map-mobile-container #entreRios{
+    height: 41px;
+    width: 31px;
+    position: relative;
+    bottom: 958px;
+    left: 137px;
+}
+
+.map-mobile-container #sanJuan{
+    height: 39px;
+    width: 31px;
+    position: relative;
+    bottom: 1010px;
+    left: 45px;
+}
+
+.map-mobile-container #laRioja{
+    height: 39px;
+    width: 31px;
+    position: relative;
+    bottom: 1066px;
+    left: 60px;
+}
+
+.map-mobile-container #catamarca{
+    height: 39px;
+    width: 31px;
+    position: relative;
+    bottom: 1131px;
+    left: 60px;
+}
+
+.map-mobile-container #tucuman{
+    height: 23px;
+    width: 18px;
+    position: relative;
+    bottom: 1161px;
+    left: 84px;
+}
+
+.map-mobile-container #santiagoDelEstero{
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 1187px;
+    left: 100px;
+}
+
+.map-mobile-container #salta{
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 1262px;
+    left: 80px;
+}
+
+.map-mobile-container #jujuy{
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 1334px;
+    left: 69px;
+}
+
+.map-mobile-container #chaco{
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 1344px;
+    left: 127px;
+}
+
+.map-mobile-container #formosa{
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 1413px;
+    left: 129px;
+}
+
+.map-mobile-container #corrientes{
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 1419px;
+    left: 153px;
+}
+
+.map-mobile-container #misiones{
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 1488px;
+    left: 185px;
+}
+
+
+
+
+/* MEDIA QUERIES*/
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .map {
+        width: 50%;
+    }
+
+    .map-section-action {
+        text-align: left;
+    }
+
+    .map-section-action h6 {
+        text-align: left;
+    }
+   
+    .map-section-desktop {
+       display: flex;
+       flex-direction: row-reverse;
+   } 
+
+   .provinces-desktop {
+       width: 50%;
+   }
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 992px) {
+    .map {
+        display: flex;
+        justify-content:end;
+    }
+    
+    .map img#map-mobile {
+        display: none;
+    }
+
+    .map img#map-desktop {
+        display: block;
+    }
+
+    .map-section {
+        padding: 50px 66px;
+    }
+
+    .map-section-action h6 {
+        font-size: 32px;
+    }
+
+    .map-section-action h6 svg{
+        bottom: -10px;
+        width: 28px;
+    }
+
+    .map-title h2 {
+        font-size: 53px;
+    }
+
+    .province .amount {
+        font-size: 21px;
+    }
+    
+    .province .name {
+        font-size: var(--paragraph-desktop);
+    }
+
+    .provinces {
+        padding-right: 40px;
+    }
+
+    .map-section hr {
+        height: 3px;
+        margin: 20px auto 25px auto;
+        width: 70px; 
+    }
+}
