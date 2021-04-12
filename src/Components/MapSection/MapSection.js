@@ -10,6 +10,9 @@ import Provinces from './Provinces';
 
 
 const MapSection = () => {
+
+    
+
     return (
         <section className="map-section">
             <div className="map-title">

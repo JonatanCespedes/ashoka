@@ -11,14 +11,14 @@ const Provinces = () => {
             <div className="provinces-col">
                 { provincesService.getAll.map((province, index) => (
                     index < 10 && 
-                    <Province name={province.name} amount={province.amount} key={index}/>
+                    <Province name={province.name} id={province.id} amount={province.amount} key={index}/>
                 ))}
                 
             </div>
             <div className="provinces-col">
             { provincesService.getAll.map((province, index) => (
                     index >= 10 && 
-                    <Province name={province.name} amount={province.amount} key={index}/>
+                    <Province name={province.name} id={province.id} amount={province.amount} key={index}/>
                 ))}
             </div>
         </div>
