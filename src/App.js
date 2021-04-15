@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 /* External resources */
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -28,6 +28,8 @@ function App() {
     Aos.init({duration: 1000}); 
   }, []);
 
+  const [mapProvince, setMapProvince] = useState()
+  console.log(mapProvince)
   return (
     <div className="general">
        <Header/> 
@@ -35,8 +37,8 @@ function App() {
        <Video/>
        <Ready/>
        <Way/>
-       <MapSection/>
-       <Filter/>
+       <MapSection setMapProvince={setMapProvince}/>
+       <Filter mapProvince={mapProvince}/>
        <Countdown/>
        <Photo/>
        <Knowmore/>

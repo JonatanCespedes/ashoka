@@ -9,10 +9,9 @@ import Button from '../Button';
 import Provinces from './Provinces';
 
 
-const MapSection = () => {
-
-    
-
+const MapSection = ({
+    setMapProvince
+}) => {
     return (
         <section className="map-section">
             <div className="map-title">
@@ -20,7 +19,7 @@ const MapSection = () => {
                 <hr/>
             </div> 
             <div className="map-section-desktop">
-                <Map/>
+                <Map setMapProvince={setMapProvince}/>
                 <div className="provinces-desktop">
                     <Provinces/>
                     <div className="map-section-action">

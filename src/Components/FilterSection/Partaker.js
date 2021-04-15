@@ -7,10 +7,10 @@ const Partaker = ({
 
     console.log(causas)
     return ( 
-        <div className="filter-partaker">
-            {
-                causas.map(causa => 
-                    <div>
+        <>
+            { 
+               causas.lenght !== 0 ? causas.map(causa => 
+                    <div className="filter-partaker">
                     <span>NOMBRE</span>
                     <p>{causa.participante}</p>
                     <span>EDAD</span>
@@ -20,10 +20,14 @@ const Partaker = ({
                     <span>PROVINCIA</span>
                     <p>{provincia}</p>
                     </div>
-                )  
+
+                ) : 
+                <div className="filter-partaker">
+                    <h2>AÚN NO HAY PARTICIPANTES</h2> 
+                </div>
             }
             
-        </div>
+       </>
      );
 }
  

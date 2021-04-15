@@ -4,7 +4,9 @@ import UnitProvince from './UnitProvince';
 
 import provincesService from '../../API/services/provincias';
 
-const Map = () => {
+const Map = ({
+    setMapProvince
+}) => {
 
     const [provincias, setProvincias] = useState([])
     useEffect(() => {
@@ -29,7 +31,11 @@ const Map = () => {
         })
     }, []);
     
-    
+    const getProvince = function(e) {
+        const provincia = e.target.htmlFor;
+        setMapProvince(provincia)
+    };
+
 
     
     return ( 
@@ -38,7 +44,7 @@ const Map = () => {
                 <img id="map-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-mapa.png" alt="Mapa de Argentina"/>
                 {
                     provincias != undefined && (provincias.map((provincia, index) => (
-                        <UnitProvince key={index} id={provincia.code}/>
+                        <UnitProvince key={index} id={provincia.code} click={getProvince}/>
                     )))
                 }
  
@@ -47,7 +53,7 @@ const Map = () => {
                 <img id="map-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio-generales_Imagen-mapa.png" alt="Mapa de Argentina"/>
                 {
                      provincias != undefined && (provincias.map((provincia, index) => (
-                        <UnitProvince key={index} id={provincia.code}/>
+                        <UnitProvince key={index} id={provincia.code} click={getProvince}/>
                     )))
                 }
             </div>

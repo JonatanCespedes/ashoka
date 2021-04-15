@@ -8,7 +8,9 @@ import './Filter.css';
 /* Components */
 import Partaker from './Partaker'
 
-const Filter = () => {
+const Filter = ({
+    mapProvince
+}) => {
 
     const [provincias, setProvincias] = useState([])
     useEffect(() => {
@@ -49,6 +51,8 @@ const Filter = () => {
                     id : response[index].id,
                     age : response[index].age,
                     name : response[index].name,
+                    causa : response[index].causa,
+                    participante : response[index].participante,
                     description : response[index].description,
                     province : response[index].province
                 }
@@ -70,7 +74,23 @@ const Filter = () => {
         setIdProvincia(provincia[0]);
     };
 
-    const [causas, setCausas] = useState([])
+    useEffect(() => {
+       let provinciaMapa = provincias.filter(item => {
+           return item.code === mapProvince
+       }) 
+       console.log(provinciaMapa)
+       let option = document.querySelectorAll('#provincias')
+       for (let index = 0; index < option.length; index++) {
+           if(option[index].value.split(',')[0] === provinciaMapa[0].code){
+               option[index].setAttribute('selected', '')
+           }
+          
+       }
+       /* document.getElementById('provincias').value = [provinciaMapa[0].name]; */
+       
+    }, [mapProvince]);
+
+   
 
     useEffect(() => {
         fetch(`https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json?orderBy="province"&equalTo="${provincia}"`)
@@ -92,11 +112,24 @@ const Filter = () => {
                 causas.push(causa)
             }
             
-            setCausas(causas)
+            setEstadoCausas(causas)
         })
     }, [idProvincia]);
 
-    console.log(causas)
+    const [estadoCausas, setEstadoCausas] = useState([])
+
+   
+
+    const getCausa = function(e) {
+        const causa = e.target.value;
+        let causasFiltradas = allCausas.filter(item => {
+            return item.causa == causa
+        })
+        console.log(causasFiltradas)
+       setEstadoCausas(causasFiltradas)
+    };
+
+
 
     return ( 
         <section className="filter-section">
@@ -106,23 +139,23 @@ const Filter = () => {
             </div>
             <div className="filter-selects">
                 <div className="select1">
-                    <select name="provincia" onChange={getProvincia}>
+                    <select name="provincia"  onChange={getProvincia}>
                     <option hidden selected>BUSCAR POR PROVINCIA</option>
                         {
                            provincias  && (provincias.map(provincia => (
-                                <option key={provincia.id} value={[provincia.code, provincia.name]}>{provincia.name}</option>
+                                <option key={provincia.id} id="provincias" value={[provincia.code, provincia.name]}>{provincia.name}</option>
                             )))
                         }
                     </select>
                 </div>
                
                 <div className="select2">
-                    <select>
+                    <select name="causas" onChange={getCausa}>
                         <option hidden selected>BUSCAR POR CAUSA</option>
                         {
                             allCausas && (
                                 allCausas.map((causa, index) => (
-                                    <option key={index} value={causa.name}>{causa.name}</option>
+                                    <option key={index} value={causa.causa}>{causa.causa}</option>
                                 ))
                             )
                         }
@@ -131,8 +164,8 @@ const Filter = () => {
                 
             </div>
             <div className="filter-result">
-                <div className="filter-result-title">PROVINCIA</div>
-                <Partaker causas={causas} provincia={nameProvincia}/>
+                <div className="filter-result-title">{nameProvincia}</div>
+                <Partaker causas={estadoCausas} provincia={nameProvincia}/>
             </div>
         </section>
      );
