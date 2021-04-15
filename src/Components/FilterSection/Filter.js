@@ -78,16 +78,44 @@ const Filter = ({
        let provinciaMapa = provincias.filter(item => {
            return item.code === mapProvince
        }) 
-       console.log(provinciaMapa)
-       let option = document.querySelectorAll('#provincias')
-       for (let index = 0; index < option.length; index++) {
-           if(option[index].value.split(',')[0] === provinciaMapa[0].code){
-               option[index].setAttribute('selected', '')
-           }
-          
-       }
-       /* document.getElementById('provincias').value = [provinciaMapa[0].name]; */
        
+       if(provinciaMapa.length != 0){
+        setIdProvincia(provinciaMapa[0].code);
+        setNameProvincia(provinciaMapa[0].name);
+        let option = document.querySelectorAll('#provincias')
+        for (let index = 0; index < option.length; index++) {
+            if(option[index].value[0] == provinciaMapa[0].code){
+                option[index].setAttribute('selected', '')
+            } 
+        }
+       }
+      
+
+       console.log(idProvincia)
+       fetch("https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json")
+       .then(function(response) {
+           return response.json();
+       })
+       .then(function(res) {
+           console.log(res)
+           let causas = []
+           let response = Object.values(res)
+           for (let index = 0; index < response.length; index++) {
+               if(index != 0){
+               let causa = {
+                   id : response[index].id,
+                   age : response[index].age,
+                   name : response[index].name,
+                   causa : response[index].causa,
+                   participante : response[index].participante,
+                   description : response[index].description,
+                   province : response[index].province
+               }
+                   causas.push(causa)
+               }  
+           }
+           setAllCausas(causas)
+       })
     }, [mapProvince]);
 
    
@@ -117,7 +145,7 @@ const Filter = ({
     }, [idProvincia]);
 
     const [estadoCausas, setEstadoCausas] = useState([])
-
+    console.log(estadoCausas)
    
 
     const getCausa = function(e) {
