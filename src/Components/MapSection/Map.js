@@ -47,7 +47,6 @@ const Map = ({
                         <UnitProvince key={index} id={provincia.code} click={getProvince}/>
                     )))
                 }
- 
             </div>
             <div className="map-desktop-container">
                 <img id="map-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio-generales_Imagen-mapa.png" alt="Mapa de Argentina"/>

@@ -10,7 +10,9 @@ const Filter = ({
     mapProvince
 }) => {
 
-    const [provincias, setProvincias] = useState([])
+    /* ALL PROVINCES */
+    const [provincias, setProvincias] = useState([]);
+
     useEffect(() => {
         fetch("https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Province.json")
         .then(function(response) {
@@ -26,14 +28,16 @@ const Filter = ({
                     name : response[index].name,
                     total : response[index].total
                 }
-                    provincias.push(provincia)
+                    provincias.push(provincia);
                 }  
             }
-            setProvincias(provincias)
+            setProvincias(provincias);
         })
     }, []);
 
-    const [allCausas, setAllCausas] = useState([])
+    /* ALL CAUSAS */    
+    const [allCausas, setAllCausas] = useState([]);
+
     useEffect(() => {
         fetch("https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json")
         .then(function(response) {
@@ -60,60 +64,27 @@ const Filter = ({
         })
     }, []);
 
+    /* Setea el estado de el nombre y código de la provincia elegida */
+
     const [idProvincia, setIdProvincia] = useState(-1);
     const [nameProvincia, setNameProvincia] = useState('')
     let provincia = idProvincia    
     
-        
-    const getProvincia = function(e) {
-        const provincia = e.target.value.split(',');
-        setNameProvincia(provincia[1]);
-        setIdProvincia(provincia[0]);
-    };
-
+    /* Setea las causas según la provincia elegida en el mapa y las cabeceras del filtro*/    
     useEffect(() => {
        let provinciaMapa = provincias.filter(item => {
            return item.code === mapProvince
        }) 
-       
        if(provinciaMapa.length != 0){
         setIdProvincia(provinciaMapa[0].code);
         setNameProvincia(provinciaMapa[0].name);
-        let option = document.querySelectorAll('#provincias')
-        for (let index = 0; index < option.length; index++) {
-            if(option[index].value[0] == provinciaMapa[0].code){
-                option[index].setAttribute('selected', '')
-            } 
-        }
+        document.querySelector('.head').innerHTML = `${provinciaMapa[0].name}`;
+        document.querySelector('.headCausa').innerHTML = "BUSCAR POR CAUSA";
        }
-      
-       console.log(idProvincia)
-       fetch("https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json")
-       .then(function(response) {
-           return response.json();
-       })
-       .then(function(res) {
-           let causas = []
-           let response = Object.values(res)
-           for (let index = 0; index < response.length; index++) {
-               if(index != 0){
-               let causa = {
-                   id : response[index].id,
-                   age : response[index].age,
-                   name : response[index].name,
-                   causa : response[index].causa,
-                   participante : response[index].participante,
-                   description : response[index].description,
-                   province : response[index].province
-               }
-                   causas.push(causa)
-               }  
-           }
-           setAllCausas(causas)
-       })
     }, [mapProvince]);
 
-   
+    /* Setea el estado de las causas según la provincia elegida */
+    const [estadoCausas, setEstadoCausas] = useState([]);
 
     useEffect(() => {
         fetch(`https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json?orderBy="province"&equalTo="${provincia}"`)
@@ -134,13 +105,11 @@ const Filter = ({
                 };
                 causas.push(causa);
             }
-            
             setEstadoCausas(causas);
         })
     }, [idProvincia]);
 
-    const [estadoCausas, setEstadoCausas] = useState([]);
-   
+    /* Captura la causa elegida desde el desplegable y setea el estado de las causas a mostrar */
     const getCausa = function(e) {
         const causa = e.target.value;
         let causasFiltradas = allCausas.filter(item => {
@@ -149,24 +118,30 @@ const Filter = ({
        setEstadoCausas(causasFiltradas);
     };
 
-    const desplegar = () =>{
-        document.querySelector('#lista').classList.toggle('none');
-    }
-
+    /* Setea el nombre de provincia que se va a mostrar como cabecera en el desplegable de provincia */    
     const provinciaSelect = function(e) {
         const provincia = e.target.outerText;
         document.querySelector('.head').innerHTML = `${provincia}`;
+        document.querySelector('.headCausa').innerHTML = "BUSCAR POR CAUSA";
         setNameProvincia(provincia);
         setIdProvincia(e.target.id);  
     };
 
+    /* Despliega filtro provincias */
+    const desplegar = () =>{
+        document.querySelector('#lista').classList.toggle('none');
+    }
+
+    /* Despliega filtro causas */
     const desplegarCausas = () =>{
         document.querySelector('#listaCausas').classList.toggle('none')
     }
 
+    /* Captura la causa seleccionada en el filtro y setea la cabecera */
     const causaSelect = function(e) {
         const causa = e.target.outerText;
         document.querySelector('.headCausa').innerHTML = `${causa}`
+        document.querySelector('.head').innerHTML = "BUSCAR POR PROVINCIA";
         setNameProvincia(causa.toUpperCase())
         let causasFiltradas = allCausas.filter(item => {
             return item.causa == causa
@@ -174,9 +149,13 @@ const Filter = ({
        setEstadoCausas(causasFiltradas)
     };
 
-
-
-
+    /* Cambia el hash para algo misterioso*/
+    const changeHash = () => {
+        if(window.scrollY >= 3248){
+            window.location.hash = "#a"
+        }
+    }
+    window.addEventListener('scroll', changeHash);
 
     return ( 
         <section className="filter-section" id="filter">
@@ -186,7 +165,7 @@ const Filter = ({
             </div>
             <div className="filter-selects">
                 <div className="select1">
-                    <ul name="provincia" onChange={getProvincia} onClick={desplegar}>
+                    <ul name="provincia"  onClick={desplegar}>
                     <li className="head">BUSCAR POR PROVINCIA</li>
                     <div id="lista" className="none" >
                     {
@@ -201,7 +180,6 @@ const Filter = ({
                
                 <div className="select2">
                     <ul name="causas" onChange={getCausa} onClick={desplegarCausas}>
-                        
                         <li className="headCausa">BUSCAR POR CAUSA</li>
                         <div id="listaCausas" className="none">
                         {
@@ -213,8 +191,7 @@ const Filter = ({
                         }
                         </div>
                     </ul>
-                </div>
-                
+                </div>  
             </div>
             <div className="filter-result">
                 <div className="filter-result-title">{nameProvincia}</div>

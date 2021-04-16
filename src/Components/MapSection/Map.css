@@ -79,7 +79,6 @@
 
 .province .negrita{
     font-weight: 900;
-    color: black;
 }
 
 
@@ -125,8 +124,8 @@
 
 .map-mobile-container .circle {
     background-color: var(--white-color);
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     border-radius: 5px;
 }
 
@@ -287,7 +286,6 @@
 
     .map {
         display: flex;
-        justify-content:end;
         max-height: 774px;
     }
     
@@ -382,6 +380,7 @@
         width: 13px;
         height: 13px;
         border-radius: 10px;
+       
     }
 
     
@@ -390,6 +389,7 @@
         width: 14px;
         height: 15px;
         background-color: var(--second-color);
+        cursor: pointer;
     }
 
     .map-desktop-container .circle:checked {

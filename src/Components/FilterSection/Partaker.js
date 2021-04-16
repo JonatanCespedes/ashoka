@@ -15,7 +15,7 @@ const Partaker = ({
                     <p>{causa.age}</p>
                     <span>CAUSA A TRANSFORMAR</span>
                     <p>{causa.causa}</p>
-                    <span>DESCRIPCION</span>
+                    <span>DESCRIPCIÓN</span>
                     <p>{causa.description}</p>
                     <span>PROVINCIA</span>
                     <p>{causa.province}</p>
