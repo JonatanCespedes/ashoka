@@ -1,24 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 const Partaker = ({
     causas,
-    provincia
 }) => {
-
-    console.log(causas)
+   
     return ( 
         <>
             { 
                causas.lenght !== 0 ? causas.map(causa => 
-                    <div className="filter-partaker">
+                    <div key={causa.age} className="filter-partaker">
                     <span>NOMBRE</span>
                     <p>{causa.participante}</p>
                     <span>EDAD</span>
                     <p>{causa.age}</p>
                     <span>CAUSA A TRANSFORMAR</span>
                     <p>{causa.causa}</p>
+                    <span>DESCRIPCION</span>
+                    <p>{causa.description}</p>
                     <span>PROVINCIA</span>
-                    <p>{provincia}</p>
+                    <p>{causa.province}</p>
                     </div>
 
                 ) : 

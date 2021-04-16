@@ -37,7 +37,7 @@ function App() {
        <Video/>
        <Ready/>
        <Way/>
-       <MapSection setMapProvince={setMapProvince}/>
+       <MapSection setMapProvince={setMapProvince} mapProvince={mapProvince}/>
        <Filter mapProvince={mapProvince}/>
        <Countdown/>
        <Photo/>

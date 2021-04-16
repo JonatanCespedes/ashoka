@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 
-import provincesService from '../../API/services/provincias';
-
 /* Stylesheet */
 import './Filter.css';
 
@@ -42,7 +40,6 @@ const Filter = ({
             return response.json();
         })
         .then(function(res) {
-            console.log(res)
             let causas = []
             let response = Object.values(res)
             for (let index = 0; index < response.length; index++) {
@@ -90,14 +87,12 @@ const Filter = ({
         }
        }
       
-
        console.log(idProvincia)
        fetch("https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json")
        .then(function(response) {
            return response.json();
        })
        .then(function(res) {
-           console.log(res)
            let causas = []
            let response = Object.values(res)
            for (let index = 0; index < response.length; index++) {
@@ -126,8 +121,8 @@ const Filter = ({
             return response.json();
         })
         .then(function(res) {
-            let causas = []
-            let response = Object.values(res)
+            let causas = [];
+            let response = Object.values(res);
             for (let index = 0; index < response.length; index++) {
                 let causa = {
                     id : response[index].id,
@@ -136,64 +131,94 @@ const Filter = ({
                     participante : response[index].participante,
                     description : response[index].description,
                     province : response[index].province
-                }
-                causas.push(causa)
+                };
+                causas.push(causa);
             }
             
-            setEstadoCausas(causas)
+            setEstadoCausas(causas);
         })
     }, [idProvincia]);
 
-    const [estadoCausas, setEstadoCausas] = useState([])
-    console.log(estadoCausas)
+    const [estadoCausas, setEstadoCausas] = useState([]);
    
-
     const getCausa = function(e) {
         const causa = e.target.value;
         let causasFiltradas = allCausas.filter(item => {
             return item.causa == causa
+        });
+       setEstadoCausas(causasFiltradas);
+    };
+
+    const desplegar = () =>{
+        document.querySelector('#lista').classList.toggle('none');
+    }
+
+    const provinciaSelect = function(e) {
+        const provincia = e.target.outerText;
+        document.querySelector('.head').innerHTML = `${provincia}`;
+        setNameProvincia(provincia);
+        setIdProvincia(e.target.id);  
+    };
+
+    const desplegarCausas = () =>{
+        document.querySelector('#listaCausas').classList.toggle('none')
+    }
+
+    const causaSelect = function(e) {
+        const causa = e.target.outerText;
+        document.querySelector('.headCausa').innerHTML = `${causa}`
+        setNameProvincia(causa.toUpperCase())
+        let causasFiltradas = allCausas.filter(item => {
+            return item.causa == causa
         })
-        console.log(causasFiltradas)
        setEstadoCausas(causasFiltradas)
     };
 
 
 
+
+
     return ( 
-        <section className="filter-section">
+        <section className="filter-section" id="filter">
             <div className="filter-title">
                 <h2>CONOCÉ JÓVENES DE CADA PROVINCIA Y SUS CAUSAS</h2>
                 <hr/>
             </div>
             <div className="filter-selects">
                 <div className="select1">
-                    <select name="provincia"  onChange={getProvincia}>
-                    <option hidden selected>BUSCAR POR PROVINCIA</option>
-                        {
+                    <ul name="provincia" onChange={getProvincia} onClick={desplegar}>
+                    <li className="head">BUSCAR POR PROVINCIA</li>
+                    <div id="lista" className="none" >
+                    {
                            provincias  && (provincias.map(provincia => (
-                                <option key={provincia.id} id="provincias" value={[provincia.code, provincia.name]}>{provincia.name}</option>
+                                <li key={provincia.id} onClick={provinciaSelect} id={provincia.code} value={[provincia.code, provincia.name]}>{provincia.name}</li>
                             )))
                         }
-                    </select>
+                    </div>
+                     
+                    </ul>
                 </div>
                
                 <div className="select2">
-                    <select name="causas" onChange={getCausa}>
-                        <option hidden selected>BUSCAR POR CAUSA</option>
+                    <ul name="causas" onChange={getCausa} onClick={desplegarCausas}>
+                        
+                        <li className="headCausa">BUSCAR POR CAUSA</li>
+                        <div id="listaCausas" className="none">
                         {
                             allCausas && (
                                 allCausas.map((causa, index) => (
-                                    <option key={index} value={causa.causa}>{causa.causa}</option>
+                                    <li key={index} onClick={causaSelect} id={causa.causa} value={causa.causa}>{causa.causa}</li>
                                 ))
                             )
                         }
-                    </select>
+                        </div>
+                    </ul>
                 </div>
                 
             </div>
             <div className="filter-result">
                 <div className="filter-result-title">{nameProvincia}</div>
-                <Partaker causas={estadoCausas} provincia={nameProvincia}/>
+                <Partaker causas={estadoCausas}/>
             </div>
         </section>
      );

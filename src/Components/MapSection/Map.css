@@ -1,5 +1,9 @@
 /* MAP */
 
+.btn-map{
+    width: 115px;
+}
+
 .map {
     display: flex;
     justify-content: center;
@@ -70,7 +74,14 @@
 
 .province .name {
     font-size: 11px;
+    color: var(--first-color);
 }
+
+.province .negrita{
+    font-weight: 900;
+    color: black;
+}
+
 
 /* UNIT PROVINCES */
 
@@ -269,6 +280,11 @@
 
 /* ESCRITORIO */
 @media screen and (min-width: 992px) {
+
+    .btn-map{
+        width: 150px;
+    }
+
     .map {
         display: flex;
         justify-content:end;
@@ -363,16 +379,16 @@
 
     .map-desktop-container .circle {
         background-color: var(--white-color);
-        width: 10px;
-        height: 10px;
-        border-radius: 5px;
+        width: 13px;
+        height: 13px;
+        border-radius: 10px;
     }
 
     
 
     .map-desktop-container .circle:hover {
-        width: 12px;
-        height: 12px;
+        width: 14px;
+        height: 15px;
         background-color: var(--second-color);
     }
 

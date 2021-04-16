@@ -18,7 +18,6 @@
 
 .contact-section a {
     color: var(--second-color);
-    display: inline-block;
     font-family: var(--WS-font);
     font-size: var(--paragraph-mobile);
     text-decoration: none;
@@ -152,6 +151,11 @@ textarea{
 /* ESCRITORIO */
 
 @media screen and (min-width: 992px) {
+    #tribu {
+        position: relative;
+        top:-10px
+    }
+
     .contact__container {
         display: grid;
         grid-template-columns: repeat(2, 50%);

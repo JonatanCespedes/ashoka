@@ -149,7 +149,7 @@ button.btn-menu.active {
         opacity: 1;
         pointer-events: auto;
         position: static;
-        width: 50%;
+        width: 75%;
     }
 
     .menu a {

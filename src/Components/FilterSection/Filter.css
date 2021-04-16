@@ -40,30 +40,53 @@
     width: 30px; 
 }
 
-.filter-selects select{
-    background-image: url('Ashoka-Landing-Mobile_Icono-Flecha-02.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-size: 5%;
-    background-position-x: 96%; 
-    background-color: var(--fourth-color);
+.filter-selects ul {
+
     border: 1px solid var(--first-color);
     color: var(--first-color);
+    background-size: 5%;
+    background-position-x: 96%; 
     font-family: var(--WS-font);
     font-size: var(--paragraph-tablet);
-    font-weight: bold;
     margin-bottom: 20px;
     padding: 7px;
     width: 100%;
 }
 
-.filter-selects select::-ms-expand {
+.none {
     display: none;
 }
+
+.filter-selects ul li{
+   list-style: none;
+   margin: 10px 0;
+   cursor: pointer;
+}
+
+.filter-selects ul li:hover{
+    color: var(--second-color);
+ }
+
+.filter-selects ul li.head {
+    background-image: url('Ashoka-Landing-Mobile_Icono-Flecha-02.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: var(--fourth-color);
+    background-size: 5%;
+    background-position-x: 96%; 
+    font-weight: bold;
+}
+
+.filter-selects ul li.headCausa {
+    background-image: url('Ashoka-Landing-Mobile_Icono-Flecha-02.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: var(--fourth-color);
+    background-size: 5%;
+    background-position-x: 96%; 
+    font-weight: bold;
+}
+
 
 .filter-title {
     display: flex;
@@ -93,6 +116,11 @@
         font-size: var(--subtitle-tablet);
     }
 
+    
+    .filter-result-title {
+        font-size: 53px;
+    }
+
     .filter-title h2{
         font-size: 53px;
         width: 100%;
@@ -110,6 +138,26 @@
     .filter-selects {
         display: flex;
     }
+
+    .filter-selects ul {
+        background-size: 2.5%;
+        background-position-x: 98%; 
+        font-size: var(--paragraph-desktop);
+        padding: 15px;
+    }
+
+    .filter-selects ul li.head {
+        background-image: url('Ashoka-Landing-Mobile_Icono-Flecha-02.png');
+        background-size: 2.5%;
+        background-position-x: 98%; 
+    }
+    
+    .filter-selects ul li.headCausa {
+        background-image: url('Ashoka-Landing-Mobile_Icono-Flecha-02.png');
+        background-size: 2.5%;
+        background-position-x: 98%; 
+    }
+    
 
     .filter-selects select{
         background-image: url('Ashoka-Landing-Mobile_Icono-Flecha-02.png');

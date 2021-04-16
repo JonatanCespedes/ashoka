@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react';
 
 import UnitProvince from './UnitProvince';
 
-import provincesService from '../../API/services/provincias';
-
 const Map = ({
     setMapProvince
 }) => {
@@ -34,6 +32,8 @@ const Map = ({
     const getProvince = function(e) {
         const provincia = e.target.htmlFor;
         setMapProvince(provincia)
+        console.log(provincia)
+        window.location.hash = "filter" 
     };
 
 

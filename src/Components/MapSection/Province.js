@@ -5,11 +5,12 @@ const Province = ({
     amount = "02",
     id, 
     key,
+    click,
 }
 ) => {
     return ( 
         <div key={key} className="province">
-            <a href="#filter" id={id} ><span className="text-white amount">{amount}</span> <span className="name">{name}</span></a>
+            <a className="provincia-hash" href="#filter" onClick={click} id={id}><span className="text-white amount" id={id}>{amount}</span> <span className="name" id={id}>{name}</span></a>
         </div>
      );
 }
