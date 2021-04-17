@@ -16,7 +16,7 @@ const Way = () => {
                         <svg className="svg-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 20">
                             <title>Ashoka-Landing-Mobile</title>
                             <g id="extras">
-                                <polygon class="cls-1" points="10.89 10.02 4.25 3.35 4.25 3.39 4.25 16.7 10.89 10.02"/>
+                                <polygon className="cls-1" points="10.89 10.02 4.25 3.35 4.25 3.39 4.25 16.7 10.89 10.02"/>
                             </g>
                         </svg>  
                     Construirán una <b>identidad</b> como agentes de cambio.    
@@ -27,7 +27,7 @@ const Way = () => {
                         <svg className="svg-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 20">
                             <title>Ashoka-Landing-Mobile</title>
                             <g id="extras">
-                                <polygon class="cls-1" points="10.64 10.16 4 3.48 4 3.52 4 16.83 10.64 10.16"/>
+                                <polygon className="cls-1" points="10.64 10.16 4 3.48 4 3.52 4 16.83 10.64 10.16"/>
                             </g>
                         </svg>
                    Pondrán en práctica la colaboración y el trabajo en <b>equipo</b>.
@@ -38,7 +38,7 @@ const Way = () => {
                         <svg className="svg-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 20">
                             <title>Ashoka-Landing-Mobile</title>
                             <g id="extras">
-                                <polygon class="cls-1" points="10.89 10.02 4.25 3.35 4.25 3.39 4.25 16.7 10.89 10.02"/>
+                                <polygon className="cls-1" points="10.89 10.02 4.25 3.35 4.25 3.39 4.25 16.7 10.89 10.02"/>
                             </g>
                         </svg>     
                     Participarán de un programa de desarrollo de habilidades de liderazgo certificado por <b>Ashoka</b> Argentina.    
@@ -50,7 +50,7 @@ const Way = () => {
                             
                             <title>Ashoka-Landing-Mobile</title>
                             <g id="extras">
-                                <polygon class="cls-1" points="10.64 10.16 4 3.48 4 3.52 4 16.83 10.64 10.16"/>
+                                <polygon className="cls-1" points="10.64 10.16 4 3.48 4 3.52 4 16.83 10.64 10.16"/>
                             </g>
                         </svg> 
                     <b>Co-crearán</b> comunidades junto a escuelas, organizaciones y empresas locales, gobiernos, entre otros.

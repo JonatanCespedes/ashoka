@@ -154,7 +154,7 @@ const Slider = () => {
                 <span id="row-left"  onClick={()=>setSlide(slide - 1)} ><i  className="fas fa-chevron-left"></i></span>
                 <span id="row-right" onClick={()=>setSlide(slide + 1)} ><i className="fas fa-chevron-right"></i></span>    
             </div>
-            <aside class="slides-nav">
+            <aside className="slides-nav">
                 <label htmlFor="slide-1" id="dot-1" onClick={()=>setSlide(0)} ></label>
                 <label htmlFor="slide-2" id="dot-2" onClick={()=>setSlide(1)} ></label>
                 <label htmlFor="slide-3" id="dot-3" onClick={()=>setSlide(2)} ></label>

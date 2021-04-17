@@ -35,15 +35,13 @@ const Countdown = () => {
         if(!timeLeft[interval]){
             return ;
         }
-
         timerComponents.push(
-            <div className="countdown-item">
+            <div key={interval} className="countdown-item">
                 <span>
                     {timeLeft[interval]}{" "}
                 </span>
                 <p>{interval}</p>
             </div>
-            
         );
     });
     return ( 
@@ -52,7 +50,7 @@ const Countdown = () => {
                 <h2 data-aos="fade-up" className="text-blue">¿CUÁNTO FALTA PARA EL CIERRE DE LA CONVOCATORIA?</h2>
                 <hr/>
                 <div  className="countdown-timer-container">
-                    {timerComponents.length ? timerComponents : <span> Time`s up!</span>}
+                    {timerComponents.length ? timerComponents : <span> FINALIZÓ LA CONVOCATORIA </span>}
                 </div>
                 
             </div>

@@ -28,8 +28,8 @@ function App() {
     Aos.init({duration: 1000}); 
   }, []);
 
-  const [mapProvince, setMapProvince] = useState()
-  console.log(mapProvince)
+  const [mapProvince, setMapProvince] = useState();
+  
   return (
     <div className="general">
        <Header/> 

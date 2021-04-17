@@ -60,9 +60,9 @@ const Header = () => {
                 </div>
                 <button className={ navBar ? "btn-menu active" : 'btn-menu'}>
                    <img alt="Boton" src="images/mobile/SVG/Ashoka-Landing-Mobile_Icono-01.svg" />
-                   <span className="none"><i class="fas fa-times"></i></span>
+                   <span className="none"><i className="fas fa-times"></i></span>
                 </button>
-                <nav class={ navBar ? "menu active" : 'menu'}>
+                <nav className={ navBar ? "menu active" : 'menu'}>
                     <a href="#acerca-d" id="acerca-desktop">ACERCA DE</a>
                     <a href="#acerca-m" id="acerca-mobile">ACERCA DE</a>
                     <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=BTQjvGUP1Uebu1jccl31xgNPV0Fju-tBoArgYbey4LdUN1lSOFJVR0FBTDZXVlkwOUdETkk3MEgzOCQlQCN0PWcu" target="_blank" rel="noreferrer">SUMATE</a>

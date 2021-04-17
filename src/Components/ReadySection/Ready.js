@@ -57,7 +57,7 @@ const Ready = () => {
                         <p>¿Te imaginás aportando al bien común?</p>
                     </div>
                 </div>
-                <div className="img-mobile" className="card">
+                <div className="img-mobile card">
                     <div className="img-container">
                         <img alt="" className="img-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Icono-08.png"/>
                     </div>

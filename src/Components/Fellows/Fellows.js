@@ -26,7 +26,7 @@ const Fellows = () => {
                     <p id="title">Director Ejecutivo de <a href="https://www.transformarlasecundaria.org/fundacion-voz/" rel="noreferrer" target="_blank">Fundación VOZ</a>.</p><p>Trabaja para lograr que la escuela secundaria sea inclusiva, de calidad y responda a los desafíos de nuestra época.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="600" className="fellow" id="fellow-3">
-                    <img alt="Foto" Delfina Irazusta src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-Fellow-Delfina Irazusta.png"/>
+                    <img alt="Foto" src="images/desktop/PNG/Ashoka-Landing-Escritorio_Imagen-Fellow-Delfina Irazusta.png"/>
                     <h6 className="text-orange">
                     DELFINA IRAZUSTA 
                     </h6>

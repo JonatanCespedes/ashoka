@@ -22,7 +22,7 @@ const Filter = ({
             let provincias = []
             let response = Object.values(res)
             for (let index = 0; index < response.length; index++) {
-                if(index != 0){
+                if(index !== 0){
                 let provincia = {
                     code : response[index].code,
                     name : response[index].name,
@@ -47,7 +47,7 @@ const Filter = ({
             let causas = []
             let response = Object.values(res)
             for (let index = 0; index < response.length; index++) {
-                if(index != 0){
+                if(index !== 0){
                 let causa = {
                     id : response[index].id,
                     age : response[index].age,
@@ -75,7 +75,7 @@ const Filter = ({
        let provinciaMapa = provincias.filter(item => {
            return item.code === mapProvince
        }) 
-       if(provinciaMapa.length != 0){
+       if(provinciaMapa.length !== 0){
         setIdProvincia(provinciaMapa[0].code);
         setNameProvincia(provinciaMapa[0].name);
         document.querySelector('.head').innerHTML = `${provinciaMapa[0].name}`;
@@ -113,7 +113,7 @@ const Filter = ({
     const getCausa = function(e) {
         const causa = e.target.value;
         let causasFiltradas = allCausas.filter(item => {
-            return item.causa == causa
+            return item.causa === causa
         });
        setEstadoCausas(causasFiltradas);
     };
@@ -144,7 +144,7 @@ const Filter = ({
         document.querySelector('.head').innerHTML = "BUSCAR POR PROVINCIA";
         setNameProvincia(causa.toUpperCase())
         let causasFiltradas = allCausas.filter(item => {
-            return item.causa == causa
+            return item.causa === causa
         })
        setEstadoCausas(causasFiltradas)
     };
@@ -166,15 +166,14 @@ const Filter = ({
             <div className="filter-selects">
                 <div className="select1">
                     <ul name="provincia"  onClick={desplegar}>
-                    <li className="head">BUSCAR POR PROVINCIA</li>
-                    <div id="lista" className="none" >
-                    {
-                           provincias  && (provincias.map(provincia => (
-                                <li key={provincia.id} onClick={provinciaSelect} id={provincia.code} value={[provincia.code, provincia.name]}>{provincia.name}</li>
-                            )))
-                        }
-                    </div>
-                     
+                        <li className="head">BUSCAR POR PROVINCIA</li>
+                        <div id="lista" className="none" >
+                            {
+                                provincias  && (provincias.map(provincia => (
+                                    <li key={provincia.id} onClick={provinciaSelect} id={provincia.code} value={[provincia.code, provincia.name]}>{provincia.name}</li>
+                                )))
+                            }
+                        </div>
                     </ul>
                 </div>
                
@@ -182,20 +181,20 @@ const Filter = ({
                     <ul name="causas" onChange={getCausa} onClick={desplegarCausas}>
                         <li className="headCausa">BUSCAR POR CAUSA</li>
                         <div id="listaCausas" className="none">
-                        {
-                            allCausas && (
-                                allCausas.map((causa, index) => (
-                                    <li key={index} onClick={causaSelect} id={causa.causa} value={causa.causa}>{causa.causa}</li>
-                                ))
-                            )
-                        }
+                            {
+                                allCausas && (
+                                    allCausas.map((causa, index) => (
+                                        <li key={index} onClick={causaSelect} id={causa.causa} value={causa.causa}>{causa.causa}</li>
+                                    ))
+                                )
+                            }
                         </div>
                     </ul>
                 </div>  
             </div>
             <div className="filter-result">
                 <div className="filter-result-title">{nameProvincia}</div>
-                <Partaker causas={estadoCausas}/>
+                <Partaker causas={estadoCausas} provincias={provincias}/>
             </div>
         </section>
      );

@@ -3,7 +3,7 @@ import React from 'react';
 import './Video.css'
 
 const Video = () => {
-    console.log(window.screen)
+
     return ( 
         <>
         <section id="acerca-m" className="video-section-mobile">
@@ -12,7 +12,7 @@ const Video = () => {
             </h3>
             <hr data-aos="fade-left" data-aos-delay="400" className="video-line"/>
             <div className="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JXxKAhsPOdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JXxKAhsPOdg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <p data-aos="fade-left" data-aos-delay="600">
                 Buscamos identificar y conectar Jóvenes Transformadorxs que representen a cada provincia de Argentina.
@@ -37,7 +37,7 @@ const Video = () => {
                 
             </div>
             <div   className="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JXxKAhsPOdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JXxKAhsPOdg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
         </section>
         </>

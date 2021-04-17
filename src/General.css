@@ -61,6 +61,10 @@ a {
     text-decoration: none;
 }
 
+.general {
+    overflow-x: hidden;
+}
+
 .text-orange {
     color: var(--second-color)
 }
@@ -76,5 +80,7 @@ a {
 .text-cian {
     color: var(--third-color)
 }
+
+
 
 

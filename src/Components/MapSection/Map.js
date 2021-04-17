@@ -16,7 +16,7 @@ const Map = ({
             let provincias = []
             let response = Object.values(res)
             for (let index = 0; index < response.length; index++) {
-                if(index != 0){
+                if(index !== 0){
                 let provincia = {
                     code : response[index].code,
                     name : response[index].name,
@@ -32,7 +32,6 @@ const Map = ({
     const getProvince = function(e) {
         const provincia = e.target.htmlFor;
         setMapProvince(provincia)
-        console.log(provincia)
         window.location.hash = "filter" 
     };
 
@@ -43,7 +42,7 @@ const Map = ({
             <div className="map-mobile-container">
                 <img id="map-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-mapa.png" alt="Mapa de Argentina"/>
                 {
-                    provincias != undefined && (provincias.map((provincia, index) => (
+                    provincias !== undefined && (provincias.map((provincia, index) => (
                         <UnitProvince key={index} id={provincia.code} click={getProvince}/>
                     )))
                 }
@@ -51,7 +50,7 @@ const Map = ({
             <div className="map-desktop-container">
                 <img id="map-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio-generales_Imagen-mapa.png" alt="Mapa de Argentina"/>
                 {
-                     provincias != undefined && (provincias.map((provincia, index) => (
+                     provincias !== undefined && (provincias.map((provincia, index) => (
                         <UnitProvince key={index} id={provincia.code} click={getProvince}/>
                     )))
                 }
