@@ -39,7 +39,7 @@ const Map = ({
     
     return ( 
         <div className="map">
-            <div className="map-mobile-container">
+            <div data-aos="fade-left" data-aos-delay="200" className="map-mobile-container">
                 <img id="map-mobile" src="images/mobile/PNG/Ashoka-Landing-Mobile_Imagen-mapa.png" alt="Mapa de Argentina"/>
                 {
                     provincias !== undefined && (provincias.map((provincia, index) => (
@@ -47,7 +47,7 @@ const Map = ({
                     )))
                 }
             </div>
-            <div className="map-desktop-container">
+            <div data-aos="fade-left" data-aos-delay="200" className="map-desktop-container">
                 <img id="map-desktop" src="images/desktop/PNG/Ashoka-Landing-Escritorio-generales_Imagen-mapa.png" alt="Mapa de Argentina"/>
                 {
                      provincias !== undefined && (provincias.map((provincia, index) => (

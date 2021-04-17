@@ -6,13 +6,13 @@ const Partaker = ({
 }) => {
         provincias.forEach(provincia => {
         causas.map(causa => {
-            if(causa.province === provincia.code){
-                causa.province = provincia.name
-            }  
+                if(causa.province === provincia.code){
+                    causa.province = provincia.name
+                }  
             })
         })
     return ( 
-        <>
+        < >
             { 
                causas.length !== 0 ? causas.map(causa => 
                     <div key={causa.age} className="filter-partaker">

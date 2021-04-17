@@ -160,11 +160,11 @@ const Filter = ({
     return ( 
         <section className="filter-section" id="filter">
             <div className="filter-title">
-                <h2>CONOCÉ JÓVENES DE CADA PROVINCIA Y SUS CAUSAS</h2>
+                <h2 data-aos="fade-up">CONOCÉ JÓVENES DE CADA PROVINCIA Y SUS CAUSAS</h2>
                 <hr/>
             </div>
             <div className="filter-selects">
-                <div className="select1">
+                <div data-aos="fade-left" data-aos-delay="200" className="select1">
                     <ul name="provincia"  onClick={desplegar}>
                         <li className="head">BUSCAR POR PROVINCIA</li>
                         <div id="lista" className="none" >
@@ -177,7 +177,7 @@ const Filter = ({
                     </ul>
                 </div>
                
-                <div className="select2">
+                <div data-aos="fade-left" data-aos-delay="250" className="select2">
                     <ul name="causas" onChange={getCausa} onClick={desplegarCausas}>
                         <li className="headCausa">BUSCAR POR CAUSA</li>
                         <div id="listaCausas" className="none">
@@ -192,7 +192,7 @@ const Filter = ({
                     </ul>
                 </div>  
             </div>
-            <div className="filter-result">
+            <div data-aos="fade-left" data-aos-delay="300" className="filter-result">
                 <div className="filter-result-title">{nameProvincia}</div>
                 <Partaker causas={estadoCausas} provincias={provincias}/>
             </div>

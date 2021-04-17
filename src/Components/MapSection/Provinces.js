@@ -67,14 +67,14 @@ const Provinces = ({
         
     return ( 
         <div className="provinces">
-            <div className="provinces-col">
+            <div data-aos="fade-left" data-aos-delay="400" className="provinces-col">
                 { provincias !== undefined && (provincias.map((province, index) => (
                     index < 12 && 
                     <Province name={province.name} click={pintarProvincia} id={province.code} amount={province.total} key={index}/>
                 )))}
                 
             </div>
-            <div className="provinces-col">
+            <div data-aos="fade-left" data-aos-delay="500" className="provinces-col">
             { provincias !== undefined && (provincias.map((province, index) => (
                     index >= 12 && 
                     <Province name={province.name} click={pintarProvincia} id={province.code} amount={province.total} key={index}/>
