@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import provincesService from '../../API/services/provinces';
+import causasService from '../../API/services/causas';
 
 /* Stylesheet */
 import './Filter.css';
@@ -13,57 +15,35 @@ const Filter = ({
     /* ALL PROVINCES */
     const [provincias, setProvincias] = useState([]);
 
-    useEffect(() => {
-        fetch("https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Province.json")
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(res) {
-            let provincias = []
-            let response = Object.values(res)
-            for (let index = 0; index < response.length; index++) {
-                if(index !== 0){
-                let provincia = {
-                    code : response[index].code,
-                    name : response[index].name,
-                    total : response[index].total
-                }
-                    provincias.push(provincia);
-                }  
-            }
-            setProvincias(provincias);
-        })
+    useEffect(() => {  
+        async function fetchData() {
+            setProvincias( await provincesService.getAll());   
+        }       
+        fetchData()     
     }, []);
 
     /* ALL CAUSAS */    
     const [allCausas, setAllCausas] = useState([]);
+    const [causasUnicas, setCausasUnicas] = useState([]);
 
     useEffect(() => {
-        fetch("https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json")
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(res) {
-            let causas = []
-            let response = Object.values(res)
-            for (let index = 0; index < response.length; index++) {
-                if(index !== 0){
-                let causa = {
-                    id : response[index].id,
-                    age : response[index].age,
-                    name : response[index].name,
-                    causa : response[index].causa,
-                    participante : response[index].participante,
-                    description : response[index].description,
-                    province : response[index].province
-                }
-                    causas.push(causa)
-                }  
-            }
-            setAllCausas(causas)
-        })
+        async function fetchData() {
+            setAllCausas( await causasService.getAll());
+        }
+        fetchData()  
     }, []);
 
+    useEffect(() => {
+        let causas = []
+        allCausas.forEach(item => {
+            causas.push(item.causa)
+        })
+        const causasSet = new Set(causas);
+        const unique = Array.from(causasSet)
+        
+       setCausasUnicas(unique)
+    }, [allCausas]);
+   
     /* Setea el estado de el nombre y código de la provincia elegida */
 
     const [idProvincia, setIdProvincia] = useState(-1);
@@ -81,42 +61,17 @@ const Filter = ({
         document.querySelector('.head').innerHTML = `${provinciaMapa[0].name}`;
         document.querySelector('.headCausa').innerHTML = "BUSCAR POR CAUSA";
        }
-    }, [mapProvince]);
+    }, [mapProvince, provincias]);
 
     /* Setea el estado de las causas según la provincia elegida */
     const [estadoCausas, setEstadoCausas] = useState([]);
 
     useEffect(() => {
-        fetch(`https://ashoka-e29af-default-rtdb.firebaseio.com/1m3AweFQ9viO1bAPpQ5yT_0-si2UzZ1rZA1pVzHEFsns/Projects.json?orderBy="province"&equalTo="${provincia}"`)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(res) {
-            let causas = [];
-            let response = Object.values(res);
-            for (let index = 0; index < response.length; index++) {
-                let causa = {
-                    id : response[index].id,
-                    causa: response[index].causa,
-                    age : response[index].age,
-                    participante : response[index].participante,
-                    description : response[index].description,
-                    province : response[index].province
-                };
-                causas.push(causa);
-            }
-            setEstadoCausas(causas);
-        })
-    }, [idProvincia]);
-
-    /* Captura la causa elegida desde el desplegable y setea el estado de las causas a mostrar */
-    const getCausa = function(e) {
-        const causa = e.target.value;
-        let causasFiltradas = allCausas.filter(item => {
-            return item.causa === causa
-        });
-       setEstadoCausas(causasFiltradas);
-    };
+        async function fetchData() {
+            setEstadoCausas(await causasService.getForProvince(provincia));
+        }
+        fetchData()
+    }, [idProvincia, provincia]);
 
     /* Setea el nombre de provincia que se va a mostrar como cabecera en el desplegable de provincia */    
     const provinciaSelect = function(e) {
@@ -178,13 +133,13 @@ const Filter = ({
                 </div>
                
                 <div data-aos="fade-left" data-aos-delay="250" className="select2">
-                    <ul name="causas" onChange={getCausa} onClick={desplegarCausas}>
+                    <ul name="causas" onClick={desplegarCausas}>
                         <li className="headCausa">BUSCAR POR CAUSA</li>
                         <div id="listaCausas" className="none">
                             {
-                                allCausas && (
-                                    allCausas.map((causa, index) => (
-                                        <li key={index} onClick={causaSelect} id={causa.causa} value={causa.causa}>{causa.causa}</li>
+                                causasUnicas && (
+                                    causasUnicas.map((causa, index) => (
+                                        <li key={index} onClick={causaSelect} id={causa} value={causa}>{causa}</li>
                                     ))
                                 )
                             }
