@@ -110,7 +110,8 @@
 .map-mobile-container #chaco,
 .map-mobile-container #formosa,
 .map-mobile-container #corrientes,
-.map-mobile-container #misiones{
+.map-mobile-container #misiones,
+.map-mobile-container #tierraDelFuego{
     position: absolute;
     width: 25px;
     height: 25px;
@@ -133,6 +134,11 @@
     width: 7px;
     height: 7px;
     background-color: var(--second-color);
+}
+
+.map-mobile-container #tierraDelFuego {
+    bottom: 18px;
+    left:60px;
 }
 
 .map-mobile-container #santaCruz {
@@ -363,7 +369,8 @@
     .map-desktop-container #chaco,
     .map-desktop-container #formosa,
     .map-desktop-container #corrientes,
-    .map-desktop-container #misiones{
+    .map-desktop-container #misiones,
+    .map-desktop-container #tierraDelFuego {
         position: absolute;
         width: 25px;
         height: 25px;
@@ -383,8 +390,6 @@
        
     }
 
-    
-
     .map-desktop-container .circle:hover {
         width: 14px;
         height: 15px;
@@ -394,6 +399,11 @@
 
     .map-desktop-container .circle:checked {
         background-color: blue;
+    }
+
+    .map-desktop-container #tierraDelFuego {
+        bottom: 20px;
+        left: 125px;
     }
 
     .map-desktop-container #santaCruz {

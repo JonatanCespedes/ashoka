@@ -14,8 +14,8 @@ const Partaker = ({
     return ( 
         < >
             { 
-               causas.length !== 0 ? causas.map(causa => 
-                    <div key={causa.age} className="filter-partaker">
+               causas.length !== 0 ? causas.map((causa, index) => 
+                    <div key={index} className="filter-partaker">
                         <span>NOMBRE</span>
                         <p>{causa.participante}</p>
                         <span>EDAD</span>
