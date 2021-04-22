@@ -19,7 +19,7 @@ const Provinces = ({
                 let provincias = []
                 let response = Object.values(res)
                 for (let index = 0; index < response.length; index++) {
-                    if(index !== 0){
+                    if(index !== null){
                     let provincia = {
                         code : response[index].code,
                         name : response[index].name,

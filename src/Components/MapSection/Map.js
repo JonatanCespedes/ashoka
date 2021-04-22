@@ -16,19 +16,20 @@ const Map = ({
             let provincias = []
             let response = Object.values(res)
             for (let index = 0; index < response.length; index++) {
-                if(index !== 0){
                 let provincia = {
                     code : response[index].code,
                     name : response[index].name,
                     total : response[index].total
                 }
                     provincias.push(provincia)
-                }  
             }
             setProvincias(provincias)
         })
     }, []);
     
+
+    console.log(provincias)
+
     const getProvince = function(e) {
         const provincia = e.target.htmlFor;
         setMapProvince(provincia)
