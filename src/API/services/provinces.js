@@ -7,12 +7,15 @@ const provincesService = {
         .then(data => {
             let response = Object.values(data.data)
             for (let index = 0; index < response.length; index++) {
-                let provincia = {
-                    code : response[index].code,
-                    name : response[index].name,
-                    total : response[index].total
+                if(index !== null && index !== 0){
+                    let provincia = {
+                        code : response[index].code,
+                        name : response[index].name,
+                        total : response[index].total
+                    }
+                        provincias.push(provincia);
                 }
-                    provincias.push(provincia);
+               
             } 
         })
         return provincias 

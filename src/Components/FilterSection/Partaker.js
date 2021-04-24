@@ -4,16 +4,20 @@ const Partaker = ({
     causas,
     provincias,
 }) => {
-        provincias.forEach(provincia => {
-        causas.map(causa => {
-                if(causa.province === provincia.code){
-                    causa.province = provincia.name
-                }  
-            })
-        })
+        /* provincias.forEach(provincia => {
+            if(causas !== null){
+                causas.map(causa => {
+                    if(causa.province === provincia.code){
+                        causa.province = provincia.name
+                    }  
+                })
+            }
+     
+        }) */
     return ( 
         < >
             { 
+               causas != null && 
                causas.length !== 0 ? causas.map((causa, index) => 
                     <div key={index} className="filter-partaker">
                         <span>NOMBRE</span>

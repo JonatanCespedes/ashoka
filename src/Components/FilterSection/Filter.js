@@ -28,9 +28,13 @@ const Filter = ({
 
     useEffect(() => {
         async function fetchData() {
-            setAllCausas( await causasService.getAll());
+            const response = await causasService.getAll();
+            response.map(item => {
+                Object.freeze(item)
+            })
+            setAllCausas(response)
         }
-        fetchData()  
+        fetchData();
     }, []);
 
     useEffect(() => {
@@ -47,7 +51,7 @@ const Filter = ({
     /* Setea el estado de el nombre y código de la provincia elegida */
 
     const [idProvincia, setIdProvincia] = useState(-1);
-    const [nameProvincia, setNameProvincia] = useState('')
+   
     let provincia = idProvincia    
     
     /* Setea las causas según la provincia elegida en el mapa y las cabeceras del filtro*/    
@@ -56,54 +60,76 @@ const Filter = ({
            return item.code === mapProvince
        }) 
        if(provinciaMapa.length !== 0){
-        setIdProvincia(provinciaMapa[0].code);
-        setNameProvincia(provinciaMapa[0].name);
-        document.querySelector('.head').innerHTML = `${provinciaMapa[0].name}`;
-        document.querySelector('.headCausa').innerHTML = "BUSCAR POR CAUSA";
+        setSelectProvincia(provinciaMapa[0].name)
+        setIdProvincia(provinciaMapa[0].code)
        }
-    }, [mapProvince, provincias]);
+    }, [mapProvince]);
 
     /* Setea el estado de las causas según la provincia elegida */
     const [estadoCausas, setEstadoCausas] = useState([]);
 
-    useEffect(() => {
-        async function fetchData() {
-            setEstadoCausas(await causasService.getForProvince(provincia));
-        }
-        fetchData()
-    }, [idProvincia, provincia]);
-
     /* Setea el nombre de provincia que se va a mostrar como cabecera en el desplegable de provincia */    
-    const provinciaSelect = function(e) {
-        const provincia = e.target.outerText;
-        document.querySelector('.head').innerHTML = `${provincia}`;
-        document.querySelector('.headCausa').innerHTML = "BUSCAR POR CAUSA";
-        setNameProvincia(provincia);
-        setIdProvincia(e.target.id);  
-    };
+    const [ selectProvincia, setSelectProvincia ] = useState('BUSCAR POR PROVINCIA');
+    const [ selectCausa, setSelectCausa ] = useState("BUSCAR POR CAUSA");
 
-    /* Despliega filtro provincias */
+    useEffect(() => {
+        if(selectProvincia !== "Todas" && selectCausa === "BUSCAR POR CAUSA"){
+            async function fetchData() {
+                setEstadoCausas(await causasService.getForProvince(provincia));
+            }
+            fetchData();
+        }    
+    }, [idProvincia, provincia]); 
+  
+     useEffect(() => {
+      
+             /* Todas las causas de todas las provincias */
+            if(selectProvincia === "Todas" && selectCausa === "BUSCAR POR CAUSA"){
+                setEstadoCausas(allCausas)   
+            }
+            /* Todas las causas de todas las provincias */
+            if(selectProvincia === 'BUSCAR POR PROVINCIA' && selectCausa === "Todas"){
+                setEstadoCausas(allCausas ) 
+            }
+            /* Todas las causas de todas las provincias */
+            if(selectProvincia === "Todas" && selectCausa === "Todas"){
+                setEstadoCausas(allCausas)
+            }
+            /* Todas las causas de la provincia seleccionada */
+            if(selectProvincia !== "Todas" && selectProvincia !== 'BUSCAR POR PROVINCIA' && selectCausa === "BUSCAR POR CAUSA"){
+               let causasProv = allCausas.filter(causa => {return causa.province === idProvincia})
+               setEstadoCausas(causasProv)
+            }
+            if(selectProvincia !== "Todas" && selectProvincia !== 'BUSCAR POR PROVINCIA' && selectCausa === "Todas"){
+                let causasProv = allCausas.filter(causa => {return causa.province === idProvincia})
+               setEstadoCausas(causasProv);
+             }
+            /* Todas las causas del pais que correspondan a la causa seleccionada */
+            if(selectProvincia === 'BUSCAR POR PROVINCIA' && selectCausa !== "Todas"){
+               let causas = allCausas.filter(causa => {return causa.causa === selectCausa})
+               setEstadoCausas(causas)
+            }
+            if(selectProvincia === 'Todas' && selectCausa !== "Todas" && selectCausa !== "BUSCAR POR CAUSA"){
+                let causas = allCausas.filter(causa => {return causa.causa === selectCausa})
+                setEstadoCausas(causas)
+             }
+            if(selectProvincia !== "Todas" && selectProvincia !== 'BUSCAR POR PROVINCIA' && selectCausa !== "Todas" && selectCausa !== "BUSCAR POR CAUSA"){
+                let causas = allCausas.filter(causa => { return causa.causa === selectCausa})
+                let causasProv = causas.filter(causa => { return causa.province === idProvincia })
+                setEstadoCausas(causasProv)
+            }
+     }, [selectProvincia, selectCausa]);
+
+       /* Despliega filtro provincias */
     const desplegar = () =>{
         document.querySelector('#lista').classList.toggle('none');
     }
 
     /* Despliega filtro causas */
     const desplegarCausas = () =>{
-        document.querySelector('#listaCausas').classList.toggle('none')
+        document.querySelector('#listaCausas').classList.toggle('none');
     }
-
-    /* Captura la causa seleccionada en el filtro y setea la cabecera */
-    const causaSelect = function(e) {
-        const causa = e.target.outerText;
-        document.querySelector('.headCausa').innerHTML = `${causa}`
-        document.querySelector('.head').innerHTML = "BUSCAR POR PROVINCIA";
-        setNameProvincia(causa.toUpperCase())
-        let causasFiltradas = allCausas.filter(item => {
-            return item.causa === causa
-        })
-       setEstadoCausas(causasFiltradas)
-    };
-
+   
     /* Cambia el hash para algo misterioso*/
     const changeHash = () => {
         if(window.scrollY >= 3248){
@@ -121,11 +147,12 @@ const Filter = ({
             <div className="filter-selects">
                 <div data-aos="fade-left" data-aos-delay="200" className="select1">
                     <ul name="provincia"  onClick={desplegar}>
-                        <li className="head">BUSCAR POR PROVINCIA</li>
+                        <li className="head">{selectProvincia}</li>
                         <div id="lista" className="none" >
+                        <li onClick={(e) => {setSelectProvincia(e.target.outerText);setIdProvincia("Todas");}}>Todas</li>
                             {
                                 provincias  && (provincias.map(provincia => (
-                                    <li key={provincia.id} onClick={provinciaSelect} id={provincia.code} value={[provincia.code, provincia.name]}>{provincia.name}</li>
+                                    <li key={provincia.id} onClick={(e) => {setSelectProvincia(e.target.outerText);setIdProvincia(e.target.id);}} id={provincia.code} value={[provincia.code, provincia.name]}>{provincia.name}</li>
                                 )))
                             }
                         </div>
@@ -134,12 +161,13 @@ const Filter = ({
                
                 <div data-aos="fade-left" data-aos-delay="250" className="select2">
                     <ul name="causas" onClick={desplegarCausas}>
-                        <li className="headCausa">BUSCAR POR CAUSA</li>
+                        <li className="headCausa">{selectCausa}</li>
                         <div id="listaCausas" className="none">
+                        <li onClick={(e)=>{setSelectCausa(e.target.outerText)}}>Todas</li>
                             {
                                 causasUnicas && (
                                     causasUnicas.map((causa, index) => (
-                                        <li key={index} onClick={causaSelect} id={causa} value={causa}>{causa}</li>
+                                        <li key={index} onClick={(e)=>{setSelectCausa(e.target.outerText)}} id={causa} value={causa}>{causa}</li>
                                     ))
                                 )
                             }
@@ -148,7 +176,7 @@ const Filter = ({
                 </div>  
             </div>
             <div data-aos="fade-left" data-aos-delay="300" className="filter-result">
-                <div className="filter-result-title">{nameProvincia}</div>
+                <div className="filter-result-title">{selectProvincia}</div>
                 <Partaker causas={estadoCausas} provincias={provincias}/>
             </div>
         </section>
