@@ -2,18 +2,8 @@ import React from 'react';
 
 const Partaker = ({
     causas,
-    provincias,
 }) => {
-        /* provincias.forEach(provincia => {
-            if(causas !== null){
-                causas.map(causa => {
-                    if(causa.province === provincia.code){
-                        causa.province = provincia.name
-                    }  
-                })
-            }
-     
-        }) */
+       console.log(causas)
     return ( 
         < >
             { 
@@ -29,7 +19,7 @@ const Partaker = ({
                         <span>DESCRIPCIÓN</span>
                         <p>{causa.description}</p>
                         <span>PROVINCIA</span>
-                        <p>{causa.province}</p>
+                        <p>{causa.provinceName}</p>
                     </div>
                 ) : 
                 <div className="filter-partaker">

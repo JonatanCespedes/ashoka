@@ -14,9 +14,6 @@ const Map = ({
         }       
         fetchData()
     }, []);
-    
-
-    console.log(provincias)
 
     const getProvince = function(e) {
         const provincia = e.target.htmlFor;

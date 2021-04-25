@@ -14,7 +14,8 @@ const causasService = {
                     causa : response[index].causa,
                     participante : response[index].participante,
                     description : response[index].description,
-                    province : response[index].province
+                    province : response[index].province,
+                    provinceName : response[index].provinceName,
                     }
                     causas.push(causa)
                 }  
@@ -35,7 +36,8 @@ const causasService = {
                     age : response[index].age,
                     participante : response[index].participante,
                     description : response[index].description,
-                    province : response[index].province
+                    province : response[index].province,
+                    provinceName : response[index].provinceName,
                 };
                 causas.push(causa);
             }

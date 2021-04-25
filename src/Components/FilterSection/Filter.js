@@ -29,9 +29,9 @@ const Filter = ({
     useEffect(() => {
         async function fetchData() {
             const response = await causasService.getAll();
-            response.map(item => {
+            /* response.map(item => {
                 Object.freeze(item)
-            })
+            }) */
             setAllCausas(response)
         }
         fetchData();
