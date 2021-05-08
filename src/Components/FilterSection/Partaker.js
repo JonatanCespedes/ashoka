@@ -16,7 +16,7 @@ const Partaker = ({
                         <p>{causa.age}</p>
                         <span>CAUSA A TRANSFORMAR</span>
                         <p>{causa.causa}</p>
-                        <span>DESCRIPCIÓN</span>
+                        <span>¿QUÉ TE MOVILIZA?</span>
                         <p>{causa.description}</p>
                         <span>PROVINCIA</span>
                         <p>{causa.provinceName}</p>
